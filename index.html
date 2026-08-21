@@ -4,294 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zirbo — Azeite Virgem Extra da Terra Fria Transmontana</title>
-<meta name="description" content="Zirbo. Azeite virgem extra premium de Trás-os-Montes, em lata de alumínio. História, terroir, características e receitas. Lote piloto limitado e numerado.">
+<meta name="description" content="Zirbo. Azeite virgem extra premium de Trás-os-Montes, em lata de alumínio. História, terroir, características e receitas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --xisto:#141310;
-    --xisto-2:#1d1b16;
-    --verde:#3F4A1F;
-    --verde-deep:#2b3315;
-    --dourado:#B98924;
-    --dourado-soft:#d3ab5a;
-    --marfim:#F7F2E7;
-    --marfim-dim:#eae3d2;
-    --line: rgba(247,242,231,0.14);
-    --max: 1180px;
-  }
-
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--marfim);
-    color:var(--xisto);
-    font-family:'Public Sans', sans-serif;
-    font-weight:400;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-    position:relative;
-  }
-
-  /* ---------- PAPER GRAIN ---------- */
-  .grain{ position:fixed; inset:0; z-index:200; pointer-events:none; opacity:0.5; mix-blend-mode:multiply; }
-  .grain svg{ width:100%; height:100%; }
-  @media (max-width:720px){ .grain{ opacity:0.4; } }
-
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
-  }
-
-  a{color:inherit;}
-  img{display:block; max-width:100%;}
-  section[id], #top{ scroll-margin-top:78px; }
-
-  h1,h2,h3,.serif{ font-family:'Fraunces', serif; font-weight:500; letter-spacing:-0.01em; }
-
-  .eyebrow{
-    font-family:'Public Sans', sans-serif;
-    text-transform:uppercase;
-    letter-spacing:0.28em;
-    font-size:0.72rem;
-    font-weight:600;
-    color:var(--dourado);
-  }
-
-  .wrap{ max-width:var(--max); margin:0 auto; padding:0 6vw; }
-  :focus-visible{ outline:2px solid var(--dourado); outline-offset:4px; }
-
-  .note{
-    border:1px solid currentColor;
-    opacity:0.85;
-    padding:16px 20px;
-    font-size:0.85rem;
-    max-width:60ch;
-    margin:24px auto 0;
-  }
-
-  /* ---------- CUT DIVIDER — signature element ---------- */
-  .cut{ position:relative; height:14vw; max-height:150px; min-height:70px; }
-  .cut svg{ position:absolute; inset:0; width:100%; height:100%; display:block; }
-
-  /* ---------- NAV — fixed: nowrap + horizontal scroll, never wraps to a second line ---------- */
-  header.nav{
-    position:fixed; top:0; left:0; right:0; z-index:100;
-    display:flex; align-items:center; justify-content:space-between;
-    gap:18px;
-    padding:16px 5vw;
-    background:rgba(20,19,16,0.68);
-    backdrop-filter:blur(14px) saturate(140%);
-    -webkit-backdrop-filter:blur(14px) saturate(140%);
-    border-bottom:1px solid rgba(247,242,231,0.08);
-    color:var(--marfim);
-    flex-wrap:nowrap;
-  }
-  header.nav .brandmark{
-    display:flex; align-items:center; gap:9px; text-decoration:none; flex:0 0 auto;
-  }
-  header.nav .brandmark img{ width:24px; height:24px; object-fit:contain; }
-  header.nav .word{ font-family:'Fraunces', serif; font-size:1.1rem; color:var(--marfim); white-space:nowrap; }
-
-  header.nav .navscroll{
-    display:flex; align-items:center; gap:26px;
-    overflow-x:auto; overflow-y:hidden;
-    white-space:nowrap;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-    font-size:0.76rem; letter-spacing:0.07em; text-transform:uppercase;
-    mask-image:linear-gradient(90deg, transparent, #000 18px, #000 calc(100% - 18px), transparent);
-  }
-  header.nav .navscroll::-webkit-scrollbar{ display:none; }
-  header.nav .navscroll a{
-    text-decoration:none; color:rgba(247,242,231,0.72); transition:color .2s;
-    flex:0 0 auto; padding:4px 2px;
-  }
-  header.nav .navscroll a:hover{ color:var(--marfim); }
-  header.nav .navscroll a.cta{
-    color:var(--xisto); background:var(--dourado-soft); padding:8px 16px; border-radius:1px;
-  }
-  header.nav .navscroll a.cta:hover{ background:var(--marfim); }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative; min-height:100svh;
-    background:
-      radial-gradient(120% 90% at 50% 12%, rgba(185,137,36,0.10), transparent 55%),
-      linear-gradient(180deg, var(--xisto) 0%, var(--xisto-2) 60%, #0f0e0c 100%);
-    color:var(--marfim);
-    display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center;
-    padding:130px 6vw 90px;
-    overflow:hidden;
-  }
-  .hero::before{
-    content:""; position:absolute; inset:0;
-    background:repeating-linear-gradient(115deg, transparent 0 68px, rgba(247,242,231,0.028) 68px 69px, transparent 69px 132px);
-    pointer-events:none;
-  }
-  .hero .mark{ width:124px; height:auto; margin-bottom:30px; opacity:0; animation:rise 1s cubic-bezier(.2,.7,.2,1) .15s forwards; }
-  .hero .mark img{ width:100%; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.35)); }
-  .hero .eyebrow{ opacity:0; animation:rise 1s cubic-bezier(.2,.7,.2,1) .35s forwards; }
-  .hero h1{
-    font-size:clamp(2.9rem, 8.5vw, 6.8rem);
-    line-height:1;
-    margin:14px 0 18px;
-    opacity:0; animation:rise 1.1s cubic-bezier(.2,.7,.2,1) .5s forwards;
-  }
-  .hero .tag{
-    font-family:'Fraunces', serif; font-style:italic; font-weight:400;
-    font-size:clamp(1rem, 2vw, 1.35rem);
-    color:var(--dourado-soft); max-width:34ch;
-    opacity:0; animation:rise 1.1s cubic-bezier(.2,.7,.2,1) .7s forwards;
-  }
-  .hero .scroll{
-    position:absolute; bottom:30px; left:50%; transform:translateX(-50%);
-    font-size:0.66rem; letter-spacing:0.3em; text-transform:uppercase;
-    color:rgba(247,242,231,0.55);
-    display:flex; flex-direction:column; align-items:center; gap:10px;
-    opacity:0; animation:rise 1s ease .95s forwards;
-  }
-  .hero .scroll::after{
-    content:""; width:1px; height:34px; background:linear-gradient(var(--dourado), transparent);
-    animation:pulse 2.4s ease-in-out infinite;
-  }
-  @keyframes rise{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
-  @keyframes pulse{ 0%,100%{opacity:.35;} 50%{opacity:1;} }
-
-  /* ---------- EDITORIAL (light, two-col, quote + copy) ---------- */
-  .editorial{ background:var(--marfim); padding:120px 6vw; }
-  .editorial.deep{ background:var(--verde-deep); color:var(--marfim); }
-  .editorial .grid{
-    max-width:var(--max); margin:0 auto;
-    display:grid; grid-template-columns:0.85fr 1.5fr; gap:80px; align-items:start;
-  }
-  .editorial .grid > div:first-child{ position:sticky; top:110px; }
-  .editorial .eyebrow{ margin-bottom:16px; display:block; }
-  .editorial.deep .eyebrow{ color:var(--dourado-soft); }
-  .editorial .lede{
-    font-family:'Fraunces', serif; font-weight:400;
-    font-size:clamp(1.6rem, 2.4vw, 2.3rem); line-height:1.28;
-    color:var(--verde);
-  }
-  .editorial.deep .lede{ color:var(--marfim); }
-  .editorial .lede em{ color:var(--dourado); font-style:italic; }
-  .editorial .copy p{ font-size:1.02rem; margin-bottom:20px; max-width:58ch; }
-  .editorial .copy p{ color:#3a372e; }
-  .editorial.deep .copy p{ color:var(--marfim-dim); }
-  .editorial .copy .sign{ font-family:'Fraunces', serif; font-style:italic; color:var(--verde); font-size:1.1rem; }
-  .editorial.deep .copy .sign{ color:var(--dourado-soft); }
-  @media (max-width:860px){
-    .editorial{ padding:90px 6vw; }
-    .editorial .grid{ grid-template-columns:1fr; gap:30px; }
-    .editorial .grid > div:first-child{ position:static; }
-  }
-
-  /* ---------- DARK CENTERED BLOCK (history, with stat row) ---------- */
-  .stat-block{ background:var(--xisto); color:var(--marfim); padding:120px 6vw; text-align:center; }
-  .stat-block .wrap{ max-width:820px; }
-  .stat-block .eyebrow{ display:block; margin-bottom:18px; }
-  .stat-block h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin-bottom:22px; }
-  .stat-block p{ color:rgba(247,242,231,0.72); font-size:1.02rem; max-width:62ch; margin:0 auto 16px; }
-  .stat-block .coord{ margin-top:40px; display:flex; gap:44px; justify-content:center; flex-wrap:wrap; }
-  .stat-block .coord div{ text-align:center; }
-  .stat-block .coord .n{ font-family:'Fraunces', serif; font-size:1.5rem; color:var(--dourado-soft); }
-  .stat-block .coord .l{ font-size:0.66rem; letter-spacing:0.16em; text-transform:uppercase; color:rgba(247,242,231,0.5); margin-top:6px; }
-
-  /* ---------- PRODUCT ---------- */
-  .product{ background:var(--verde-deep); color:var(--marfim); }
-  .product .grid{ max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; align-items:center; }
-  .product .imgcol{ padding:90px 6vw; display:flex; align-items:center; justify-content:center; position:relative; }
-  .product .imgcol::before{ content:""; position:absolute; inset:8%; border:1px solid rgba(247,242,231,0.14); pointer-events:none; }
-  .product .imgcol img{ max-width:320px; filter:drop-shadow(0 40px 60px rgba(0,0,0,0.45)); transition:transform .6s cubic-bezier(.2,.7,.2,1); }
-  .product .imgcol:hover img{ transform:translateY(-6px) rotate(-0.4deg); }
-  .product .infocol{ padding:90px 6vw 90px 0; }
-  .product .infocol h2{ font-size:clamp(1.9rem, 3.2vw, 2.8rem); margin:14px 0 18px; }
-  .product .infocol > p{ color:var(--marfim-dim); max-width:50ch; margin-bottom:16px; }
-  .product .infocol .tinnote{ color:var(--dourado-soft); font-size:0.92rem; margin-bottom:30px; max-width:50ch; }
-
-  .specs{ list-style:none; border-top:1px solid rgba(247,242,231,0.18); }
-  .specs li{ display:flex; align-items:baseline; gap:10px; padding:16px 0; border-bottom:1px solid rgba(247,242,231,0.18); font-size:0.95rem; }
-  .specs li .k{ color:rgba(247,242,231,0.58); font-size:0.76rem; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; }
-  .specs li .dots{ flex:1; border-bottom:1px dotted rgba(247,242,231,0.28); height:0; margin-bottom:5px; }
-  .specs li .v{ font-family:'Fraunces', serif; font-weight:400; font-size:1.02rem; text-align:right; white-space:nowrap; color:var(--marfim); }
-  .foot-note{ font-size:0.72rem; color:rgba(247,242,231,0.4); margin-top:14px; }
-  @media (max-width:860px){
-    .product .grid{ grid-template-columns:1fr; }
-    .product .infocol{ padding:0 6vw 80px; }
-    .product .imgcol{ padding:70px 6vw 20px; }
-  }
-
-  /* ---------- BENEFÍCIOS ---------- */
-  .beneficios{ background:var(--marfim); padding:120px 6vw; text-align:center; }
-  .beneficios .wrap{ max-width:720px; }
-  .beneficios .eyebrow{ display:block; margin-bottom:18px; }
-  .beneficios h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); color:var(--verde); margin-bottom:22px; }
-  .beneficios p{ color:#3a372e; font-size:1.02rem; max-width:64ch; margin:0 auto 16px; }
-  .beneficios .note{ color:#6b6650; text-align:left; margin-left:auto; margin-right:auto; }
-
-  /* ---------- RECEITAS ---------- */
-  .receitas{ background:var(--xisto); color:var(--marfim); padding:120px 6vw; }
-  .receitas > .wrap > .head{ text-align:center; max-width:640px; margin:0 auto 60px; }
-  .receitas .eyebrow{ display:block; margin-bottom:18px; }
-  .receitas h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin-bottom:16px; }
-  .receitas > .wrap > .head p{ color:rgba(247,242,231,0.68); font-size:1.02rem; }
-  .rgrid{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(247,242,231,0.14); max-width:var(--max); margin:0 auto; border:1px solid rgba(247,242,231,0.14); }
-  .rcard{ background:var(--xisto-2); padding:40px; }
-  .rcard h3{ font-size:1.35rem; margin-bottom:10px; color:var(--marfim); }
-  .rcard .desc{ font-family:'Fraunces', serif; font-style:italic; color:var(--dourado-soft); font-size:0.98rem; margin-bottom:20px; line-height:1.5; }
-  .rcard ol{ padding-left:1.1em; color:rgba(247,242,231,0.75); font-size:0.9rem; }
-  .rcard ol li{ margin-bottom:8px; }
-  .rcard p.simple{ color:rgba(247,242,231,0.75); font-size:0.92rem; }
-  @media (max-width:860px){
-    .rgrid{ grid-template-columns:1fr; }
-    .receitas{ padding:90px 6vw; }
-  }
-
-  /* ---------- LOTE / WAITLIST ---------- */
-  .lote{ background:var(--marfim); padding:130px 6vw 150px; text-align:center; }
-  .lote .wrap{ max-width:640px; }
-  .lote .eyebrow{ display:block; margin-bottom:18px; }
-  .lote h2{ font-size:clamp(2rem, 3.8vw, 3rem); color:var(--verde); margin-bottom:18px; }
-  .lote > .wrap > p{ color:#514d40; margin-bottom:40px; font-size:1.02rem; }
-  .lotebar{ display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:40px; flex-wrap:wrap; }
-  .lotebar .num{ font-family:'Fraunces', serif; font-size:2.4rem; color:var(--verde); }
-  .lotebar .of{ color:#8a8672; font-size:0.95rem; }
-  form.waitlist{ display:flex; gap:10px; max-width:440px; margin:0 auto 16px; flex-wrap:wrap; justify-content:center; }
-  form.waitlist input[type=email]{
-    flex:1 1 240px; padding:16px 18px; border:1px solid #cfc7ab; background:#fff;
-    font-family:'Public Sans', sans-serif; font-size:0.95rem; color:var(--xisto);
-  }
-  form.waitlist input[type=email]:focus{ outline:2px solid var(--dourado); outline-offset:2px; border-color:var(--dourado); }
-  form.waitlist button{
-    padding:16px 28px; background:var(--verde); color:var(--marfim); border:none;
-    font-family:'Public Sans', sans-serif; font-weight:600; letter-spacing:0.04em; font-size:0.85rem;
-    text-transform:uppercase; cursor:pointer; transition:background .2s;
-  }
-  form.waitlist button:hover{ background:var(--dourado); color:var(--xisto); }
-  .lote .fineprint{ font-size:0.78rem; color:#9a967f; }
-  .lote .formnote{ font-size:0.78rem; color:#9a967f; max-width:440px; margin:0 auto 10px; }
-
-  /* ---------- FOOTER ---------- */
-  footer{ background:var(--xisto); color:rgba(247,242,231,0.6); padding:70px 6vw 40px; }
-  footer .fgrid{
-    max-width:var(--max); margin:0 auto; display:flex; justify-content:space-between; align-items:flex-start;
-    gap:40px; flex-wrap:wrap; padding-bottom:40px; border-bottom:1px solid rgba(247,242,231,0.12);
-  }
-  footer .brand{ font-family:'Fraunces', serif; color:var(--marfim); font-size:1.3rem; }
-  footer .tagline{ font-family:'Fraunces', serif; font-style:italic; color:var(--dourado-soft); margin-top:8px; font-size:0.95rem; }
-  footer .cols{ display:flex; gap:60px; flex-wrap:wrap; }
-  footer .col h4{ font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(247,242,231,0.4); margin-bottom:14px; }
-  footer .col a, footer .col span{ display:block; font-size:0.86rem; margin-bottom:8px; color:rgba(247,242,231,0.72); text-decoration:none; }
-  footer .col a:hover{ color:var(--dourado-soft); }
-  footer .bottom{
-    max-width:var(--max); margin:0 auto; padding-top:24px;
-    display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;
-    font-size:0.74rem; color:rgba(247,242,231,0.38);
-  }
-  footer .bottom p{ max-width:60ch; }
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -304,21 +21,20 @@
     <rect width="100%" height="100%" filter="url(#paper)"/>
   </svg>
 </div>
-
 <header class="nav">
-  <a class="brandmark" href="#top">
+  <a class="brandmark" href="index.html">
     <img src="assets/logo.png" alt="">
     <span class="word">Zirbo</span>
   </a>
   <div class="navscroll">
-    <a href="#nome">Zirbo</a>
-    <a href="#historia-azeite">O Azeite</a>
-    <a href="#tras-os-montes">Trás-os-Montes</a>
-    <a href="#terroir">Terroir</a>
-    <a href="#produto">Produto</a>
-    <a href="#beneficios">Benefícios</a>
-    <a href="#receitas">Receitas</a>
-    <a href="#lote" class="cta">Lista de espera</a>
+    <a href="index.html" aria-current="page">Início</a>
+    <a href="historia-do-azeite.html">O Azeite</a>
+    <a href="tras-os-montes.html">Trás-os-Montes</a>
+    <a href="terroir.html">Terroir</a>
+    <a href="produto.html">Produto</a>
+    <a href="beneficios.html">Benefícios</a>
+    <a href="receitas.html">Receitas</a>
+    <a href="index.html#lote" class="cta">Lista de espera</a>
   </div>
 </header>
 
@@ -338,7 +54,7 @@
     </div>
     <div class="copy">
       <p>Nas terras altas de Trás-os-Montes, onde o inverno esculpe a paisagem com rigor e silêncio, nasce o Zirbo — o vento frio e cortante que desafia as oliveiras. É sob este clima da Terra Fria que a azeitona amadurece lentamente, concentrando aromas e caráter.</p>
-      <p>Este azeite virgem extra nasce do encontro entre a dureza da terra e o ouro líquido do lagar. Um tributo à persistência transmontana, engarrafado — ou melhor, enlatado — na sua forma mais pura.</p>
+      <p>Este azeite virgem extra nasce do encontro entre a dureza da terra e o ouro líquido do lagar. Um tributo à persistência transmontana, enlatado na sua forma mais pura.</p>
       <p class="sign">Zirbo — a força da terra, esculpida pelo vento.</p>
     </div>
   </div>
@@ -351,131 +67,49 @@
   </svg>
 </div>
 
-<section class="stat-block" id="historia-azeite">
-  <div class="wrap">
-    <span class="eyebrow">Uma herança milenar</span>
-    <h2>A história do azeite</h2>
-    <p>O azeite acompanha a civilização mediterrânica há milhares de anos. Da Creta minóica ao Egito antigo, da Grécia clássica a Roma, foi alimento, unguento, combustível de candeeiros e moeda de troca — usado em rituais, em atletas olímpicos e guardado em ânforas que percorreram rotas comerciais inteiras.</p>
-    <p>Foram os fenícios, e mais tarde os romanos, que trouxeram a oliveira à Península Ibérica, onde encontrou solo e clima para se enraizar durante séculos. É dessa herança — de árvore sagrada a pilar da dieta mediterrânica — que nasce cada gota de azeite produzida hoje em Portugal.</p>
-    <div class="coord">
-      <div><div class="n">+ 6.000 anos</div><div class="l">De cultivo</div></div>
-      <div><div class="n">Bacia do Mediterrâneo</div><div class="l">Origem</div></div>
-      <div><div class="n">Fenícios &amp; Romanos</div><div class="l">Chegada a Portugal</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="editorial deep" id="tras-os-montes">
-  <div class="grid">
-    <div>
-      <span class="eyebrow">A terra que dá nome à região</span>
-      <p class="lede">«Atrás dos montes» —<br>isolada, austera,<br>e por isso <em>única</em>.</p>
-    </div>
-    <div class="copy">
-      <p>Trás-os-Montes ganha o nome pela sua própria geografia: a terra que fica atrás da cordilheira que a separa do litoral. Durante séculos, esse isolamento moldou um povo de hábitos austeros e uma paisagem de xisto e granito.</p>
-      <p>A região divide-se em duas: a Terra Fria — planalto de invernos rigorosos, onde nasce o vento Zirbo — e a Terra Quente, vale mais ameno ao longo do Douro e do Sabor. É uma terra de aldeias de pedra, transumância, castanheiros centenários e uma agricultura que soube transformar a escassez em identidade.</p>
-    </div>
-  </div>
-</section>
-
-<section class="editorial" id="terroir">
-  <div class="grid">
-    <div>
-      <span class="eyebrow">O azeite na região</span>
-      <p class="lede">Onde a oliveira<br>desafia o <em>planalto</em>.</p>
-    </div>
-    <div class="copy">
-      <p>A presença da oliveira em Trás-os-Montes remonta à Antiguidade, provavelmente introduzida pelos romanos ao longo dos vales do Douro e do Sabor, onde o microclima permite o que o planalto recusa. Já no século XVIII, o médico Francisco da Fonseca Henriques recomendava, na sua obra <em>Medicina Lusitana</em>, comer pão quente com azeite novo saído diretamente do lagar.</p>
-      <p>Hoje, a região tem direito a uma Denominação de Origem Protegida própria — Azeite de Trás-os-Montes DOP —, sustentada por variedades autóctones como a Cobrançosa, a Verdeal Transmontana, a Madural e a Cordovil, cultivadas em concelhos como Mirandela, Vila Flor ou Macedo de Cavaleiros.</p>
-      <p class="sign">É este terroir — e não ainda uma certificação — que Zirbo procura honrar.</p>
-    </div>
-  </div>
-</section>
-
-<div class="cut" aria-hidden="true" style="transform:rotate(180deg)">
-  <svg preserveAspectRatio="none" viewBox="0 0 100 10">
-    <polygon points="0,10 100,10 100,3 0,10" fill="#B98924"></polygon>
-    <polygon points="0,10 100,3 100,0 0,4" fill="#2b3315"></polygon>
-  </svg>
-</div>
-
-<section class="product" id="produto">
-  <div class="grid">
-    <div class="imgcol">
-      <img src="assets/tin.png" alt="Lata de alumínio Zirbo de azeite virgem extra, 500 ml, Trás-os-Montes">
-    </div>
-    <div class="infocol">
-      <span class="eyebrow">Produto &amp; características</span>
-      <h2>Um azeite,<br>um lote, uma origem.</h2>
-      <p>Um perfil equilibrado: verde na cor, com aroma a folha e erva cortada, notas de amêndoa fresca e um amargor e picante bem marcados — sinais de uma azeitona colhida cedo, típicos dos azeites transmontanos de qualidade.</p>
-      <p class="tinnote">Escolhemos a lata de alumínio, não a garrafa de vidro: veda por completo a luz — o maior inimigo do azeite — e protege da oxidação, conservando aroma e propriedades durante mais tempo.</p>
-      <ul class="specs">
-        <li><span class="k">Categoria</span><span class="dots"></span><span class="v">Virgem Extra Premium</span></li>
-        <li><span class="k">Formato</span><span class="dots"></span><span class="v">Lata de alumínio, 500&nbsp;ml</span></li>
-        <li><span class="k">Proteção</span><span class="dots"></span><span class="v">Barreira total à luz</span></li>
-        <li><span class="k">Variedades</span><span class="dots"></span><span class="v">Cobrançosa · Verdeal</span></li>
-        <li><span class="k">Acidez</span><span class="dots"></span><span class="v">≤ 0,2%*</span></li>
-        <li><span class="k">Origem</span><span class="dots"></span><span class="v">Terra Fria Transmontana</span></li>
-        <li><span class="k">Extração</span><span class="dots"></span><span class="v">A frio</span></li>
-      </ul>
-      <p class="foot-note">*Valores-alvo, sujeitos a confirmação pela ficha técnica final do lote.</p>
-    </div>
-  </div>
-</section>
-
-<section class="beneficios" id="beneficios">
-  <div class="wrap">
-    <span class="eyebrow">Propriedades nutricionais</span>
-    <h2>Efeitos benéficos</h2>
-    <p>O azeite virgem extra é rico em ácido oleico, a gordura monoinsaturada que é a base da dieta mediterrânica — reconhecida pela UNESCO como Património Cultural Imaterial da Humanidade.</p>
-    <p>Contém também polifenóis, compostos naturais com propriedades antioxidantes. A regulamentação europeia reconhece que os polifenóis do azeite contribuem para a proteção das gorduras do sangue contra o stress oxidativo, no contexto de um consumo diário adequado e de um padrão alimentar equilibrado.</p>
-    <p class="note">Esta informação tem caráter nutricional geral e não substitui aconselhamento médico ou nutricional personalizado.</p>
-  </div>
-</section>
-
-<section class="receitas" id="receitas">
+<section class="tabs" id="explorar">
   <div class="wrap">
     <div class="head">
-      <span class="eyebrow">Da lata para a mesa</span>
-      <h2>Receitas típicas portuguesas</h2>
-      <p>Quatro clássicos onde o azeite não é ingrediente — é protagonista.</p>
+      <span class="eyebrow">Explore a marca</span>
+      <h2>Seis histórias. Uma origem.</h2>
     </div>
-    <div class="rgrid">
-      <article class="rcard">
-        <h3>Açorda de Bacalhau</h3>
-        <p class="desc">Pão amanhecido, bacalhau desfiado, coentros e um fio generoso de Zirbo no final.</p>
-        <ol>
-          <li>Demolhe o bacalhau e desfie em lascas.</li>
-          <li>Ferva água com alho e coentros; regue fatias de pão amanhecido.</li>
-          <li>Junte o bacalhau e um ovo escalfado por cima.</li>
-          <li>Termine com um fio generoso de azeite antes de servir.</li>
-        </ol>
-      </article>
-      <article class="rcard">
-        <h3>Bacalhau à Lagareiro</h3>
-        <p class="desc">Lombos assados em azeite, com batata a murro — o nome já diz tudo: à moda do lagar.</p>
-        <ol>
-          <li>Asse os lombos de bacalhau em forno com azeite abundante.</li>
-          <li>Esmague batatas cozidas com casca, "a murro".</li>
-          <li>Regue tudo com azeite quente e alho laminado.</li>
-          <li>Sirva de imediato, ainda a fumegar.</li>
-        </ol>
-      </article>
-      <article class="rcard">
-        <h3>Migas à Transmontana</h3>
-        <p class="desc">Pão migado com alho e entrecosto, unido pelo azeite que dá liga e sabor.</p>
-        <ol>
-          <li>Corte o pão em pedaços pequenos.</li>
-          <li>Refogue alho em bastante azeite.</li>
-          <li>Junte o pão e caldo até formar uma massa solta.</li>
-          <li>Sirva com carne grelhada ao lado.</li>
-        </ol>
-      </article>
-      <article class="rcard">
-        <h3>Broa com Azeite e Queijo</h3>
-        <p class="desc">A combinação mais simples do Nordeste transmontano.</p>
-        <p class="simple">Uma fatia de broa de milho, queijo de cabra curado por cima, e um fio generoso de Zirbo a terminar. Sem receita — só bom senso e um azeite à altura.</p>
-      </article>
+    <div class="tabgrid">
+      <a class="tabcard" href="historia-do-azeite.html">
+        <span class="num">01</span>
+        <h3>A História do Azeite</h3>
+        <p>Seis mil anos de civilização — do Neolítico às mesas de hoje.</p>
+        <span class="go">Ler mais →</span>
+      </a>
+      <a class="tabcard" href="tras-os-montes.html">
+        <span class="num">02</span>
+        <h3>Trás-os-Montes</h3>
+        <p>Dos primeiros sinais humanos aos castros e à romanização.</p>
+        <span class="go">Ler mais →</span>
+      </a>
+      <a class="tabcard" href="terroir.html">
+        <span class="num">03</span>
+        <h3>O Azeite na Região</h3>
+        <p>Como a oliveira encontrou o seu lugar na Terra Fria.</p>
+        <span class="go">Ler mais →</span>
+      </a>
+      <a class="tabcard" href="produto.html">
+        <span class="num">04</span>
+        <h3>Produto &amp; Características</h3>
+        <p>Perfil sensorial, ficha técnica e a lata que protege o azeite.</p>
+        <span class="go">Ler mais →</span>
+      </a>
+      <a class="tabcard" href="beneficios.html">
+        <span class="num">05</span>
+        <h3>Efeitos Benéficos</h3>
+        <p>O que a ciência diz sobre o azeite virgem extra.</p>
+        <span class="go">Ler mais →</span>
+      </a>
+      <a class="tabcard" href="receitas.html">
+        <span class="num">06</span>
+        <h3>Receitas Típicas</h3>
+        <p>Quatro clássicos portugueses onde o azeite é protagonista.</p>
+        <span class="go">Ler mais →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -496,7 +130,6 @@
     <p class="fineprint">Sem spam. Apenas o essencial: colheita, lote e abertura da loja.</p>
   </div>
 </section>
-
 <footer>
   <div class="fgrid">
     <div>
@@ -505,18 +138,17 @@
     </div>
     <div class="cols">
       <div class="col">
-        <h4>Marca</h4>
-        <a href="#nome">Zirbo</a>
-        <a href="#historia-azeite">O Azeite</a>
-        <a href="#tras-os-montes">Trás-os-Montes</a>
-        <a href="#terroir">Terroir</a>
+        <h4>Explorar</h4>
+        <a href="historia-do-azeite.html">O Azeite</a>
+        <a href="tras-os-montes.html">Trás-os-Montes</a>
+        <a href="terroir.html">Terroir</a>
+        <a href="produto.html">Produto</a>
       </div>
       <div class="col">
-        <h4>Explorar</h4>
-        <a href="#produto">Produto</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#receitas">Receitas</a>
-        <a href="#lote">Lista de espera</a>
+        <h4>Mais</h4>
+        <a href="beneficios.html">Benefícios</a>
+        <a href="receitas.html">Receitas</a>
+        <a href="index.html#lote">Lista de espera</a>
       </div>
       <div class="col">
         <h4>Contacto</h4>
@@ -526,10 +158,9 @@
     </div>
   </div>
   <div class="bottom">
-    <p>© 2026 Zirbo. Produto de Portugal. Este é um projeto em fase de lançamento — menções de origem, denominação, acidez e efeitos nutricionais estão sujeitas a confirmação do lote e a validação legal antes da comercialização.</p>
+    <p>© 2026 Zirbo. Produto de Portugal. Este é um projeto em fase de lançamento — menções de origem, denominação, acidez e efeitos nutricionais estão sujeitas a confirmação do lote e a validação legal antes da comercialização. Conteúdo histórico apresentado para fins editoriais, compilado a partir de fontes públicas.</p>
     <p>zirbo.cc</p>
   </div>
 </footer>
-
 </body>
 </html>
