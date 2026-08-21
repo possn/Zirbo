@@ -275,6 +275,33 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 .shopcard .cta-link:hover{ color:var(--verde); border-color:var(--verde); }
 @media (max-width:860px){ .shopgrid{ grid-template-columns:1fr; } .shop-section .shead{ flex-direction:column; align-items:flex-start; gap:4px; } }
 
+/* Horizontal-scrolling product row — used for rows that will keep growing
+   (e.g. Edições Especiais). Touch drag is contained to this row only,
+   it never drags the page. New cards just get appended, no layout changes. */
+.shopgrid.scrollrow{
+  display:flex; flex-wrap:nowrap; gap:16px;
+  overflow-x:auto; overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x proximity;
+  background:none; border:none;
+  padding-bottom:14px;
+  margin:0 auto;
+  overscroll-behavior-x:contain;
+}
+.shopgrid.scrollrow::-webkit-scrollbar{ height:6px; }
+.shopgrid.scrollrow::-webkit-scrollbar-thumb{ background:#d9d0b8; }
+.shopgrid.scrollrow .shopcard{
+  flex:0 0 78%; max-width:340px;
+  scroll-snap-align:start;
+  border:1px solid #d9d0b8;
+}
+@media (min-width:640px){
+  .shopgrid.scrollrow .shopcard{ flex-basis:320px; }
+}
+@media (max-width:860px){
+  .shopgrid.scrollrow{ grid-template-columns:initial; }
+}
+
 /* ---------- COMPARE (norte / sul) ---------- */
 .compare{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:#d9d0b8; border:1px solid #d9d0b8; max-width:var(--prose); margin:32px auto 0; }
 .compare .col{ background:var(--marfim); padding:28px 26px; }
