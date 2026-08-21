@@ -32,13 +32,25 @@
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
+    position:relative;
   }
+
+  /* ---------- PAPER GRAIN — fibrous cotton-paper texture over the whole page ---------- */
+  .grain{
+    position:fixed; inset:0; z-index:200;
+    pointer-events:none;
+    opacity:0.5;
+    mix-blend-mode:multiply;
+  }
+  .grain svg{ width:100%; height:100%; }
+  @media (max-width:720px){ .grain{ opacity:0.4; } }
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
   }
 
   a{color:inherit;}
   img{display:block; max-width:100%;}
+  section[id], #top{ scroll-margin-top:78px; }
 
   h1,h2,h3,.serif{
     font-family:'Fraunces', serif;
@@ -72,19 +84,40 @@
 
   /* ---------- NAV ---------- */
   header.nav{
-    position:fixed; top:0; left:0; right:0; z-index:50;
+    position:fixed; top:0; left:0; right:0; z-index:100;
     display:flex; align-items:center; justify-content:space-between;
-    padding:22px 6vw;
-    mix-blend-mode:difference;
-    color:#fff;
+    padding:18px 6vw;
+    background:rgba(20,19,16,0.62);
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    border-bottom:1px solid rgba(247,242,231,0.08);
+    color:var(--marfim);
+    transition:padding .25s ease;
   }
+  header.nav .brandmark{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+  header.nav .brandmark img{ width:26px; height:26px; object-fit:contain; }
   header.nav .word{
-    font-family:'Fraunces', serif; font-size:1.15rem; letter-spacing:0.02em;
+    font-family:'Fraunces', serif; font-size:1.2rem; letter-spacing:0.01em; color:var(--marfim);
   }
-  header.nav nav{ display:flex; gap:32px; font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase; }
-  header.nav nav a{ text-decoration:none; opacity:0.85; transition:opacity .2s; }
-  header.nav nav a:hover{ opacity:1; }
-  @media (max-width:720px){ header.nav nav{ gap:18px; } header.nav nav a span{display:none;} }
+  header.nav nav{ display:flex; align-items:center; gap:38px; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; }
+  header.nav nav a{ text-decoration:none; color:rgba(247,242,231,0.72); transition:color .2s; position:relative; padding:4px 0; }
+  header.nav nav a::after{
+    content:""; position:absolute; left:0; right:100%; bottom:0; height:1px; background:var(--dourado-soft);
+    transition:right .25s ease;
+  }
+  header.nav nav a:hover{ color:var(--marfim); }
+  header.nav nav a:hover::after{ right:0; }
+  header.nav nav a.cta{
+    color:var(--xisto); background:var(--dourado-soft); padding:9px 18px; letter-spacing:0.06em;
+  }
+  header.nav nav a.cta::after{ display:none; }
+  header.nav nav a.cta:hover{ background:var(--marfim); }
+  @media (max-width:760px){
+    header.nav{ padding:16px 5vw; }
+    header.nav nav{ gap:16px; font-size:0.68rem; }
+    header.nav nav a:not(.cta){ display:none; }
+    header.nav nav a.cta{ font-size:0.7rem; padding:9px 16px; }
+  }
 
   /* ---------- HERO ---------- */
   .hero{
@@ -144,12 +177,15 @@
   /* ---------- MANIFESTO ---------- */
   .manifesto{
     background:var(--marfim);
-    padding:130px 6vw 110px;
+    padding:150px 6vw 140px;
   }
   .manifesto .grid{
     max-width:var(--max); margin:0 auto;
-    display:grid; grid-template-columns:0.9fr 1.5fr; gap:70px;
+    display:grid; grid-template-columns:0.85fr 1.5fr; gap:90px;
     align-items:start;
+  }
+  .manifesto .grid > div:first-child{
+    position:sticky; top:110px;
   }
   .manifesto .eyebrow{ margin-bottom:18px; }
   .manifesto .lede{
@@ -172,6 +208,7 @@
   }
   @media (max-width:860px){
     .manifesto .grid{ grid-template-columns:1fr; gap:34px; }
+    .manifesto .grid > div:first-child{ position:static; }
   }
 
   /* ---------- PRODUCT ---------- */
@@ -207,15 +244,28 @@
   .product .infocol h2{ font-size:clamp(2rem, 3.4vw, 3rem); margin:14px 0 22px; }
   .product .infocol > p{ color:var(--marfim-dim); max-width:46ch; margin-bottom:38px; }
 
-  .specs{ list-style:none; border-top:1px solid rgba(247,242,231,0.16); }
+  /* Menu-de-prova style: dotted leader between label and value, like a
+     tasting-menu or wine list — fitting for a gourmet product spec sheet. */
+  .specs{ list-style:none; border-top:1px solid rgba(247,242,231,0.18); }
   .specs li{
-    display:flex; justify-content:space-between; gap:24px;
-    padding:16px 0;
-    border-bottom:1px solid rgba(247,242,231,0.16);
+    display:flex; align-items:baseline; gap:10px;
+    padding:17px 0;
+    border-bottom:1px solid rgba(247,242,231,0.18);
     font-size:0.95rem;
   }
-  .specs li .k{ color:rgba(247,242,231,0.6); letter-spacing:0.02em; }
-  .specs li .v{ font-weight:500; text-align:right; }
+  .specs li .k{
+    color:rgba(247,242,231,0.58); letter-spacing:0.03em;
+    font-size:0.78rem; text-transform:uppercase; letter-spacing:0.12em;
+    white-space:nowrap;
+  }
+  .specs li .dots{
+    flex:1; border-bottom:1px dotted rgba(247,242,231,0.28);
+    height:0; margin-bottom:5px;
+  }
+  .specs li .v{
+    font-family:'Fraunces', serif; font-weight:400; font-size:1.05rem;
+    text-align:right; white-space:nowrap; color:var(--marfim);
+  }
 
   @media (max-width:860px){
     .product .grid{ grid-template-columns:1fr; }
@@ -227,7 +277,7 @@
   .origem{
     background:var(--xisto);
     color:var(--marfim);
-    padding:120px 6vw;
+    padding:150px 6vw;
     position:relative;
     text-align:center;
   }
@@ -249,7 +299,7 @@
   /* ---------- ESCASSEZ / WAITLIST ---------- */
   .lote{
     background:var(--marfim);
-    padding:130px 6vw 140px;
+    padding:150px 6vw 160px;
     text-align:center;
   }
   .lote .wrap{ max-width:640px; }
@@ -330,17 +380,30 @@
 </head>
 <body>
 
+<div class="grain" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#paper)"/>
+  </svg>
+</div>
+
 <header class="nav">
-  <div class="word">Zirbo</div>
+  <a class="brandmark" href="#top">
+    <img src="assets/logo.png" alt="">
+    <span class="word">Zirbo</span>
+  </a>
   <nav>
-    <a href="#historia"><span>01</span> História</a>
-    <a href="#produto"><span>02</span> Produto</a>
-    <a href="#origem"><span>03</span> Origem</a>
-    <a href="#lote">Lista de espera</a>
+    <a href="#historia">História</a>
+    <a href="#produto">Produto</a>
+    <a href="#origem">Origem</a>
+    <a href="#lote" class="cta">Lista de espera</a>
   </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="top">
   <div class="mark"><img src="assets/logo.png" alt="Zirbo — emblema com Z, ramo de oliveira e gota de azeite"></div>
   <span class="eyebrow">Terra Fria Transmontana · Azeite Virgem Extra</span>
   <h1>Zirbo</h1>
@@ -379,13 +442,14 @@
       <h2>Um azeite,<br>um lote, uma origem.</h2>
       <p>Selecionado por perfil sensorial e rastreabilidade, não apenas por acidez. Cada garrafa pertence a um lote único, produzido e engarrafado na Terra Fria Transmontana.</p>
       <ul class="specs">
-        <li><span class="k">Categoria</span><span class="v">Azeite Virgem Extra Premium</span></li>
-        <li><span class="k">Formato</span><span class="v">Vidro escuro, 500 ml</span></li>
-        <li><span class="k">Variedades</span><span class="v">Cobrançosa · Verdeal</span></li>
-        <li><span class="k">Acidez</span><span class="v">≤ 0,2%*</span></li>
-        <li><span class="k">Origem</span><span class="v">Terra Fria Transmontana</span></li>
-        <li><span class="k">Extração</span><span class="v">A frio</span></li>
+        <li><span class="k">Categoria</span><span class="dots"></span><span class="v">Virgem Extra Premium</span></li>
+        <li><span class="k">Formato</span><span class="dots"></span><span class="v">Vidro escuro, 500&nbsp;ml</span></li>
+        <li><span class="k">Variedades</span><span class="dots"></span><span class="v">Cobrançosa · Verdeal</span></li>
+        <li><span class="k">Acidez</span><span class="dots"></span><span class="v">≤ 0,2%*</span></li>
+        <li><span class="k">Origem</span><span class="dots"></span><span class="v">Terra Fria Transmontana</span></li>
+        <li><span class="k">Extração</span><span class="dots"></span><span class="v">A frio</span></li>
       </ul>
+      <p style="font-size:0.72rem; color:rgba(247,242,231,0.4); margin-top:14px;">*Valor-alvo, sujeito a confirmação pela ficha técnica final do lote.</p>
     </div>
   </div>
 </section>
