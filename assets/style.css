@@ -265,6 +265,21 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 .shopcard .cta-link:hover{ color:var(--verde); border-color:var(--verde); }
 @media (max-width:860px){ .shopgrid{ grid-template-columns:1fr; } .shop-section .shead{ flex-direction:column; align-items:flex-start; gap:4px; } }
 
+/* ---------- COMPARE (norte / sul) ---------- */
+.compare{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:#d9d0b8; border:1px solid #d9d0b8; max-width:var(--prose); margin:32px auto 0; }
+.compare .col{ background:var(--marfim); padding:28px 26px; }
+.compare .col h4{ font-family:'Fraunces', serif; font-size:1.1rem; color:var(--verde); margin-bottom:14px; }
+.compare .col ul{ list-style:none; }
+.compare .col li{ font-size:0.9rem; color:#4a4636; padding:8px 0; border-top:1px solid #e3dbc4; }
+.compare .col li:first-child{ border-top:none; }
+@media (max-width:600px){ .compare{ grid-template-columns:1fr; } }
+
+/* ---------- DOP LIST ---------- */
+.doplist{ display:flex; flex-direction:column; gap:1px; background:#e3dbc4; border:1px solid #e3dbc4; max-width:var(--prose); margin:32px auto 0; }
+.dopitem{ background:var(--marfim); padding:20px 24px; display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline; }
+.dopitem .name{ font-family:'Fraunces', serif; font-size:1.05rem; color:var(--verde); flex:0 0 auto; min-width:180px; }
+.dopitem .desc{ font-size:0.88rem; color:#6b6650; flex:1 1 260px; }
+
 /* ---------- BENEFÍCIOS ---------- */
 .note{ border:1px solid currentColor; opacity:0.8; padding:16px 20px; font-size:0.85rem; max-width:var(--prose); margin:30px auto 0; }
 
