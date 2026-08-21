@@ -238,6 +238,33 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 .charitem .v{ font-family:'Fraunces', serif; font-size:1.05rem; }
 @media (max-width:600px){ .chargrid{ grid-template-columns:1fr; } }
 
+/* ---------- LOJA ---------- */
+.shop-intro{ background:var(--marfim); padding:90px 6vw 40px; text-align:center; }
+.shop-intro .wrap{ max-width:680px; }
+.shop-intro p{ color:#3a372e; font-size:1.02rem; }
+
+.shop-section{ background:var(--marfim); padding:50px 6vw 30px; }
+.shop-section .shead{ max-width:var(--max); margin:0 auto 30px; display:flex; align-items:baseline; gap:16px; }
+.shop-section .shead h2{ font-size:1.5rem; color:var(--verde); }
+.shop-section .shead .cnt{ font-size:0.78rem; color:#8a8672; letter-spacing:0.04em; }
+
+.shopgrid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:#d9d0b8; border:1px solid #d9d0b8; max-width:var(--max); margin:0 auto 60px; }
+.shopcard{ background:var(--marfim); padding:34px 28px; display:flex; flex-direction:column; gap:12px; }
+.shopcard .badge{
+  align-self:flex-start; font-size:0.64rem; letter-spacing:0.12em; text-transform:uppercase;
+  padding:5px 10px; border:1px solid var(--dourado); color:var(--dourado);
+}
+.shopcard .badge.live{ background:var(--verde); color:var(--marfim); border-color:var(--verde); }
+.shopcard h3{ font-family:'Fraunces', serif; font-size:1.2rem; color:var(--xisto); margin-top:4px; }
+.shopcard p{ font-size:0.9rem; color:#6b6650; flex:1; }
+.shopcard .price{ font-family:'Fraunces', serif; font-size:1rem; color:var(--verde); }
+.shopcard .cta-link{
+  margin-top:8px; display:inline-block; font-size:0.76rem; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--dourado); text-decoration:none; border-bottom:1px solid var(--dourado); padding-bottom:2px; width:fit-content;
+}
+.shopcard .cta-link:hover{ color:var(--verde); border-color:var(--verde); }
+@media (max-width:860px){ .shopgrid{ grid-template-columns:1fr; } .shop-section .shead{ flex-direction:column; align-items:flex-start; gap:4px; } }
+
 /* ---------- BENEFÍCIOS ---------- */
 .note{ border:1px solid currentColor; opacity:0.8; padding:16px 20px; font-size:0.85rem; max-width:var(--prose); margin:30px auto 0; }
 
