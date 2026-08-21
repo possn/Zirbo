@@ -139,6 +139,9 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
   font-family:'Fraunces', serif; font-style:italic; color:var(--marfim-dim);
   font-size:clamp(1rem, 1.6vw, 1.25rem); max-width:56ch; line-height:1.5;
 }
+@media (max-width:720px){
+  .page-hero{ min-height:auto; padding:110px 6vw 50px; }
+}
 
 /* ---------- PROSE (article body) ---------- */
 .prose-section{ background:var(--marfim); padding:90px 6vw; }
@@ -155,6 +158,10 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 }
 .prose-section.deep .prose .pull, .prose-section.dark .prose .pull{ color:var(--dourado-soft); }
 .prose + .prose-section .prose, .prose-section + .prose-section .prose{ padding-top:0; }
+@media (max-width:720px){
+  .prose-section{ padding:56px 6vw; }
+  .prose-section.deep, .prose-section.dark{ padding:56px 6vw; }
+}
 
 /* ---------- TIMELINE (stat strip) ---------- */
 .timeline{ background:var(--xisto); color:var(--marfim); padding:70px 6vw; text-align:center; }
@@ -242,6 +249,9 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 .shop-intro{ background:var(--marfim); padding:90px 6vw 40px; text-align:center; }
 .shop-intro .wrap{ max-width:680px; }
 .shop-intro p{ color:#3a372e; font-size:1.02rem; }
+@media (max-width:720px){
+  .shop-intro{ padding:44px 6vw 20px; }
+}
 
 .shop-section{ background:var(--marfim); padding:50px 6vw 30px; }
 .shop-section .shead{ max-width:var(--max); margin:0 auto 30px; display:flex; align-items:baseline; gap:16px; }
