@@ -240,6 +240,82 @@
     ter_t2n: { pt: "Séc. XVIII", en: "18th c." },
     ter_t2: { pt: "Registo de Fonseca Henriques", en: "Fonseca Henriques' record" },
     ter_t3: { pt: "Variedades autóctones", en: "Native varieties" },
+    // azeite em portugal
+    pt2_eyebrow: { pt: "Um país, dois olivais", en: "One country, two olive groves" },
+    pt2_title: { pt: "O Azeite em Portugal", en: "Olive Oil in Portugal" },
+    pt2_dek: {
+      pt: "Do planalto transmontano às planícies do Alentejo: como o mesmo fruto dá origem a azeites — e a modelos de agricultura — completamente diferentes.",
+      en: "From the Trás-os-Montes plateau to the Alentejo plains: how the same fruit gives rise to completely different oils — and completely different farming models."
+    },
+    pt2_h1: { pt: "De importador a exportador", en: "From importer to exporter" },
+    pt2_p1: {
+      pt: "Durante décadas, Portugal dependeu de importações para ter azeite à mesa. Essa história mudou por completo: desde 2014, o país é autossuficiente em azeite, e a produção nacional atingiu cerca de 150 mil toneladas na campanha de 2019–2020 — um volume que transformou Portugal num exportador global, não já num importador.",
+      en: "For decades, Portugal relied on imports to get olive oil onto the table. That story has completely changed: since 2014, the country has been self-sufficient in olive oil, and national production reached around 150,000 tonnes in the 2019–2020 season — a volume that turned Portugal into a global exporter, no longer an importer."
+    },
+    pt2_p2: {
+      pt: "Essa transformação tem uma geografia muito clara: fez-se sobretudo a Sul, no Alentejo. Mas a história do azeite português continua a escrever-se, também, nos moldes antigos do Norte — onde nasce o Zirbo.",
+      en: "This transformation has a very clear geography: it happened mostly in the South, in the Alentejo. But the story of Portuguese olive oil is still being written, too, in the old ways of the North — where Zirbo is born."
+    },
+    pt2_h2: { pt: "Norte e Sul: duas formas de fazer azeite", en: "North and South: two ways of making olive oil" },
+    pt2_p3: {
+      pt: "Poucas culturas agrícolas ilustram tão bem o contraste entre o Portugal do interior norte e o Portugal do Sul como o olival.",
+      en: "Few crops illustrate the contrast between inland northern Portugal and southern Portugal as well as the olive tree does."
+    },
+    pt2_col1_h: { pt: "Norte — Trás-os-Montes & Beira", en: "North — Trás-os-Montes & Beira" },
+    pt2_col1_l1: { pt: "Olival tradicional, de sequeiro (sem rega)", en: "Traditional, rainfed olive groves (no irrigation)" },
+    pt2_col1_l2: { pt: "Encostas de xisto e granito, terreno acidentado", en: "Schist and granite hillsides, rugged terrain" },
+    pt2_col1_l3: { pt: "70 a 120 árvores por hectare", en: "70 to 120 trees per hectare" },
+    pt2_col1_l4: { pt: "Colheita frequentemente manual", en: "Often hand-harvested" },
+    pt2_col1_l5: { pt: "Variedades autóctones: Cobrançosa, Verdeal, Madural", en: "Native varieties: Cobrançosa, Verdeal, Madural" },
+    pt2_col1_l6: { pt: "Azeites mais amargos, picantes e complexos", en: "More bitter, pungent, complex oils" },
+    pt2_col2_h: { pt: "Sul — Alentejo", en: "South — Alentejo" },
+    pt2_col2_l1: { pt: "Olival intensivo e superintensivo, regado", en: "Intensive and super-intensive, irrigated groves" },
+    pt2_col2_l2: { pt: "Planícies, regadio do Alqueva", en: "Plains, Alqueva irrigation" },
+    pt2_col2_l3: { pt: "Centenas a milhares de árvores por hectare, em sebe", en: "Hundreds to thousands of trees per hectare, hedgerow-style" },
+    pt2_col2_l4: { pt: "Colheita totalmente mecanizada", en: "Fully mechanised harvest" },
+    pt2_col2_l5: { pt: "Variedades internacionais: Arbequina, Arbosana, Picual", en: "International varieties: Arbequina, Arbosana, Picual" },
+    pt2_col2_l6: { pt: "Azeites mais suaves, produção em grande escala", en: "Milder oils, large-scale production" },
+    pt2_pull1: {
+      pt: "O Alentejo, impulsionado pela água do Alqueva, passa hoje a área de olival tradicional em olival “moderno” a um ritmo notável — e concentra hoje entre 76% e 85% de toda a produção nacional de azeite.",
+      en: "The Alentejo, driven by Alqueva's water, is converting traditional groves into “modern” ones at a remarkable pace — and now accounts for between 76% and 85% of the country's entire olive oil production."
+    },
+    pt2_p4: {
+      pt: "É um modelo eficiente e, para muitos produtores, uma revolução económica genuína para o Baixo Alentejo. Também gera debate: associações ambientalistas têm alertado para o consumo de água e o impacto na biodiversidade da região; a associação de olivicultores do Sul contrapõe que o olival moderno está entre as culturas mais eficientes do perímetro do Alqueva em termos de água por hectare. É uma discussão em aberto, própria de qualquer transformação agrícola desta escala.",
+      en: "It's an efficient model and, for many producers, a genuine economic revolution for the Lower Alentejo. It also sparks debate: environmental groups have raised concerns about water use and the impact on the region's biodiversity; the southern olive growers' association counters that modern groves are among the most water-efficient crops in the Alqueva irrigation perimeter, per hectare. It's an open discussion, typical of any agricultural transformation of this scale."
+    },
+    pt2_h3: { pt: "Seis Denominações de Origem Protegida", en: "Six Protected Designations of Origin" },
+    pt2_p5: {
+      pt: "Portugal tem seis regiões de azeite certificadas com Denominação de Origem Protegida (DOP) pela União Europeia, cada uma com o seu próprio conjunto de variedades e carácter sensorial:",
+      en: "Portugal has six olive oil regions certified with a Protected Designation of Origin (PDO) by the European Union, each with its own set of varieties and sensory character:"
+    },
+    pt2_dop1: { pt: "Cobrançosa, Verdeal Transmontana, Madural, Cordovil — equilibrado, amendoado, doce-verde-amargo-picante.", en: "Cobrançosa, Verdeal Transmontana, Madural, Cordovil — balanced, almond-like, sweet-green-bitter-pungent." },
+    pt2_dop2: { pt: "Galega, Cobrançosa, Cornicabra (Beira Alta); Galega, Bical, Cordovil (Beira Baixa) — baixa acidez, sabor a fruto.", en: "Galega, Cobrançosa, Cornicabra (Beira Alta); Galega, Bical, Cordovil (Beira Baixa) — low acidity, fruity flavour." },
+    pt2_dop3: { pt: "Galega Vulgar predominante — a região dos azeites doces por excelência.", en: "Predominantly Galega Vulgar — the region of sweet oils par excellence." },
+    pt2_dop4: { pt: "Galega, Carrasquenha, Redondil — frutado a maçã madura, cor amarelo-ouro.", en: "Galega, Carrasquenha, Redondil — ripe-apple fruitiness, golden-yellow colour." },
+    pt2_dop5: { pt: "Galega, Cordovil de Serpa, Cobrançosa — condições edafoclimáticas muito próprias.", en: "Galega, Cordovil de Serpa, Cobrançosa — very distinctive soil and climate conditions." },
+    pt2_dop6: { pt: "Cordovil de Serpa, Galega, Verdeal Alentejana — muito frutado, amargo e picante.", en: "Cordovil de Serpa, Galega, Verdeal Alentejana — very fruity, bitter and pungent." },
+    pt2_h4: { pt: "As variedades — um retrato", en: "The varieties — a portrait" },
+    pt2_p6: { pt: "Portugal cultiva dezenas de variedades de azeitona, mas um pequeno grupo domina a paisagem:", en: "Portugal grows dozens of olive varieties, but a small group dominates the landscape:" },
+    pt2_var1: { pt: "A mais difundida no país; doce e suave", en: "The most widespread in the country; sweet and mild" },
+    pt2_var2: { pt: "Norte e Alentejo; amargor e picante", en: "North and Alentejo; bitterness and pungency" },
+    pt2_var3: { pt: "Várias sub-regiões; alto teor de ácidos monoinsaturados", en: "Several sub-regions; high monounsaturated fat content" },
+    pt2_var4: { pt: "Transmontana ou Alentejana; muito frutada", en: "Transmontana or Alentejana; very fruity" },
+    pt2_var5: { pt: "Catalã; olival superintensivo do Sul", en: "Catalan; southern super-intensive groves" },
+    pt2_var6: { pt: "Espanhola; olival intensivo do Alentejo", en: "Spanish; intensive Alentejo groves" },
+    pt2_p7: {
+      pt: "A Galega é, de longe, a variedade mais espalhada pelo país — das Beiras ao Algarve — e a base dos azeites mais suaves e frutados de Portugal. Já a Cobrançosa, com maior presença no Norte, é responsável pelo amargor e picante que caracterizam azeites como o de Trás-os-Montes.",
+      en: "Galega is by far the most widespread variety in the country — from the Beiras to the Algarve — and the base of Portugal's mildest, most fruity oils. Cobrançosa, more present in the North, is responsible for the bitterness and pungency that characterise oils like Trás-os-Montes'."
+    },
+    pt2_h5: { pt: "Onde entra o Zirbo", en: "Where Zirbo fits in" },
+    pt2_p8: {
+      pt: "Face a este panorama, o Zirbo escolhe deliberadamente o lado do Norte: olival de sequeiro, em encosta, com variedades autóctones colhidas numa escala pequena e humana — o oposto do olival em sebe que hoje domina a produção nacional. Não é o modelo mais eficiente. É, para nós, o mais interessante.",
+      en: "Given this landscape, Zirbo deliberately chooses the northern side: rainfed, hillside groves, with native varieties harvested at a small, human scale — the opposite of the hedgerow groves that now dominate national production. It's not the most efficient model. To us, it's the most interesting one."
+    },
+    pt2_t1n: { pt: "Desde 2014", en: "Since 2014" },
+    pt2_t1: { pt: "Portugal autossuficiente em azeite", en: "Portugal self-sufficient in olive oil" },
+    pt2_t2: { pt: "Denominações de Origem Protegida", en: "Protected Designations of Origin" },
+    pt2_t3: { pt: "Produção nacional concentrada no Alentejo", en: "National production concentrated in the Alentejo" },
+    pt2_t4: { pt: "Árvores no olival tradicional do Norte", en: "Trees in traditional northern groves" },
     // search / cart UI
     search_placeholder: { pt: "Procurar na Zirbo…", en: "Search Zirbo…" },
     search_empty: { pt: "Sem resultados.", en: "No results." },
