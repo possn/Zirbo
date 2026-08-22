@@ -316,6 +316,71 @@
     pt2_t2: { pt: "Denominações de Origem Protegida", en: "Protected Designations of Origin" },
     pt2_t3: { pt: "Produção nacional concentrada no Alentejo", en: "National production concentrated in the Alentejo" },
     pt2_t4: { pt: "Árvores no olival tradicional do Norte", en: "Trees in traditional northern groves" },
+    // produto
+    prod_eyebrow: { pt: "Produto & características", en: "Product & characteristics" },
+    prod_title: { pt: "Um azeite, um lote, uma origem", en: "One oil, one batch, one origin" },
+    prod_dek: { pt: "Perfil sensorial, ficha técnica e a razão por trás de uma escolha pouco convencional: a lata.", en: "Sensory profile, spec sheet, and the reasoning behind an unconventional choice: the tin." },
+    prod_card_eyebrow: { pt: "Ficha técnica", en: "Spec sheet" },
+    prod_card_h: { pt: "Verde na cor,<br>firme no carácter.", en: "Green in colour,<br>firm in character." },
+    prod_card_p1: {
+      pt: "Um perfil equilibrado: verde na cor, com aroma a folha e erva cortada, notas de amêndoa fresca e um amargor e picante bem marcados — sinais de uma azeitona colhida cedo, típicos dos azeites transmontanos de qualidade.",
+      en: "A balanced profile: green in colour, with the aroma of leaf and cut grass, notes of fresh almond, and a pronounced bitterness and pungency — signs of an early harvest, typical of quality Trás-os-Montes oils."
+    },
+    prod_card_p2: {
+      pt: "Escolhemos a lata de alumínio, não a garrafa de vidro: veda por completo a luz — o maior inimigo do azeite — e protege da oxidação, conservando aroma e propriedades durante mais tempo.",
+      en: "We chose the aluminium tin, not a glass bottle: it fully blocks light — olive oil's biggest enemy — and protects against oxidation, preserving aroma and properties for longer."
+    },
+    spec_cat: { pt: "Categoria", en: "Category" },
+    spec_cat_v: { pt: "Virgem Extra Premium", en: "Premium Extra Virgin" },
+    spec_format: { pt: "Formato", en: "Format" },
+    spec_format_v: { pt: "Lata de alumínio, 500 ml", en: "Aluminium tin, 500 ml" },
+    spec_protect: { pt: "Proteção", en: "Protection" },
+    spec_protect_v: { pt: "Barreira total à luz", en: "Total light barrier" },
+    spec_variety: { pt: "Variedades", en: "Varieties" },
+    spec_acidity: { pt: "Acidez", en: "Acidity" },
+    spec_origin: { pt: "Origem", en: "Origin" },
+    spec_extraction: { pt: "Extração", en: "Extraction" },
+    spec_extraction_v: { pt: "A frio", en: "Cold" },
+    prod_footnote: { pt: "*Valores-alvo, sujeitos a confirmação pela ficha técnica final do lote.", en: "*Target values, subject to confirmation by the batch's final spec sheet." },
+    prod_h1: { pt: "Porquê lata, e não vidro", en: "Why a tin, not glass" },
+    prod_p1: {
+      pt: "A lata de alumínio é a embalagem tradicionalmente usada para azeites de gama alta em contextos onde a proteção da luz é prioridade absoluta — a exposição à luz é uma das principais causas de degradação do azeite, oxidando os seus compostos e alterando aroma e sabor ao longo do tempo. Ao contrário do vidro, mesmo escuro, a lata bloqueia totalmente a luz e o ar, prolongando a vida útil do produto sem necessidade de conservantes.",
+      en: "The aluminium tin is the packaging traditionally used for high-end olive oils where protection from light is an absolute priority — light exposure is one of the main causes of oil degradation, oxidising its compounds and altering aroma and flavour over time. Unlike glass, even dark glass, the tin fully blocks light and air, extending shelf life without needing preservatives."
+    },
+    prod_p2: { pt: "É também uma escolha prática: mais leve, mais resistente ao transporte e a quedas, e totalmente reciclável.", en: "It's also a practical choice: lighter, more resistant to shipping and drops, and fully recyclable." },
+    prod_t1: { pt: "Acidez-alvo", en: "Target acidity" },
+    prod_t2n: { pt: "A frio", en: "Cold" },
+    prod_t2: { pt: "Método de extração", en: "Extraction method" },
+    prod_t3: { pt: "Formato único", en: "Single format" },
+    prod_t4: { pt: "Latas no lote piloto", en: "Tins in the pilot batch" },
+    // benefícios
+    ben_eyebrow: { pt: "Propriedades nutricionais", en: "Nutritional properties" },
+    ben_title: { pt: "Efeitos benéficos do azeite", en: "Health benefits of olive oil" },
+    ben_dek: { pt: "O que a ciência da nutrição diz — com rigor, sem exageros — sobre o azeite virgem extra.", en: "What nutrition science says — rigorously, without hype — about extra virgin olive oil." },
+    ben_h1: { pt: "Uma gordura diferente das outras", en: "A different kind of fat" },
+    ben_p1: {
+      pt: "O azeite virgem extra é rico em ácido oleico, uma gordura monoinsaturada que constitui a base da dieta mediterrânica — um padrão alimentar reconhecido pela UNESCO como Património Cultural Imaterial da Humanidade. Ao contrário de gorduras saturadas, o ácido oleico está associado, na literatura nutricional, a um perfil lipídico mais favorável quando consumido no contexto de uma alimentação equilibrada.",
+      en: "Extra virgin olive oil is rich in oleic acid, a monounsaturated fat that forms the basis of the Mediterranean diet — a dietary pattern recognised by UNESCO as Intangible Cultural Heritage of Humanity. Unlike saturated fats, oleic acid is associated in the nutritional literature with a more favourable lipid profile when consumed as part of a balanced diet."
+    },
+    ben_p2: {
+      pt: "O azeite virgem extra contém também polifenóis — compostos naturais com propriedades antioxidantes, resultantes do processo de extração a frio e ausentes em óleos vegetais refinados.",
+      en: "Extra virgin olive oil also contains polyphenols — natural compounds with antioxidant properties, a result of cold extraction and absent from refined vegetable oils."
+    },
+    ben_h2: { pt: "O que a regulamentação europeia reconhece", en: "What EU regulation recognises" },
+    ben_p3: {
+      pt: "A União Europeia reconhece oficialmente uma alegação de saúde específica para o azeite: os polifenóis do azeite contribuem para a proteção das gorduras do sangue contra o stress oxidativo. Esta alegação aplica-se especificamente a azeites com um teor mínimo garantido de hidroxitirosol e seus derivados, consumidos como parte de um padrão alimentar equilibrado — não a qualquer azeite, em qualquer quantidade.",
+      en: "The European Union officially recognises one specific health claim for olive oil: olive oil polyphenols contribute to the protection of blood lipids from oxidative stress. This claim applies specifically to oils with a guaranteed minimum content of hydroxytyrosol and its derivatives, consumed as part of a balanced diet — not to any olive oil, in any amount."
+    },
+    ben_pull1: { pt: "É uma diferença importante: a ciência apoia benefícios reais, mas específicos e dependentes de contexto — não uma promessa genérica de saúde.", en: "It's an important distinction: the science supports real, but specific and context-dependent benefits — not a generic health promise." },
+    ben_h3: { pt: "Parte de um padrão, não uma solução isolada", en: "Part of a pattern, not a standalone fix" },
+    ben_p4: {
+      pt: "A investigação em torno da dieta mediterrânica associa consistentemente o consumo regular de azeite virgem extra — no contexto de uma dieta rica em vegetais, legumes, peixe e cereais integrais — a indicadores de saúde cardiovascular mais favoráveis. O valor do azeite está, sobretudo, no seu papel dentro de um padrão alimentar mais amplo, e não como suplemento isolado.",
+      en: "Research on the Mediterranean diet consistently links regular consumption of extra virgin olive oil — within a diet rich in vegetables, legumes, fish and whole grains — to more favourable cardiovascular health markers. Olive oil's value lies mainly in its role within a broader dietary pattern, not as a standalone supplement."
+    },
+    ben_note: {
+      pt: "Esta informação tem caráter nutricional geral e educativo. Não constitui aconselhamento médico ou nutricional personalizado — para orientação adaptada à sua situação de saúde, consulte um médico ou nutricionista.",
+      en: "This information is general and educational in nature. It does not constitute personalised medical or nutritional advice — for guidance tailored to your health situation, consult a doctor or dietitian."
+    },
     // search / cart UI
     search_placeholder: { pt: "Procurar na Zirbo…", en: "Search Zirbo…" },
     search_empty: { pt: "Sem resultados.", en: "No results." },
