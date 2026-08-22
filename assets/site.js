@@ -87,6 +87,159 @@
       en: "This extra virgin olive oil is born from the meeting between the harshness of the land and the liquid gold of the mill. A tribute to Trás-os-Montes' persistence, tinned in its purest form."
     },
     nome_sign: { pt: "Zirbo — a força da terra, esculpida pelo vento.", en: "Zirbo — the strength of the land, carved by the wind." },
+    // história do azeite
+    ha_eyebrow: { pt: "Seis mil anos de civilização", en: "Six thousand years of civilisation" },
+    ha_title: { pt: "A História do Azeite", en: "The History of Olive Oil" },
+    ha_dek: {
+      pt: "Do Neolítico às mesas de hoje: como um fruto amargo se tornou pilar de impérios, religiões e da própria ideia de Mediterrâneo.",
+      en: "From the Neolithic to today's tables: how a bitter fruit became the pillar of empires, religions, and the very idea of the Mediterranean."
+    },
+    ha_h1: { pt: "As primeiras prensas", en: "The first presses" },
+    ha_p1: {
+      pt: "As evidências mais antigas do uso da oliveira remontam a cerca de 5000 a.C., na costa do Monte Carmelo, na atual Israel — uma região com saída direta para o Mediterrâneo. Escavações no sítio neolítico de Kfar Samir revelaram prensas de azeitona rudimentares, prova de que a extração de azeite já era praticada muito antes da escrita.",
+      en: "The earliest evidence of olive use dates back to around 5000 BC, on the coast of Mount Carmel in modern-day Israel — a region with direct access to the Mediterranean. Excavations at the Neolithic site of Kfar Samir revealed rudimentary olive presses, proof that oil extraction was practised long before writing."
+    },
+    ha_p2: {
+      pt: "Por volta de 3000 a.C., a oliveira já se cultivava por todo o Crescente Fértil. Os povos da Mesopotâmia usavam o azeite para se proteger do frio e untavam o corpo antes de batalhas — um óleo que era, ao mesmo tempo, alimento, medicina e armadura simbólica.",
+      en: "By around 3000 BC, the olive tree was already cultivated across the Fertile Crescent. The peoples of Mesopotamia used olive oil to protect against the cold and anointed their bodies before battle — an oil that was, at once, food, medicine, and symbolic armour."
+    },
+    ha_h2: { pt: "Ouro líquido no comércio antigo", en: "Liquid gold in ancient trade" },
+    ha_p3: {
+      pt: "A propagação da cultura do azeite pelo Mediterrâneo deve-se, em grande parte, aos fenícios — os grandes navegadores e comerciantes da Antiguidade. A Bíblia regista trocas comerciais de azeite entre a cidade fenícia de Tiro e o Egito, e o Antigo Testamento descreve o rei Salomão a pagar a Hirão de Tiro com milhares de batos de azeite pela construção do Templo de Jerusalém.",
+      en: "The spread of olive-growing across the Mediterranean owes much to the Phoenicians — Antiquity's great navigators and traders. The Bible records olive oil trade between the Phoenician city of Tyre and Egypt, and the Old Testament describes King Solomon paying Hiram of Tyre thousands of baths of oil for building the Temple of Jerusalem."
+    },
+    ha_pull1: { pt: "Foi por esta raridade e valor de troca que o azeite ficou conhecido, na Antiguidade, como “ouro líquido”.", en: "It was this scarcity and trade value that earned olive oil, in Antiquity, the name “liquid gold”." },
+    ha_h3: { pt: "A árvore sagrada da Grécia", en: "Greece's sacred tree" },
+    ha_p4: {
+      pt: "Foi na Grécia Antiga que o azeite e a oliveira alcançaram o estatuto que hoje reconhecemos. As tabuinhas em Linear B encontradas nos palácios de Micenas e Pilos documentam já a produção e o comércio de azeite na Grécia micénica, séculos antes de Homero.",
+      en: "It was in Ancient Greece that olive oil and the olive tree reached the status we recognise today. Linear B tablets found in the palaces of Mycenae and Pylos already document olive oil production and trade in Mycenaean Greece, centuries before Homer."
+    },
+    ha_p5: {
+      pt: "No século VI a.C., Sólon — o grande legislador ateniense — decretou uma das primeiras leis de proteção ambiental da história: proibiu o corte descontrolado de oliveiras. Os atletas dos Jogos Olímpicos antigos untavam o corpo com azeite antes das provas, e os vencedores eram coroados com ramos de oliveira cortados com uma foice de ouro. Entre os séculos VII e III a.C., filósofos, médicos e historiadores gregos dedicaram-se a estudar as propriedades do azeite — o mesmo conhecimento que a ciência moderna hoje “redescobre” ao investigar a dieta mediterrânica.",
+      en: "In the 6th century BC, Solon — the great Athenian lawmaker — issued one of history's first environmental protection laws: a ban on the uncontrolled felling of olive trees. Ancient Olympic athletes anointed their bodies with oil before competing, and winners were crowned with olive branches cut with a golden sickle. Between the 7th and 3rd centuries BC, Greek philosophers, physicians and historians studied the properties of olive oil — the same knowledge modern science now “rediscovers” when researching the Mediterranean diet."
+    },
+    ha_h4: { pt: "Roma e a expansão pelo Império", en: "Rome and expansion across the Empire" },
+    ha_p6: {
+      pt: "Com a expansão do Império Romano, o cultivo da oliveira alastrou-se para novas províncias — Hispânia, Tunísia e Líbia — entre os séculos I e III d.C. Os romanos aperfeiçoaram as técnicas de prensagem e, sobretudo, o transporte: milhões de ânforas de azeite circulavam pelas rotas marítimas do Império.",
+      en: "As the Roman Empire expanded, olive cultivation spread to new provinces — Hispania, Tunisia and Libya — between the 1st and 3rd centuries AD. The Romans refined pressing techniques and, above all, transport: millions of olive oil amphorae travelled the Empire's maritime routes."
+    },
+    ha_p7: {
+      pt: "Em Roma, chegou a formar-se uma colina artificial — o Monte Testaccio — composta quase inteiramente por cacos de ânforas de azeite descartadas ao longo de séculos, um testemunho silencioso da escala do consumo romano. A Hispânia, de que Portugal fazia parte enquanto território da Lusitânia, tornou-se uma das províncias mais produtivas de azeite de todo o Império.",
+      en: "In Rome, an artificial hill even formed — Monte Testaccio — made up almost entirely of discarded olive oil amphora shards accumulated over centuries, a silent testament to the scale of Roman consumption. Hispania, of which Portugal was part as the territory of Lusitania, became one of the Empire's most productive olive oil provinces."
+    },
+    ha_h5: { pt: "Da Idade Média aos dias de hoje", en: "From the Middle Ages to today" },
+    ha_p8: {
+      pt: "Durante a Idade Média, mosteiros e comunidades agrícolas mantiveram viva a tradição olivícola herdada de Roma, e fontes portuguesas atribuem aos árabes um papel importante no aperfeiçoamento das técnicas de cultivo do olival na Península Ibérica. O azeite manteve, ao longo de séculos, um papel simbólico em rituais religiosos — da unção de reis e sacerdotes às lâmpadas votivas.",
+      en: "During the Middle Ages, monasteries and farming communities kept alive the olive-growing tradition inherited from Rome, and Portuguese sources credit the Arabs with an important role in refining olive-growing techniques on the Iberian Peninsula. For centuries, olive oil retained a symbolic role in religious rites — from anointing kings and priests to votive lamps."
+    },
+    ha_p9: {
+      pt: "Hoje, a bacia do Mediterrâneo continua a ser responsável por cerca de 95% da produção mundial de azeite, e a Dieta Mediterrânica — da qual o azeite é pilar central — é reconhecida pela UNESCO como Património Cultural Imaterial da Humanidade. É esta linhagem milenar que chega, gota a gota, a cada lata de Zirbo.",
+      en: "Today, the Mediterranean basin is still responsible for around 95% of the world's olive oil production, and the Mediterranean Diet — of which olive oil is a central pillar — is recognised by UNESCO as Intangible Cultural Heritage of Humanity. It's this millennia-old lineage that arrives, drop by drop, in every tin of Zirbo."
+    },
+    ha_t1: { pt: "Primeiras prensas, Monte Carmelo", en: "First presses, Mount Carmel" },
+    ha_t2: { pt: "Lei de Sólon, Atenas", en: "Solon's law, Athens" },
+    ha_t3: { pt: "Expansão romana pela Hispânia", en: "Roman expansion across Hispania" },
+    ha_t4n: { pt: "Hoje", en: "Today" },
+    ha_t4: { pt: "Património da Humanidade (UNESCO)", en: "World Heritage (UNESCO)" },
+    // trás-os-montes
+    tom_eyebrow: { pt: "Milhares de anos atrás dos montes", en: "Thousands of years behind the mountains" },
+    tom_title: { pt: "Trás-os-Montes: a Terra Fria", en: "Trás-os-Montes: the Cold Land" },
+    tom_dek: {
+      pt: "Uma região que a sua própria geografia isolou — e que, por isso mesmo, guarda alguns dos vestígios humanos mais antigos da Península Ibérica.",
+      en: "A region isolated by its own geography — and which, for that very reason, holds some of the oldest human traces on the Iberian Peninsula."
+    },
+    tom_h1: { pt: "Os primeiros sinais humanos", en: "The first signs of human presence" },
+    tom_p1: {
+      pt: "Muito antes de haver nome para esta terra, já havia mãos a gravar pedra. No Vale do Côa, perto de Vila Nova de Foz Côa, encontram-se milhares de gravuras rupestres a céu aberto, feitas ao longo de mais de 20.000 anos — entre o Paleolítico Superior (cerca de 25.000–10.000 a.C.) e a Idade do Ferro. Cavalos, auroques, cabras-monteses e veados foram entalhados nas rochas de xisto às margens do rio Côa, com um realismo que ainda hoje impressiona arqueólogos.",
+      en: "Long before this land had a name, hands were already carving stone. In the Côa Valley, near Vila Nova de Foz Côa, thousands of open-air rock engravings can be found, made over more than 20,000 years — between the Upper Palaeolithic (roughly 25,000–10,000 BC) and the Iron Age. Horses, aurochs, ibex and deer were carved into the schist rocks along the Côa river, with a realism that still impresses archaeologists today."
+    },
+    tom_pull1: {
+      pt: "Estas são consideradas as primeiras obras-primas da humanidade em Portugal — e uma das maiores concentrações de arte rupestre paleolítica ao ar livre do mundo.",
+      en: "These are considered humanity's first masterpieces in Portugal — and one of the world's largest concentrations of open-air Palaeolithic rock art."
+    },
+    tom_p2: {
+      pt: "O sítio esteve prestes a desaparecer sob as águas de uma barragem projetada nos anos 90; a descoberta pública das gravuras, em 1994, travou a obra. Em 1998, a UNESCO classificou o Vale do Côa como Património Mundial — o primeiro parque arqueológico português.",
+      en: "The site was about to disappear under the waters of a dam planned in the 1990s; the public discovery of the engravings in 1994 halted the project. In 1998, UNESCO designated the Côa Valley a World Heritage Site — Portugal's first archaeological park."
+    },
+    tom_h2: { pt: "Os castros: aldeias fortificadas da Idade do Ferro", en: "The castros: fortified Iron Age villages" },
+    tom_p3: {
+      pt: "Séculos mais tarde, as terras altas de Trás-os-Montes encheram-se de castros — povoados fortificados de planta circular, construídos em granito e xisto, característicos do Noroeste da Península Ibérica. A região regista uma concentração particularmente densa destes povoados nas zonas de maior altitude, acima dos 750 metros, em concelhos como Montalegre, Boticas, Vinhais e Bragança.",
+      en: "Centuries later, the highlands of Trás-os-Montes filled with castros — fortified, circular hilltop settlements built in granite and schist, characteristic of northwestern Iberia. The region shows a particularly dense concentration of these settlements at higher altitudes, above 750 metres, in municipalities such as Montalegre, Boticas, Vinhais and Bragança."
+    },
+    tom_p4: {
+      pt: "Eram comunidades agropastoris, com metalurgia própria e uma cultura de influência céltica, organizadas em torno da criação de gado, da guerra e do artesanato. Muitos destes castros mantiveram-se habitados mesmo depois da chegada de Roma — um sinal de resistência que ainda hoje parece definir o carácter transmontano.",
+      en: "These were farming and herding communities with their own metalworking and a Celtic-influenced culture, organised around livestock, warfare and craft. Many of these castros remained inhabited even after Rome's arrival — a sign of resistance that still seems to define the character of Trás-os-Montes today."
+    },
+    tom_h3: { pt: "A romanização — incompleta e à sua maneira", en: "Romanisation — incomplete, and on its own terms" },
+    tom_p5: {
+      pt: "Roma chegou a Trás-os-Montes através de uma rede de vias — as chamadas Vias Augustas — que ligavam Bracara Augusta (Braga) a Aquae Flaviae (Chaves, célebre pelas suas termas e pela ponte romana ainda em uso) e daí até Bragança. Ao longo destas estradas surgiram pontes, marcos miliários e inscrições em latim que ainda hoje se encontram em vilas como Favaios.",
+      en: "Rome reached Trás-os-Montes through a network of roads — the so-called Vias Augustas — linking Bracara Augusta (Braga) to Aquae Flaviae (Chaves, famous for its thermal springs and its Roman bridge, still in use) and on to Bragança. Along these roads, bridges, milestones and Latin inscriptions appeared that can still be found today in villages like Favaios."
+    },
+    tom_p6: {
+      pt: "Mas a romanização desta terra foi, comparada com o litoral, lenta e parcial: estudos arqueológicos ao território de Trás-os-Montes Oriental identificam sinais claros de romanização em pouco menos de metade dos castros inventariados na região. É um detalhe revelador — mesmo sob o Império, esta continuou a ser uma terra que resistia à uniformização.",
+      en: "But this land's Romanisation was, compared to the coast, slow and partial: archaeological studies of eastern Trás-os-Montes identify clear signs of Romanisation in just under half of the region's catalogued castros. It's a revealing detail — even under the Empire, this remained a land that resisted uniformity."
+    },
+    tom_h4: { pt: "Terra Fria, Terra Quente", en: "Cold Land, Warm Land" },
+    tom_p7: {
+      pt: "Geograficamente, Trás-os-Montes divide-se em duas metades de temperamento oposto. A Terra Fria é o planalto de invernos rigorosos onde nasce o vento Zirbo — paisagem de xisto e granito, castanheiros centenários e aldeias de pedra. A Terra Quente estende-se pelos vales mais amenos do Douro e do Sabor, onde o microclima permite culturas que o planalto recusa, incluindo, historicamente, o olival.",
+      en: "Geographically, Trás-os-Montes splits into two halves of opposite temperament. The Terra Fria is the plateau of harsh winters where the Zirbo wind is born — a landscape of schist and granite, centuries-old chestnut trees and stone villages. The Terra Quente stretches along the milder valleys of the Douro and Sabor rivers, where the microclimate allows crops the plateau refuses, including, historically, the olive tree."
+    },
+    tom_p8: {
+      pt: "Foi este isolamento — a própria origem do nome “Trás-os-Montes”, a terra que fica atrás da cordilheira que a separa do litoral — que moldou séculos de austeridade, transumância e uma agricultura de subsistência transformada, com o tempo, em identidade.",
+      en: "It was this isolation — the very origin of the name “Trás-os-Montes”, the land that lies behind the mountain range separating it from the coast — that shaped centuries of austerity, seasonal herding, and a subsistence agriculture that, over time, became identity."
+    },
+    tom_h5: { pt: "Uma identidade que resistiu ao tempo", en: "An identity that outlasted time" },
+    tom_p9: {
+      pt: "Nenhum símbolo ilustra melhor essa resistência do que o mirandês. Falado na região de Miranda do Douro, este idioma de raiz asturo-leonesa sobreviveu séculos de isolamento por transmissão oral, até ser “descoberto” pelo filólogo José Leite de Vasconcelos em 1882. Em 29 de janeiro de 1999, tornou-se, por lei, a segunda língua oficial de Portugal — um reconhecimento tardio de uma voz muito antiga.",
+      en: "No symbol illustrates that resistance better than Mirandese. Spoken in the Miranda do Douro region, this Astur-Leonese-rooted language survived centuries of isolation through oral transmission, until it was “discovered” by philologist José Leite de Vasconcelos in 1882. On 29 January 1999, it legally became Portugal's second official language — a late recognition of a very old voice."
+    },
+    tom_t1: { pt: "Arte rupestre do Côa", en: "Côa rock art" },
+    tom_t2n: { pt: "Idade do Ferro", en: "Iron Age" },
+    tom_t2: { pt: "Castros nas terras altas", en: "Castros in the highlands" },
+    tom_t3n: { pt: "Séc. I d.C.", en: "1st c. AD" },
+    tom_t3: { pt: "Vias romanas Braga–Bragança", en: "Roman roads, Braga–Bragança" },
+    tom_t4: { pt: "Mirandês, língua oficial", en: "Mirandese, official language" },
+    // terroir (o azeite em trás-os-montes)
+    ter_eyebrow: { pt: "O azeite na região", en: "Olive oil in the region" },
+    ter_title: { pt: "O Azeite em Trás-os-Montes", en: "Olive Oil in Trás-os-Montes" },
+    ter_dek: {
+      pt: "Onde a oliveira desafia o planalto: a história de como esta terra fria se tornou, contra as probabilidades, uma origem de azeite reconhecida.",
+      en: "Where the olive tree defies the plateau: the story of how this cold land became, against the odds, a recognised olive oil origin."
+    },
+    ter_h1: { pt: "Uma introdução romana, num microclima favorável", en: "A Roman introduction, in a favourable microclimate" },
+    ter_p1: {
+      pt: "A presença da oliveira em Trás-os-Montes remonta provavelmente à romanização, introduzida ao longo dos vales encaixados do Douro e do Sabor — onde o microclima, mais ameno do que o planalto envolvente, permite o que a Terra Fria recusa. É nesses vales, e não nas terras altas, que a azeitona sempre encontrou o seu lugar na região.",
+      en: "The olive tree's presence in Trás-os-Montes probably dates back to Romanisation, introduced along the steep valleys of the Douro and Sabor rivers — where the microclimate, milder than the surrounding plateau, allows what the Terra Fria refuses. It's in these valleys, not the highlands, that the olive has always found its place in the region."
+    },
+    ter_pull1: {
+      pt: "Já no século XVIII, o médico Francisco da Fonseca Henriques recomendava, na sua obra Medicina Lusitana, comer pão quente com azeite novo saído diretamente do lagar — prova de uma tradição de consumo com séculos de enraizamento popular.",
+      en: "As early as the 18th century, physician Francisco da Fonseca Henriques recommended, in his work Medicina Lusitana, eating warm bread with new oil straight from the mill — proof of a consumption tradition rooted in popular practice for centuries."
+    },
+    ter_h2: { pt: "Uma Denominação de Origem Protegida", en: "A Protected Designation of Origin" },
+    ter_p2: {
+      pt: "Hoje, a região tem direito a uma Denominação de Origem Protegida própria — a Azeite de Trás-os-Montes DOP —, que abrange concelhos como Mirandela, Vila Flor, Alfândega da Fé, Macedo de Cavaleiros, Vila Nova de Foz Côa e Carrazeda de Ansiães, entre outros. É uma das denominações de origem mais antigas e consagradas de Portugal, sustentada por regras rígidas de produção, colheita e engarrafamento na própria região.",
+      en: "Today, the region holds its own Protected Designation of Origin — Azeite de Trás-os-Montes DOP — covering municipalities such as Mirandela, Vila Flor, Alfândega da Fé, Macedo de Cavaleiros, Vila Nova de Foz Côa and Carrazeda de Ansiães, among others. It's one of Portugal's oldest and most established designations of origin, underpinned by strict rules for production, harvesting and bottling within the region itself."
+    },
+    ter_p3: {
+      pt: "O concelho de Mirandela — também conhecido pela sua alheira — concentra os olivais mais importantes da região, ocupando cerca de 35% da sua área agrícola.",
+      en: "The municipality of Mirandela — also known for its alheira sausage — holds the region's most important olive groves, covering around 35% of its farmland."
+    },
+    ter_h3: { pt: "Quatro variedades, um carácter", en: "Four varieties, one character" },
+    ter_p4: { pt: "O perfil do azeite transmontano nasce do equilíbrio entre quatro variedades autóctones:", en: "The character of Trás-os-Montes olive oil comes from the balance of four native varieties:" },
+    ter_v1: { pt: "Contribui com amargor e picante", en: "Adds bitterness and pungency" },
+    ter_v2: { pt: "Sabor frutado mais intenso", en: "More intense fruity flavour" },
+    ter_v3: { pt: "Perfil suave e aromático", en: "Soft, aromatic profile" },
+    ter_v4: { pt: "Contribui para o teor de ácidos monoinsaturados", en: "Contributes to monounsaturated fat content" },
+    ter_p5: {
+      pt: "O resultado é um azeite equilibrado, de cor amarelo-esverdeada, com aroma e sabor a fruto fresco — por vezes amendoado — e uma sensação notável de doce, verde, amargo e picante em conjunto. São estas características particulares que distinguem o azeite de Trás-os-Montes dos restantes azeites do país.",
+      en: "The result is a balanced oil, yellow-green in colour, with the aroma and flavour of fresh fruit — sometimes almond-like — and a notable combination of sweet, green, bitter and pungent notes. These particular characteristics are what set Trás-os-Montes olive oil apart from the rest of the country's oils."
+    },
+    ter_sign: { pt: "É este terroir — e não ainda uma certificação — que Zirbo procura honrar.", en: "It's this terroir — not yet a certification — that Zirbo seeks to honour." },
+    ter_t1n: { pt: "Antiguidade", en: "Antiquity" },
+    ter_t1: { pt: "Introdução romana da oliveira", en: "Roman introduction of the olive tree" },
+    ter_t2n: { pt: "Séc. XVIII", en: "18th c." },
+    ter_t2: { pt: "Registo de Fonseca Henriques", en: "Fonseca Henriques' record" },
+    ter_t3: { pt: "Variedades autóctones", en: "Native varieties" },
     // search / cart UI
     search_placeholder: { pt: "Procurar na Zirbo…", en: "Search Zirbo…" },
     search_empty: { pt: "Sem resultados.", en: "No results." },
