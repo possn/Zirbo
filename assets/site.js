@@ -281,6 +281,7 @@
     pt2_col2_l5: { pt: "Variedades internacionais: Arbequina, Arbosana, Picual", en: "International varieties: Arbequina, Arbosana, Picual" },
     pt2_col2_l6: { pt: "Azeites mais suaves, produção em grande escala", en: "Milder oils, large-scale production" },
     pt2_fig1: { pt: "Olival superintensivo em sebe, colhido por máquina — o modelo que hoje domina a produção nacional.", en: "Super-intensive hedgerow grove, machine-harvested — the model that now dominates national production." },
+    pt2_fig2: { pt: "No Norte, a colheita continua a fazer-se árvore a árvore, com escada e à mão.", en: "In the North, the harvest is still done tree by tree, by hand, from a ladder." },
     pt2_pull1: {
       pt: "O Alentejo, impulsionado pela água do Alqueva, passa hoje a área de olival tradicional em olival “moderno” a um ritmo notável — e concentra hoje entre 76% e 85% de toda a produção nacional de azeite.",
       en: "The Alentejo, driven by Alqueva's water, is converting traditional groves into “modern” ones at a remarkable pace — and now accounts for between 76% and 85% of the country's entire olive oil production."
