@@ -21,22 +21,65 @@
     <rect width="100%" height="100%" filter="url(#paper)"/>
   </svg>
 </div>
+
+<!-- Search overlay -->
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-box">
+    <div class="search-top">
+      <input type="text" id="searchInput" data-i18n-ph="search_placeholder" placeholder="Procurar na Zirbo…" autocomplete="off">
+      <button id="searchClose" aria-label="Fechar">&times;</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Cart drawer -->
+<div class="cart-scrim" id="cartScrim"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-head">
+    <span data-i18n="cart_title">O seu carrinho</span>
+    <button id="cartClose" aria-label="Fechar">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-subtotal">
+      <span data-i18n="cart_subtotal">Subtotal</span>
+      <span id="cartSubtotal">0,00 €</span>
+    </div>
+    <p class="cart-note" data-i18n="cart_note">Portes calculados no checkout.</p>
+    <a href="checkout.html" class="cart-checkout-btn" data-i18n="cart_checkout">Finalizar compra</a>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
 <header class="nav">
   <a class="brandmark" href="index.html">
     <img src="assets/logo.png" alt="">
     <span class="word">Zirbo</span>
   </a>
   <div class="navscroll">
-    <a href="index.html">Início</a>
-    <a href="historia-do-azeite.html">O Azeite</a>
-    <a href="tras-os-montes.html">Trás-os-Montes</a>
-    <a href="terroir.html">Terroir</a>
-    <a href="azeite-em-portugal.html">Portugal</a>
-    <a href="produto.html">Produto</a>
-    <a href="beneficios.html">Benefícios</a>
-    <a href="receitas.html">Receitas</a>
-    <a href="loja.html">Loja</a>
-    <a href="index.html#lote" class="cta">Lista de espera</a>
+    <a href="index.html" data-i18n="nav_index">Início</a>
+    <a href="historia-do-azeite.html" data-i18n="nav_historia_do_azeite">O Azeite</a>
+    <a href="tras-os-montes.html" data-i18n="nav_tras_os_montes">Trás-os-Montes</a>
+    <a href="terroir.html" data-i18n="nav_terroir">Terroir</a>
+    <a href="azeite-em-portugal.html" data-i18n="nav_azeite_em_portugal">Portugal</a>
+    <a href="produto.html" data-i18n="nav_produto">Produto</a>
+    <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
+    <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
+    <a href="loja.html" data-i18n="nav_loja">Loja</a>
+    <a href="index.html#lote" class="cta" data-i18n="nav_waitlist">Lista de espera</a>
+  </div>
+  <div class="navicons">
+    <button class="icon-btn" id="searchOpen" aria-label="Procurar" title="Procurar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <button class="icon-btn cart-btn" id="cartOpen" aria-label="Carrinho" title="Carrinho">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L4.5 3H2"/><circle cx="9.5" cy="20" r="1.4" fill="currentColor" stroke="none"/><circle cx="17.5" cy="20" r="1.4" fill="currentColor" stroke="none"/></svg>
+      <span class="cart-count" id="cartCount" hidden>0</span>
+    </button>
+    <button class="lang-toggle" id="langToggle" title="Português / English">
+      <span class="on">PT</span><span class="off">EN</span>
+    </button>
   </div>
 </header>
 <section class="page-hero">
@@ -78,48 +121,49 @@
   <div class="fgrid">
     <div>
       <div class="brand">Zirbo</div>
-      <div class="tagline">A força da terra, esculpida pelo vento.</div>
+      <div class="tagline" data-i18n="footer_tagline">A força da terra, esculpida pelo vento.</div>
     </div>
     <div class="cols">
       <div class="col">
-        <h4>Explorar</h4>
-        <a href="historia-do-azeite.html">O Azeite</a>
-        <a href="tras-os-montes.html">Trás-os-Montes</a>
-        <a href="terroir.html">Terroir</a>
-        <a href="azeite-em-portugal.html">O Azeite em Portugal</a>
-        <a href="produto.html">Produto</a>
+        <h4 data-i18n="footer_explore">Explorar</h4>
+        <a href="historia-do-azeite.html" data-i18n="nav_historia_do_azeite">O Azeite</a>
+        <a href="tras-os-montes.html" data-i18n="nav_tras_os_montes">Trás-os-Montes</a>
+        <a href="terroir.html" data-i18n="nav_terroir">Terroir</a>
+        <a href="azeite-em-portugal.html" data-i18n="nav_azeite_em_portugal">O Azeite em Portugal</a>
+        <a href="produto.html" data-i18n="nav_produto">Produto</a>
       </div>
       <div class="col">
-        <h4>Mais</h4>
-        <a href="beneficios.html">Benefícios</a>
-        <a href="receitas.html">Receitas</a>
-        <a href="loja.html">Loja</a>
-        <a href="index.html#lote">Lista de espera</a>
+        <h4 data-i18n="footer_more">Mais</h4>
+        <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
+        <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
+        <a href="loja.html" data-i18n="nav_loja">Loja</a>
+        <a href="index.html#lote" data-i18n="nav_waitlist">Lista de espera</a>
       </div>
       <div class="col">
-        <h4>Apoio ao Cliente</h4>
-        <a href="sobre-nos.html">Sobre Nós</a>
-        <a href="contacto.html">Contacte-nos</a>
-        <a href="entrega-devolucoes.html">Entrega &amp; Devoluções</a>
+        <h4 data-i18n="footer_support">Apoio ao Cliente</h4>
+        <a href="sobre-nos.html" data-i18n="footer_about">Sobre Nós</a>
+        <a href="contacto.html" data-i18n="footer_contact">Contacte-nos</a>
+        <a href="entrega-devolucoes.html" data-i18n="footer_delivery">Entrega &amp; Devoluções</a>
       </div>
       <div class="col">
-        <h4>Legal</h4>
-        <a href="privacidade-cookies.html">Privacidade &amp; Cookies</a>
-        <a href="direito-livre-resolucao.html">Direito de Livre Resolução</a>
+        <h4 data-i18n="footer_legal">Legal</h4>
+        <a href="privacidade-cookies.html" data-i18n="footer_privacy">Privacidade &amp; Cookies</a>
+        <a href="direito-livre-resolucao.html" data-i18n="footer_withdrawal">Direito de Livre Resolução</a>
         <a href="https://www.livroreclamacoes.pt/inicio" target="_blank" rel="noopener">Livro de Reclamações</a>
-        <a href="http://www.centroarbitragemlisboa.pt/" target="_blank" rel="noopener">Resolução de Conflitos Online</a>
+        <a href="http://www.centroarbitragemlisboa.pt/" target="_blank" rel="noopener" data-i18n="footer_odr">Resolução de Conflitos Online</a>
       </div>
       <div class="col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="footer_contact_h">Contacto</h4>
         <span>geral@zirbo.cc</span>
-        <span>Trás-os-Montes, Portugal</span>
+        <span data-i18n="footer_region">Trás-os-Montes, Portugal</span>
       </div>
     </div>
   </div>
   <div class="bottom">
-    <p>© 2026 Zirbo. Produto de Portugal. Este é um projeto em fase de lançamento — menções de origem, denominação, acidez e efeitos nutricionais estão sujeitas a confirmação do lote e a validação legal antes da comercialização. Conteúdo histórico apresentado para fins editoriais, compilado a partir de fontes públicas.</p>
+    <p data-i18n="footer_legal_note">© 2026 Zirbo. Produto de Portugal. Este é um projeto em fase de lançamento — menções de origem, denominação, acidez e efeitos nutricionais estão sujeitas a confirmação do lote e a validação legal antes da comercialização. Conteúdo histórico apresentado para fins editorial, compilado a partir de fontes públicas.</p>
     <p>zirbo.cc</p>
   </div>
 </footer>
+<script src="assets/site.js"></script>
 </body>
 </html>
