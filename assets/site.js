@@ -365,6 +365,7 @@
       en: "Zirbo follows the rituals that have always defined olive oil in Trás-os-Montes. The harvest is done by hand, olive by olive or by traditional beating with sticks — never by mass mechanical shaking —, allowing only fruit at the right ripeness to be chosen, without bruising it before its time."
     },
     prod_fig1: { pt: "Azeitona colhida e recolhida à mão sobre rede — sem pressa, sem atalhos.", en: "Olives hand-picked and gathered on a net — no rush, no shortcuts." },
+    prod_fig2: { pt: "Vareijo tradicional: as varas fazem cair a azeitona diretamente sobre a rede, sem pressa nem máquinas.", en: "Traditional varejo: sticks knock the olives down straight onto the net, no rush and no machines." },
     prod_p4: {
       pt: "A prensagem é feita num lagar tradicional da região, à escala pequena, seguindo o mesmo princípio de sempre: extrair o azeite sem pressa e sem atalhos. É um processo lento, dependente do tempo, da mão de quem colhe e de quem prensa — e é exatamente por isso que se produz tão pouco. Não é escassez artificial; é o limite natural de fazer as coisas como sempre se fizeram.",
       en: "Pressing takes place at a small, traditional mill in the region, following the same principle it always has: extracting the oil without rushing and without shortcuts. It's a slow process, dependent on the weather, on the hands of whoever harvests and whoever presses — and that's exactly why so little is made. It isn't artificial scarcity; it's the natural limit of doing things the way they've always been done."
