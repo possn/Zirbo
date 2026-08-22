@@ -414,6 +414,148 @@
       pt: "Em todas estas receitas, o momento em que o azeite é adicionado importa tanto quanto a quantidade. Regado em cru, no final da confeção, um azeite virgem extra de qualidade preserva o aroma e as notas frutadas que se perdem quando exposto a temperaturas elevadas durante demasiado tempo. É por isso que a tradição portuguesa reserva sempre o “fio final” de azeite para o prato já pronto a servir.",
       en: "In all these recipes, when the oil is added matters as much as how much. Drizzled raw, at the end of cooking, a good extra virgin olive oil preserves the aroma and fruity notes that are lost when exposed to high heat for too long. That's why Portuguese tradition always saves the “final drizzle” of olive oil for the dish once it's ready to serve."
     },
+    // sobre nós
+    sobre_eyebrow: { pt: "Quem somos", en: "Who we are" },
+    sobre_title: { pt: "Sobre a Zirbo", en: "About Zirbo" },
+    sobre_dek: { pt: "Uma marca nova, com uma origem muito antiga.", en: "A new brand, with a very old origin." },
+    sobre_h1: { pt: "Quem somos", en: "Who we are" },
+    sobre_p1: {
+      pt: "Zirbo é uma marca portuguesa dedicada à comercialização de azeite virgem extra premium, com foco na Terra Fria Transmontana. É um projeto em fase de lançamento — o primeiro lote é piloto: 1.000 latas de 500 ml, produzidas em regime de marca própria junto de um lagar parceiro certificado na região.",
+      en: "Zirbo is a Portuguese brand dedicated to selling premium extra virgin olive oil, focused on the Terra Fria Transmontana. It's a pre-launch project — the first batch is a pilot: 1,000 tins of 500 ml, produced under a private-label arrangement with a certified partner mill in the region."
+    },
+    sobre_p2: {
+      pt: "A nossa missão é simples: honrar o terroir de Trás-os-Montes com um produto rastreável, de produção limitada, e ser honestos sobre o que ainda está por confirmar — desde a ficha técnica final do lote até ao registo legal da marca.",
+      en: "Our mission is simple: honour the Trás-os-Montes terroir with a traceable, limited-production product, and be honest about what's still to be confirmed — from the batch's final spec sheet to the brand's legal registration."
+    },
+    sobre_pull: { pt: "Mantemos um compromisso contínuo com a qualidade, para os futuros clientes e para a própria região que nos inspira.", en: "We maintain an ongoing commitment to quality, for future customers and for the region that inspires us." },
+    sobre_p3: {
+      pt: "Para conhecer a história por trás do nome, da região e do produto, visite as páginas A História do Azeite, Trás-os-Montes e O Azeite na Região.",
+      en: "To learn the story behind the name, the region and the product, visit the pages The History of Olive Oil, Trás-os-Montes and Olive Oil in the Region."
+    },
+    // contacto
+    cont_eyebrow: { pt: "Fale connosco", en: "Get in touch" },
+    cont_title: { pt: "Contacte-nos", en: "Contact Us" },
+    cont_dek: { pt: "Ainda somos uma equipa pequena — mas respondemos a todas as mensagens.", en: "We're still a small team — but we answer every message." },
+    cont_h1: { pt: "Como nos contactar", en: "How to reach us" },
+    cont_p1: {
+      pt: "Para questões sobre o lançamento, o lote piloto, parcerias com lagares ou pontos de venda, escreva para geral@zirbo.cc. Respondemos, tipicamente, dentro de 2 a 3 dias úteis.",
+      en: "For questions about the launch, the pilot batch, mill partnerships or points of sale, write to geral@zirbo.cc. We typically reply within 2 to 3 business days."
+    },
+    cont_p2: {
+      pt: "Este site ainda não tem um formulário de contacto nem um chat ligados a um sistema de apoio ao cliente — por agora, o e-mail é o canal principal.",
+      en: "This site doesn't yet have a contact form or chat connected to a customer support system — for now, email is the main channel."
+    },
+    cont_email_k: { pt: "E-mail geral", en: "General email" },
+    cont_region_k: { pt: "Região de operação", en: "Region of operation" },
+    cont_note: {
+      pt: "A firma, morada fiscal e número de identificação da empresa serão publicados nesta página assim que a constituição societária e o registo estiverem concluídos.",
+      en: "The company name, registered address and tax ID will be published on this page once the company's formation and registration are complete."
+    },
+    // entrega & devoluções
+    ent_eyebrow: { pt: "Política de entrega e devolução", en: "Delivery and returns policy" },
+    ent_title: { pt: "Entrega & Devoluções", en: "Delivery & Returns" },
+    ent_dek: { pt: "Esta secção descreve o que planeamos para o lançamento — os valores finais serão confirmados antes da abertura da loja.", en: "This section describes what we're planning for launch — final figures will be confirmed before the shop opens." },
+    ent_h1: { pt: "Condições gerais", en: "General conditions" },
+    ent_p1: {
+      pt: "A Zirbo pode alterar a informação e a oferta comercial de qualquer produto sem aviso prévio. Todos os preços apresentados na loja online estão sujeitos a alteração e a rutura de stock. No caso de uma encomenda não poder ser satisfeita, total ou parcialmente, o cliente será contactado para encontrarmos, em conjunto, a melhor solução.",
+      en: "Zirbo may change the information and commercial offer of any product without prior notice. All prices shown in the online shop are subject to change and stock availability. If an order cannot be fulfilled, in whole or in part, the customer will be contacted so we can find the best solution together."
+    },
+    ent_h2: { pt: "Encomendas", en: "Orders" },
+    ent_p2: { pt: "Após a confirmação do pagamento, a preparação da encomenda tem início. Cada lata viaja em caixa de cartão canelado reforçada, com separadores internos, testada para transporte seguro.", en: "Once payment is confirmed, order preparation begins. Each tin travels in a reinforced corrugated cardboard box, with internal dividers, tested for safe shipping." },
+    ent_h3: { pt: "Prazos de entrega", en: "Delivery times" },
+    ent_p3: { pt: "Está previsto um prazo de entrega entre 2 a 5 dias úteis para Portugal Continental. Para as Ilhas e para o resto da Europa, o prazo poderá variar consoante a transportadora e o destino. Estes valores serão confirmados antes da abertura da loja com pagamentos.", en: "Delivery is expected within 2 to 5 business days for mainland Portugal. For the islands and the rest of Europe, timing may vary depending on the carrier and destination. These figures will be confirmed before the shop opens for payments." },
+    ent_h4: { pt: "Custos de envio", en: "Shipping costs" },
+    ent_p4: { pt: "Ao preço final de cada compra acresce o custo de envio, calculado com base no peso total da encomenda. O valor total será sempre apresentado antes da finalização da compra, no checkout — nenhum custo é cobrado sem o cliente o ver primeiro.", en: "Shipping cost is added to each purchase's final price, calculated based on the order's total weight. The total amount will always be shown before checkout is completed — no cost is charged without the customer seeing it first." },
+    ent_h5: { pt: "Trocas e devoluções", en: "Exchanges and returns" },
+    ent_p5: {
+      pt: "Nos termos do Decreto-Lei n.º 24/2014, de 14 de fevereiro, o cliente tem direito a resolver o contrato sem necessidade de justificação no prazo de 14 dias a contar da receção do produto — ver detalhes completos em Direito de Livre Resolução. Os custos diretos da devolução do produto ficam a cargo do cliente, salvo indicação em contrário. O reembolso é processado após a receção e verificação do artigo devolvido.",
+      en: "Under Decree-Law no. 24/2014, of 14 February, the customer has the right to withdraw from the contract without justification within 14 days of receiving the product — see full details on the Right of Withdrawal page. Direct return shipping costs are borne by the customer, unless stated otherwise. Refunds are processed after the returned item is received and inspected."
+    },
+    ent_p6: {
+      pt: "Por se tratar de um produto alimentar, a Zirbo poderá não aceitar devoluções de latas cujo selo de origem tenha sido violado, ou que tenham sido expostas a condições inadequadas de temperatura, humidade ou luminosidade — esta exceção será clarificada nos termos finais antes do lançamento.",
+      en: "As this is a food product, Zirbo may not accept returns of tins whose original seal has been broken, or that have been exposed to inadequate temperature, humidity or light conditions — this exception will be clarified in the final terms before launch."
+    },
+    ent_note: { pt: "Esta página descreve a política prevista para o lançamento. Os valores e prazos definitivos serão confirmados, com validação legal, antes da abertura da loja com pagamentos.", en: "This page describes the policy planned for launch. Final figures and timeframes will be confirmed, with legal validation, before the shop opens for payments." },
+    // privacidade & cookies
+    priv_eyebrow: { pt: "RGPD & cookies", en: "GDPR & cookies" },
+    priv_title: { pt: "Privacidade & Cookies", en: "Privacy & Cookies" },
+    priv_dek: { pt: "Como tratamos os seus dados — de forma simples e em conformidade com o Regulamento Geral de Proteção de Dados.", en: "How we handle your data — simply, and in compliance with the General Data Protection Regulation." },
+    priv_h1: { pt: "1. Recolha e registo de dados", en: "1. Data collection and recording" },
+    priv_p1: {
+      pt: "A Zirbo compromete-se a proteger a privacidade de quem visita este site e recolhe apenas os dados pessoais fornecidos voluntariamente — atualmente, apenas o endereço de e-mail submetido na lista de espera. Esse dado é usado exclusivamente para avisar sobre o lançamento do lote piloto e para comunicações relacionadas com a marca.",
+      en: "Zirbo is committed to protecting the privacy of everyone who visits this site, and only collects personal data voluntarily provided — currently, only the email address submitted to the waitlist. This data is used exclusively to notify about the pilot batch's launch and for brand-related communications."
+    },
+    priv_h2: { pt: "2. Retificação ou eliminação dos dados", en: "2. Rectification or deletion of data" },
+    priv_p2: {
+      pt: "Nos termos da legislação aplicável, tem direito de acesso e retificação dos seus dados a qualquer momento. Qualquer pessoa pode optar livremente por fornecer os seus dados, e o preenchimento do formulário da lista de espera é entendido como uma indicação voluntária, aceitando esta política de privacidade. Se pretender deixar de ser contactado, basta pedir a eliminação dos seus dados para o contacto indicado no ponto 5.",
+      en: "Under applicable law, you have the right to access and rectify your data at any time. Anyone may freely choose whether to provide their data, and filling in the waitlist form is understood as a voluntary act, accepting this privacy policy. If you wish to stop being contacted, simply request deletion of your data via the contact listed in point 5."
+    },
+    priv_h3: { pt: "3. Segurança e utilização da informação", en: "3. Security and use of information" },
+    priv_p3: { pt: "A Zirbo compromete-se a não vender, alugar ou transmitir a terceiros os dados pessoais recolhidos através deste site, exceto com autorização do utilizador ou quando legalmente exigido.", en: "Zirbo commits to not selling, renting or transmitting to third parties the personal data collected through this site, except with user authorisation or when legally required." },
+    priv_h4: { pt: "4. Conservação da informação pessoal", en: "4. Retention of personal information" },
+    priv_p4: { pt: "Os dados recolhidos são conservados pelo período necessário para o fim para que foram fornecidos, até indicação em contrário ou até que a lei exija a sua eliminação.", en: "Collected data is retained for as long as necessary for the purpose it was provided for, until stated otherwise or until the law requires its deletion." },
+    priv_h5: { pt: "5. Entidade responsável", en: "5. Data controller" },
+    priv_p5: {
+      pt: "O responsável pelo tratamento de dados deste site ainda não tem identificação societária formal publicada — a firma, morada fiscal e número de identificação da empresa serão acrescentados a este ponto assim que a constituição estiver concluída. Para questões sobre os seus dados, contacte geral@zirbo.cc.",
+      en: "This site's data controller does not yet have a formally published company identification — the company name, registered address and tax ID will be added to this section once formation is complete. For questions about your data, contact geral@zirbo.cc."
+    },
+    priv_h6: { pt: "A nossa política de cookies", en: "Our cookie policy" },
+    priv_p6: { pt: "Cookies são pequenos ficheiros de texto guardados pelo seu navegador. Este site, na sua versão atual, utiliza apenas cookies estritamente necessários ao funcionamento básico da página — não usamos cookies analíticos, de marketing ou de terceiros.", en: "Cookies are small text files stored by your browser. This site, in its current version, only uses cookies strictly necessary for basic page functionality — we don't use analytics, marketing or third-party cookies." },
+    priv_c1k: { pt: "Estritamente necessários", en: "Strictly necessary" },
+    priv_c1v: { pt: "Essenciais ao funcionamento do site", en: "Essential to the site's operation" },
+    priv_c2k: { pt: "Analíticos", en: "Analytics" },
+    priv_c3k: { pt: "Funcionalidade", en: "Functionality" },
+    priv_c4k: { pt: "Marketing", en: "Marketing" },
+    priv_cnu: { pt: "Não utilizados nesta versão", en: "Not used in this version" },
+    priv_p7: { pt: "Se, no futuro, forem adicionadas ferramentas de análise de tráfego ou publicidade, esta página será atualizada com um aviso de consentimento explícito, com opção de aceitar, recusar ou personalizar.", en: "If traffic analytics or advertising tools are added in the future, this page will be updated with an explicit consent notice, with the option to accept, decline or customise." },
+    priv_note: { pt: "Esta política será revista e formalizada com apoio jurídico antes do lançamento comercial completo.", en: "This policy will be reviewed and formalised with legal support before full commercial launch." },
+    // livro de reclamações
+    rec2_eyebrow: { pt: "O seu direito enquanto consumidor", en: "Your right as a consumer" },
+    rec2_title: { pt: "Livro de Reclamações", en: "Complaints Book" },
+    rec2_dek: { pt: "Em Portugal, todo o fornecedor de bens ou prestador de serviços tem de disponibilizar um livro de reclamações — físico ou eletrónico.", en: "In Portugal, every supplier of goods or services must provide a complaints book — physical or electronic." },
+    rec2_h1: { pt: "Como reclamar", en: "How to file a complaint" },
+    rec2_p1: { pt: "Nos termos da legislação portuguesa (Decreto-Lei n.º 156/2005), tem direito a apresentar uma reclamação através do Livro de Reclamações Eletrónico, disponível no portal oficial:", en: "Under Portuguese law (Decree-Law no. 156/2005), you have the right to file a complaint through the Electronic Complaints Book, available on the official portal:" },
+    rec2_p2: {
+      pt: "Enquanto a Zirbo não tiver o seu registo formal concluído nesta plataforma — algo que faremos antes de iniciar vendas com pagamento —, qualquer reclamação pode também ser enviada diretamente para geral@zirbo.cc, com o assunto “Reclamação”.",
+      en: "Until Zirbo has completed its formal registration on this platform — something we'll do before starting paid sales —, any complaint can also be sent directly to geral@zirbo.cc, with the subject “Complaint”."
+    },
+    rec2_note: { pt: "O número de registo do Livro de Reclamações da Zirbo será publicado nesta página assim que o processo de registo estiver concluído.", en: "Zirbo's Complaints Book registration number will be published on this page once the registration process is complete." },
+    // resolução de conflitos
+    odr_eyebrow: { pt: "Antes de ir a tribunal", en: "Before going to court" },
+    odr_title: { pt: "Resolução de Conflitos Online", en: "Online Dispute Resolution" },
+    odr_dek: { pt: "Existem formas de resolver um litígio de consumo sem passar pelos tribunais.", en: "There are ways to resolve a consumer dispute without going to court." },
+    odr_h1: { pt: "Resolução Alternativa de Litígios (RAL)", en: "Alternative Dispute Resolution (ADR)" },
+    odr_p1: { pt: "Caso surja um conflito relacionado com uma compra na Zirbo que não consigamos resolver diretamente, tem direito a recorrer a uma entidade de Resolução Alternativa de Litígios de Consumo (RAL), nos termos da Lei n.º 144/2015. A entidade competente, consoante a sua área de residência, poderá ser consultada no Portal do Consumidor.", en: "Should a dispute arise related to a Zirbo purchase that we can't resolve directly, you have the right to turn to a Consumer Alternative Dispute Resolution (ADR) body, under Law no. 144/2015. The competent body, depending on your area of residence, can be found on the Consumer Portal." },
+    odr_h2: { pt: "Plataforma Europeia de Resolução de Litígios Online (RLL)", en: "European Online Dispute Resolution Platform (ODR)" },
+    odr_p2: { pt: "Se preferir, pode também recorrer à plataforma europeia de Resolução de Litígios em Linha, criada pela União Europeia para litígios resultantes de compras online dentro do espaço europeu:", en: "If you prefer, you can also use the European Online Dispute Resolution platform, created by the European Union for disputes arising from online purchases within the EU:" },
+    odr_note: { pt: "A identificação da entidade de RAL competente para a Zirbo será publicada nesta página assim que a atividade comercial estiver formalmente registada.", en: "The competent ADR body for Zirbo will be identified on this page once the business is formally registered." },
+    // direito de livre resolução
+    wdr_eyebrow: { pt: "O seu direito de arrependimento", en: "Your right of withdrawal" },
+    wdr_title: { pt: "Direito de Livre Resolução", en: "Right of Withdrawal" },
+    wdr_dek: { pt: "Em compras à distância, a lei portuguesa dá-lhe 14 dias para mudar de ideias — sem ter de justificar porquê.", en: "For distance purchases, Portuguese law gives you 14 days to change your mind — with no need to explain why." },
+    wdr_h1: { pt: "O prazo de 14 dias", en: "The 14-day period" },
+    wdr_p1: {
+      pt: "Nos termos do Decreto-Lei n.º 24/2014, que transpõe a Diretiva Europeia dos Direitos dos Consumidores, tem direito a resolver livremente um contrato celebrado à distância — como uma compra na loja online da Zirbo —, sem necessidade de indicar qualquer motivo, no prazo de 14 dias corridos a contar da data de receção do produto.",
+      en: "Under Decree-Law no. 24/2014, which transposes the EU Consumer Rights Directive, you have the right to freely withdraw from a distance contract — such as a purchase in the Zirbo online shop — with no need to state a reason, within 14 calendar days of receiving the product."
+    },
+    wdr_h2: { pt: "Exceções previstas na lei", en: "Exceptions provided by law" },
+    wdr_p2: {
+      pt: "A legislação prevê exceções a este direito para determinados bens, nomeadamente produtos alimentares selados que não sejam adequados a devolução por razões de proteção da saúde ou higiene, uma vez abertos após a entrega. A aplicação exata desta exceção à lata de azeite Zirbo será confirmada e clarificada nos termos e condições finais, antes da abertura da loja com pagamentos.",
+      en: "The law provides exceptions to this right for certain goods, namely sealed food products not suitable for return for health or hygiene reasons once opened after delivery. The exact application of this exception to the Zirbo tin will be confirmed and clarified in the final terms and conditions, before the shop opens for payments."
+    },
+    wdr_h3: { pt: "Como exercer este direito", en: "How to exercise this right" },
+    wdr_p3: {
+      pt: "Para exercer o direito de livre resolução, bastará contactar geral@zirbo.cc dentro do prazo indicado. Um modelo de formulário de livre resolução será disponibilizado nesta página junto com a abertura da loja.",
+      en: "To exercise the right of withdrawal, simply contact geral@zirbo.cc within the stated period. A withdrawal form template will be made available on this page alongside the shop's opening."
+    },
+    // obrigado
+    obr_eyebrow: { pt: "Encomenda confirmada", en: "Order confirmed" },
+    obr_title: { pt: "Obrigado.", en: "Thank you." },
+    obr_dek: { pt: "A sua encomenda foi recebida com sucesso.", en: "Your order was received successfully." },
+    obr_h1: { pt: "O que se segue", en: "What happens next" },
+    obr_p1: { pt: "Vai receber um e-mail de confirmação do Stripe com os detalhes do pagamento. Entraremos em contacto assim que a sua lata estiver pronta a enviar.", en: "You'll receive a confirmation email from Stripe with your payment details. We'll be in touch once your tin is ready to ship." },
+    obr_p2: { pt: "Se tiver qualquer dúvida sobre a sua encomenda, escreva para geral@zirbo.cc.", en: "If you have any questions about your order, write to geral@zirbo.cc." },
+    obr_note: { pt: "Nota: este site está em fase de testes de pagamento. Se completou uma compra em modo de teste, nenhum valor real foi cobrado.", en: "Note: this site is in payment testing phase. If you completed a purchase in test mode, no real charge was made." },
     // search / cart UI
     search_placeholder: { pt: "Procurar na Zirbo…", en: "Search Zirbo…" },
     search_empty: { pt: "Sem resultados.", en: "No results." },
