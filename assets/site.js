@@ -381,6 +381,39 @@
       pt: "Esta informação tem caráter nutricional geral e educativo. Não constitui aconselhamento médico ou nutricional personalizado — para orientação adaptada à sua situação de saúde, consulte um médico ou nutricionista.",
       en: "This information is general and educational in nature. It does not constitute personalised medical or nutritional advice — for guidance tailored to your health situation, consult a doctor or dietitian."
     },
+    // receitas
+    rec_eyebrow: { pt: "Da lata para a mesa", en: "From the tin to the table" },
+    rec_title: { pt: "Receitas típicas portuguesas", en: "Traditional Portuguese recipes" },
+    rec_dek: { pt: "Quatro clássicos onde o azeite não é ingrediente — é protagonista.", en: "Four classics where olive oil isn't just an ingredient — it's the star." },
+    rec1_h: { pt: "Açorda de Bacalhau", en: "Açorda de Bacalhau (Codfish Bread Soup)" },
+    rec1_desc: { pt: "Pão amanhecido, bacalhau desfiado, coentros e um fio generoso de Zirbo no final.", en: "Day-old bread, flaked salt cod, coriander, and a generous drizzle of Zirbo at the end." },
+    rec1_s1: { pt: "Demolhe o bacalhau e desfie em lascas.", en: "Soak the salt cod and flake it." },
+    rec1_s2: { pt: "Ferva água com alho e coentros; regue fatias de pão amanhecido.", en: "Boil water with garlic and coriander; pour over slices of day-old bread." },
+    rec1_s3: { pt: "Junte o bacalhau e um ovo escalfado por cima.", en: "Add the cod and a poached egg on top." },
+    rec1_s4: { pt: "Termine com um fio generoso de azeite antes de servir.", en: "Finish with a generous drizzle of olive oil before serving." },
+    rec2_h: { pt: "Bacalhau à Lagareiro", en: "Bacalhau à Lagareiro (Miller-Style Codfish)" },
+    rec2_desc: { pt: "Lombos assados em azeite, com batata a murro — o nome já diz tudo: à moda do lagar.", en: "Loins roasted in olive oil, with smashed potatoes — the name says it all: mill-style." },
+    rec2_s1: { pt: "Asse os lombos de bacalhau em forno com azeite abundante.", en: "Roast the cod loins in the oven with plenty of olive oil." },
+    rec2_s2: { pt: "Esmague batatas cozidas com casca, “a murro”.", en: "Smash boiled skin-on potatoes with your fist." },
+    rec2_s3: { pt: "Regue tudo com azeite quente e alho laminado.", en: "Drizzle everything with hot olive oil and sliced garlic." },
+    rec2_s4: { pt: "Sirva de imediato, ainda a fumegar.", en: "Serve immediately, still steaming." },
+    rec3_h: { pt: "Migas à Transmontana", en: "Migas à Transmontana (Trás-os-Montes Bread Migas)" },
+    rec3_desc: { pt: "Pão migado com alho e entrecosto, unido pelo azeite que dá liga e sabor.", en: "Crumbled bread with garlic and pork ribs, brought together by the olive oil that binds and flavours." },
+    rec3_s1: { pt: "Corte o pão em pedaços pequenos.", en: "Cut the bread into small pieces." },
+    rec3_s2: { pt: "Refogue alho em bastante azeite.", en: "Sauté garlic in plenty of olive oil." },
+    rec3_s3: { pt: "Junte o pão e caldo até formar uma massa solta.", en: "Add the bread and stock until it forms a loose mass." },
+    rec3_s4: { pt: "Sirva com carne grelhada ao lado.", en: "Serve with grilled meat on the side." },
+    rec4_h: { pt: "Broa com Azeite e Queijo", en: "Corn Bread with Olive Oil and Cheese" },
+    rec4_desc: { pt: "A combinação mais simples do Nordeste transmontano.", en: "The simplest combination from northeastern Trás-os-Montes." },
+    rec4_p: {
+      pt: "Uma fatia de broa de milho, queijo de cabra curado por cima, e um fio generoso de Zirbo a terminar. Sem receita — só bom senso e um azeite à altura.",
+      en: "A slice of corn bread, aged goat cheese on top, and a generous drizzle of Zirbo to finish. No recipe needed — just good judgement and an olive oil worthy of it."
+    },
+    rec_note_h: { pt: "Uma nota sobre o azeite em cru", en: "A note on raw olive oil" },
+    rec_note_p: {
+      pt: "Em todas estas receitas, o momento em que o azeite é adicionado importa tanto quanto a quantidade. Regado em cru, no final da confeção, um azeite virgem extra de qualidade preserva o aroma e as notas frutadas que se perdem quando exposto a temperaturas elevadas durante demasiado tempo. É por isso que a tradição portuguesa reserva sempre o “fio final” de azeite para o prato já pronto a servir.",
+      en: "In all these recipes, when the oil is added matters as much as how much. Drizzled raw, at the end of cooking, a good extra virgin olive oil preserves the aroma and fruity notes that are lost when exposed to high heat for too long. That's why Portuguese tradition always saves the “final drizzle” of olive oil for the dish once it's ready to serve."
+    },
     // search / cart UI
     search_placeholder: { pt: "Procurar na Zirbo…", en: "Search Zirbo…" },
     search_empty: { pt: "Sem resultados.", en: "No results." },
