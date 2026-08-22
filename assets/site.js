@@ -158,6 +158,7 @@
       pt: "Estas são consideradas as primeiras obras-primas da humanidade em Portugal — e uma das maiores concentrações de arte rupestre paleolítica ao ar livre do mundo.",
       en: "These are considered humanity's first masterpieces in Portugal — and one of the world's largest concentrations of open-air Palaeolithic rock art."
     },
+    tom_fig1: { pt: "Gravuras rupestres no Vale do Côa — figuras de animais entalhadas em xisto há mais de 20 mil anos.", en: "Rock engravings in the Côa Valley — animal figures carved into schist more than 20,000 years ago." },
     tom_p2: {
       pt: "O sítio esteve prestes a desaparecer sob as águas de uma barragem projetada nos anos 90; a descoberta pública das gravuras, em 1994, travou a obra. Em 1998, a UNESCO classificou o Vale do Côa como Património Mundial — o primeiro parque arqueológico português.",
       en: "The site was about to disappear under the waters of a dam planned in the 1990s; the public discovery of the engravings in 1994 halted the project. In 1998, UNESCO designated the Côa Valley a World Heritage Site — Portugal's first archaeological park."
