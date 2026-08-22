@@ -109,6 +109,7 @@
       en: "The spread of olive-growing across the Mediterranean owes much to the Phoenicians — Antiquity's great navigators and traders. The Bible records olive oil trade between the Phoenician city of Tyre and Egypt, and the Old Testament describes King Solomon paying Hiram of Tyre thousands of baths of oil for building the Temple of Jerusalem."
     },
     ha_pull1: { pt: "Foi por esta raridade e valor de troca que o azeite ficou conhecido, na Antiguidade, como “ouro líquido”.", en: "It was this scarcity and trade value that earned olive oil, in Antiquity, the name “liquid gold”." },
+    ha_fig1: { pt: "Ânfora grega de figuras negras retratando a colheita da azeitona — a cena agrícola mais antiga registada na cerâmica ática.", en: "Black-figure Greek amphora depicting the olive harvest — the oldest agricultural scene recorded on Attic pottery." },
     ha_h3: { pt: "A árvore sagrada da Grécia", en: "Greece's sacred tree" },
     ha_p4: {
       pt: "Foi na Grécia Antiga que o azeite e a oliveira alcançaram o estatuto que hoje reconhecemos. As tabuinhas em Linear B encontradas nos palácios de Micenas e Pilos documentam já a produção e o comércio de azeite na Grécia micénica, séculos antes de Homero.",

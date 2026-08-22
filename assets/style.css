@@ -159,6 +159,14 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
   color:var(--verde); border-left:2px solid var(--dourado); padding-left:24px; margin:36px 0;
 }
 .prose-section.deep .prose .pull, .prose-section.dark .prose .pull{ color:var(--dourado-soft); }
+.prose figure{ margin:32px 0; }
+.prose figure img{ width:100%; height:auto; display:block; border:1px solid rgba(0,0,0,0.08); }
+.prose-section.deep figure img, .prose-section.dark figure img{ border-color:rgba(247,242,231,0.15); }
+.prose figcaption{
+  font-family:'Fraunces', serif; font-style:italic; font-size:0.85rem;
+  color:#8a8672; margin-top:10px; line-height:1.4;
+}
+.prose-section.deep figcaption, .prose-section.dark figcaption{ color:rgba(247,242,231,0.5); }
 .prose + .prose-section .prose, .prose-section + .prose-section .prose{ padding-top:0; }
 @media (max-width:720px){
   .prose-section{ padding:56px 6vw; }
