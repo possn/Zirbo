@@ -367,6 +367,7 @@
     },
     prod_fig1: { pt: "Azeitona colhida e recolhida à mão sobre rede — sem pressa, sem atalhos.", en: "Olives hand-picked and gathered on a net — no rush, no shortcuts." },
     prod_fig2: { pt: "Vareijo tradicional: as varas fazem cair a azeitona diretamente sobre a rede, sem pressa nem máquinas.", en: "Traditional varejo: sticks knock the olives down straight onto the net, no rush and no machines." },
+    prod_fig3: { pt: "Um lagar de pedra tradicional — as mós de granito ainda giram como giravam há gerações.", en: "A traditional stone lagar — the granite millstones still turn as they did for generations." },
     prod_p4: {
       pt: "A prensagem é feita num lagar tradicional da região, à escala pequena, seguindo o mesmo princípio de sempre: extrair o azeite sem pressa e sem atalhos. É um processo lento, dependente do tempo, da mão de quem colhe e de quem prensa — e é exatamente por isso que se produz tão pouco. Não é escassez artificial; é o limite natural de fazer as coisas como sempre se fizeram.",
       en: "Pressing takes place at a small, traditional mill in the region, following the same principle it always has: extracting the oil without rushing and without shortcuts. It's a slow process, dependent on the weather, on the hands of whoever harvests and whoever presses — and that's exactly why so little is made. It isn't artificial scarcity; it's the natural limit of doing things the way they've always been done."
@@ -790,8 +791,8 @@
                 '<button data-act="dec" aria-label="-">-</button>' +
                 '<span>' + qty + "</span>" +
                 '<button data-act="inc" aria-label="+">+</button>' +
-                '<button class="ci-remove" data-act="rm">' + t("remove") + "</button>" +
               "</div>" +
+              '<button class="ci-remove" data-act="rm">' + t("remove") + "</button>" +
             "</div>" +
           "</div>"
         );
