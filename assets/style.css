@@ -440,6 +440,20 @@ html[data-lang="en"] .lang-toggle .off{ color:var(--dourado-soft); }
   .lang-toggle{ padding:5px 7px; }
 }
 
+/* ---------- CONTACT FORM ---------- */
+#contactForm{ max-width:var(--prose); }
+.cf-row{ margin-bottom:20px; }
+.cf-label{ display:block; font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--dourado-soft); margin-bottom:8px; }
+.cf-input{
+  width:100%; padding:13px 14px; background:rgba(247,242,231,0.06);
+  border:1px solid rgba(247,242,231,0.25); color:var(--marfim);
+  font-family:'Public Sans', sans-serif; font-size:0.95rem;
+}
+.cf-input:focus{ outline:none; border-color:var(--dourado-soft); background:rgba(247,242,231,0.1); }
+textarea.cf-input{ resize:vertical; min-height:120px; }
+#cf-status.error{ color:#e2a0a0; }
+#cf-status.success{ color:var(--dourado-soft); }
+
 /* ---------- BENEFÍCIOS ---------- */
 .note{ border:1px solid currentColor; opacity:0.8; padding:16px 20px; font-size:0.85rem; max-width:var(--prose); margin:30px auto 0; }
 

@@ -20,6 +20,10 @@ export default {
       return handleCheckout(request, env, url);
     }
 
+    if (url.pathname === "/api/contact" && request.method === "POST") {
+      return handleContact(request, env);
+    }
+
     if (url.pathname === "/api/health") {
       return new Response(JSON.stringify({ ok: true }), {
         headers: { "content-type": "application/json" },
@@ -92,4 +96,79 @@ function json(obj, status) {
     status: status || 200,
     headers: { "content-type": "application/json" },
   });
+}
+
+// Contact form → sends an email via Resend (env.RESEND_API_KEY) to the
+// address the form was set up for (CONTACT_TO env var, or a hardcoded
+// fallback). The visitor's own address is set as reply-to, so replying
+// to the notification email goes straight back to them.
+const CONTACT_TO = "geral@zirbo.cc";
+const CONTACT_FROM = "Zirbo — Site <site@zirbo.cc>"; // must be a verified sender/domain in Resend
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+async function handleContact(request, env) {
+  try {
+    if (!env.RESEND_API_KEY) {
+      return json({ error: "O envio de e-mail ainda não está configurado neste servidor." }, 500);
+    }
+
+    const body = await request.json();
+    const name = (body.name || "").toString().trim().slice(0, 200);
+    const email = (body.email || "").toString().trim().slice(0, 200);
+    const subject = (body.subject || "Mensagem do site").toString().trim().slice(0, 200);
+    const message = (body.message || "").toString().trim().slice(0, 5000);
+    const hp = (body.company || "").toString(); // honeypot field, should stay empty
+
+    if (hp) {
+      // Likely a bot; pretend success without sending anything.
+      return json({ ok: true });
+    }
+
+    if (!name || !email || !message) {
+      return json({ error: "Preencha nome, e-mail e mensagem." }, 400);
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      return json({ error: "E-mail inválido." }, 400);
+    }
+
+    const html = `
+      <p><strong>Nome:</strong> ${escapeHtml(name)}</p>
+      <p><strong>E-mail:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Assunto:</strong> ${escapeHtml(subject)}</p>
+      <p><strong>Mensagem:</strong></p>
+      <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
+    `;
+
+    const resendRes = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: CONTACT_FROM,
+        to: [CONTACT_TO],
+        reply_to: email,
+        subject: `[Zirbo — Contacto] ${subject}`,
+        html,
+      }),
+    });
+
+    if (!resendRes.ok) {
+      const errData = await resendRes.json().catch(() => ({}));
+      return json({ error: errData.message || "Erro ao enviar a mensagem." }, 502);
+    }
+
+    return json({ ok: true });
+  } catch (err) {
+    return json({ error: "Erro inesperado ao enviar a mensagem." }, 500);
+  }
 }

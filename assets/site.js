@@ -460,6 +460,12 @@
       pt: "A firma, morada fiscal e número de identificação da empresa serão publicados nesta página assim que a constituição societária e o registo estiverem concluídos.",
       en: "The company name, registered address and tax ID will be published on this page once the company's formation and registration are complete."
     },
+    cont_form_h: { pt: "Envie-nos uma mensagem", en: "Send us a message" },
+    cont_form_name: { pt: "Nome", en: "Name" },
+    cont_form_email: { pt: "E-mail", en: "Email" },
+    cont_form_subject: { pt: "Assunto", en: "Subject" },
+    cont_form_message: { pt: "Mensagem", en: "Message" },
+    cont_form_send: { pt: "Enviar mensagem", en: "Send message" },
     // entrega & devoluções
     ent_eyebrow: { pt: "Política de entrega e devolução", en: "Delivery and returns policy" },
     ent_title: { pt: "Entrega & Devoluções", en: "Delivery & Returns" },
@@ -889,11 +895,59 @@
     });
 
     // add-to-cart buttons
-    document.querySelectorAll(".add-cart-btn").forEach(function (btn) {
+    document.querySelectorAll(".add-cart-btn[data-product]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         addToCart(btn.getAttribute("data-product"), 1);
         openCart();
       });
+    });
+
+    // contact form
+    var contactForm = document.getElementById("contactForm");
+    if (contactForm) contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var statusEl = document.getElementById("cf-status");
+      var submitBtn = document.getElementById("cf-submit");
+      var fd = new FormData(contactForm);
+      var data = {
+        name: fd.get("name") || "",
+        email: fd.get("email") || "",
+        subject: fd.get("subject") || "",
+        message: fd.get("message") || "",
+        company: fd.get("company") || "", // honeypot
+      };
+      statusEl.className = "foot-note";
+      statusEl.textContent = "";
+      submitBtn.disabled = true;
+      var sendingTxt = getLang() === "en" ? "Sending…" : "A enviar…";
+      submitBtn.textContent = sendingTxt;
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }); })
+        .then(function (res) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = t("cont_form_send");
+          if (res.ok && res.body.ok) {
+            statusEl.className = "foot-note success";
+            statusEl.textContent = getLang() === "en"
+              ? "Message sent — we'll reply as soon as we can."
+              : "Mensagem enviada — responderemos assim que possível.";
+            contactForm.reset();
+          } else {
+            throw new Error((res.body && res.body.error) || "error");
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = t("cont_form_send");
+          statusEl.className = "foot-note error";
+          statusEl.textContent = getLang() === "en"
+            ? "Couldn't send the message — please email geral@zirbo.cc directly."
+            : "Não foi possível enviar a mensagem — escreva diretamente para geral@zirbo.cc.";
+        });
     });
 
     // checkout — calls the Worker's /api/checkout to create a real Stripe

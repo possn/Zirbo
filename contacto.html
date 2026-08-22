@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contacte-nos — Zirbo</title>
-<meta name="description" content="Contacte a Zirbo por e-mail. Informação de apoio ao cliente e da empresa.">
+<meta name="description" content="Contacte a Zirbo por e-mail ou pelo formulário de contacto. Informação de apoio ao cliente e da empresa.">
 <link rel="canonical" href="https://www.zirbo.cc/contacto.html">
 
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -18,7 +18,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Zirbo">
 <meta property="og:title" content="Contacte-nos — Zirbo">
-<meta property="og:description" content="Contacte a Zirbo por e-mail. Informação de apoio ao cliente e da empresa.">
+<meta property="og:description" content="Contacte a Zirbo por e-mail ou pelo formulário de contacto. Informação de apoio ao cliente e da empresa.">
 <meta property="og:url" content="https://www.zirbo.cc/contacto.html">
 <meta property="og:image" content="https://www.zirbo.cc/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -28,7 +28,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contacte-nos — Zirbo">
-<meta name="twitter:description" content="Contacte a Zirbo por e-mail. Informação de apoio ao cliente e da empresa.">
+<meta name="twitter:description" content="Contacte a Zirbo por e-mail ou pelo formulário de contacto. Informação de apoio ao cliente e da empresa.">
 <meta name="twitter:image" content="https://www.zirbo.cc/assets/og-image.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,13 +120,41 @@
 <section class="prose-section">
   <div class="prose">
     <h2 data-i18n="cont_h1">Como nos contactar</h2>
-    <p data-i18n="cont_p1">Para questões sobre o lançamento, o lote piloto, parcerias com lagares ou pontos de venda, escreva para <strong>geral@zirbo.cc</strong>. Respondemos, tipicamente, dentro de 2 a 3 dias úteis.</p>
-    <p data-i18n="cont_p2">Este site ainda não tem um formulário de contacto nem um chat ligados a um sistema de apoio ao cliente — por agora, o e-mail é o canal principal.</p>
+    <p data-i18n="cont_p1">Para questões sobre o lançamento, o lote piloto, parcerias com lagares ou pontos de venda, escreva para <strong>geral@zirbo.cc</strong> ou use o formulário abaixo. Respondemos, tipicamente, dentro de 2 a 3 dias úteis.</p>
     <div class="chargrid" style="margin-top:32px;">
       <div class="charitem"><div class="k" data-i18n="cont_email_k">E-mail geral</div><div class="v">geral@zirbo.cc</div></div>
       <div class="charitem"><div class="k" data-i18n="cont_region_k">Região de operação</div><div class="v">Trás-os-Montes, Portugal</div></div>
     </div>
     <p class="foot-note" style="color:#9a967f; margin-top:24px;" data-i18n="cont_note">A firma, morada fiscal e número de identificação da empresa serão publicados nesta página assim que a constituição societária e o registo estiverem concluídos.</p>
+  </div>
+</section>
+
+<section class="prose-section deep">
+  <div class="prose">
+    <h2 data-i18n="cont_form_h">Envie-nos uma mensagem</h2>
+    <form id="contactForm" novalidate>
+      <div style="position:absolute; left:-9999px;" aria-hidden="true">
+        <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label" for="cf-name" data-i18n="cont_form_name">Nome</label>
+        <input class="cf-input" id="cf-name" name="name" type="text" required maxlength="200">
+      </div>
+      <div class="cf-row">
+        <label class="cf-label" for="cf-email" data-i18n="cont_form_email">E-mail</label>
+        <input class="cf-input" id="cf-email" name="email" type="email" required maxlength="200">
+      </div>
+      <div class="cf-row">
+        <label class="cf-label" for="cf-subject" data-i18n="cont_form_subject">Assunto</label>
+        <input class="cf-input" id="cf-subject" name="subject" type="text" maxlength="200">
+      </div>
+      <div class="cf-row">
+        <label class="cf-label" for="cf-message" data-i18n="cont_form_message">Mensagem</label>
+        <textarea class="cf-input" id="cf-message" name="message" rows="6" required maxlength="5000"></textarea>
+      </div>
+      <button type="submit" class="add-cart-btn" id="cf-submit" data-i18n="cont_form_send">Enviar mensagem</button>
+      <p id="cf-status" class="foot-note" style="margin-top:14px;"></p>
+    </form>
   </div>
 </section>
 <section class="crosslinks">
