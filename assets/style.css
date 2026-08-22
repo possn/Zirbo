@@ -411,11 +411,12 @@ html[data-lang="en"] .lang-toggle .off{ color:var(--dourado-soft); }
 .cart-subtotal{ display:flex; justify-content:space-between; font-family:'Fraunces', serif; font-size:1.15rem; margin-bottom:6px; }
 .cart-note{ font-size:0.76rem; color:#9a967f; margin-bottom:16px; }
 .cart-checkout-btn{
-  display:block; text-align:center; background:var(--verde); color:var(--marfim);
+  display:block; width:100%; text-align:center; background:var(--verde); color:var(--marfim);
   padding:15px; text-decoration:none; font-size:0.85rem; letter-spacing:0.05em; text-transform:uppercase;
-  font-weight:600; transition:background .2s;
+  font-weight:600; transition:background .2s; border:none; cursor:pointer; font-family:'Public Sans', sans-serif;
 }
 .cart-checkout-btn:hover{ background:var(--dourado); color:var(--xisto); }
+.cart-checkout-btn[disabled]{ opacity:0.6; cursor:wait; }
 
 /* ---------- TOAST ---------- */
 .toast{

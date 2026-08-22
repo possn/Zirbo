@@ -300,5 +300,44 @@
         openCart();
       });
     });
+
+    // checkout — calls the Worker's /api/checkout to create a real Stripe
+    // Checkout Session (test mode until the Stripe key is switched to live).
+    var checkoutBtn = document.getElementById("cartCheckoutBtn");
+    var checkoutError = document.getElementById("checkoutError");
+    if (checkoutBtn) checkoutBtn.addEventListener("click", function () {
+      var cart = getCart();
+      var items = Object.keys(cart).map(function (id) { return { id: id, qty: cart[id] }; });
+      if (items.length === 0) {
+        showToast(t("cart_empty"));
+        return;
+      }
+      checkoutBtn.disabled = true;
+      checkoutBtn.textContent = "…";
+      if (checkoutError) checkoutError.style.display = "none";
+      fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ items: items }),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            throw new Error(data.error || "checkout error");
+          }
+        })
+        .catch(function () {
+          checkoutBtn.disabled = false;
+          checkoutBtn.textContent = t("cart_checkout");
+          if (checkoutError) {
+            checkoutError.textContent = getLang() === "en"
+              ? "Checkout isn't available yet — please try the waitlist instead."
+              : "O checkout ainda não está disponível — use a lista de espera por agora.";
+            checkoutError.style.display = "block";
+          }
+        });
+    });
   });
 })();

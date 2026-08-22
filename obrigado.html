@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checkout — Zirbo</title>
-<meta name="description" content="Finalizar compra na Zirbo. Pagamentos ainda não estão ativos — em breve, via Stripe.">
+<title>Obrigado — Zirbo</title>
+<meta name="description" content="Obrigado pela sua compra na Zirbo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -47,7 +47,8 @@
       <span id="cartSubtotal">0,00 €</span>
     </div>
     <p class="cart-note" data-i18n="cart_note">Portes calculados no checkout.</p>
-    <a href="checkout.html" class="cart-checkout-btn" data-i18n="cart_checkout">Finalizar compra</a>
+    <button id="cartCheckoutBtn" class="cart-checkout-btn" data-i18n="cart_checkout">Finalizar compra</button>
+    <p class="cart-note" id="checkoutError" style="color:#a94442; display:none; margin-top:8px;"></p>
   </div>
 </aside>
 
@@ -85,27 +86,27 @@
 <section class="page-hero">
   <div class="wrap" style="max-width:var(--max); margin:0 auto; width:100%;">
     <a class="back" href="index.html">&larr; Voltar ao início</a>
-    <span class="eyebrow">Quase lá</span>
-    <h1>Checkout</h1>
-    <p class="dek">Os pagamentos ainda não estão ligados — mas o carrinho e o site já estão prontos para o dia em que estiverem.</p>
+    <span class="eyebrow">Encomenda confirmada</span>
+    <h1>Obrigado.</h1>
+    <p class="dek">A sua encomenda foi recebida com sucesso.</p>
   </div>
 </section>
 
 <section class="prose-section">
   <div class="prose">
-    <h2>O que falta para isto ficar operacional</h2>
-    <p>Esta página é uma pré-visualização da experiência de compra. O carrinho que acabou de usar já guarda os artigos corretamente — mas o pagamento em si ainda não está ligado a nenhum processador real.</p>
-    <p>Antes de aceitar pagamentos, faltam dois passos: concluir o registo legal da empresa (NIF, morada fiscal — necessários para o Stripe poder processar e depositar pagamentos), e ativar o Stripe em modo de produção. Quando isso acontecer, esta mesma página passa a processar o pagamento diretamente, sem precisar de mudar mais nada no site.</p>
-    <p class="pull">Para já, se quiser garantir o seu lugar no lote piloto, a forma correta é a lista de espera — respondemos por e-mail assim que a loja abrir a sério.</p>
+    <h2>O que se segue</h2>
+    <p>Vai receber um e-mail de confirmação do Stripe com os detalhes do pagamento. Entraremos em contacto assim que a sua lata estiver pronta a enviar.</p>
+    <p>Se tiver qualquer dúvida sobre a sua encomenda, escreva para <a href="contacto.html" style="color:var(--dourado); text-decoration:underline;">geral@zirbo.cc</a>.</p>
+    <p class="note">Nota: este site está em fase de testes de pagamento. Se completou uma compra em modo de teste, nenhum valor real foi cobrado.</p>
   </div>
 </section>
 <section class="crosslinks">
   <div class="wrap">
     <span class="eyebrow">Continue a explorar</span>
     <div class="grid">
-    <a href="index.html#lote"><div class="k">Reservar</div><div class="t">Lista de espera</div></a>
     <a href="loja.html"><div class="k">Ver</div><div class="t">A Loja</div></a>
-    <a href="contacto.html"><div class="k">Falar connosco</div><div class="t">Contacte-nos</div></a>
+    <a href="receitas.html"><div class="k">Explorar</div><div class="t">Receitas Típicas</div></a>
+    <a href="index.html#lote"><div class="k">Reservar</div><div class="t">Lista de espera</div></a>
     </div>
   </div>
 </section>
