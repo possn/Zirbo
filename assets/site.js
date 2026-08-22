@@ -941,13 +941,15 @@
             throw new Error((res.body && res.body.error) || "error");
           }
         })
-        .catch(function () {
+        .catch(function (err) {
           submitBtn.disabled = false;
           submitBtn.textContent = t("cont_form_send");
           statusEl.className = "foot-note error";
-          statusEl.textContent = getLang() === "en"
+          var detail = (err && err.message && err.message !== "error") ? err.message : "";
+          var fallback = getLang() === "en"
             ? "Couldn't send the message — please email geral@zirbo.cc directly."
             : "Não foi possível enviar a mensagem — escreva diretamente para geral@zirbo.cc.";
+          statusEl.textContent = detail ? (fallback + " (" + detail + ")") : fallback;
         });
     });
 
