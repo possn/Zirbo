@@ -159,6 +159,7 @@
       en: "These are considered humanity's first masterpieces in Portugal — and one of the world's largest concentrations of open-air Palaeolithic rock art."
     },
     tom_fig1: { pt: "Gravuras rupestres no Vale do Côa — figuras de animais entalhadas em xisto há mais de 20 mil anos.", en: "Rock engravings in the Côa Valley — animal figures carved into schist more than 20,000 years ago." },
+    tom_fig2: { pt: "A ponte romana de Trajano, em Chaves (a antiga Aquae Flaviae) — ainda hoje em uso, quase dois mil anos depois.", en: "Trajan's Roman bridge in Chaves (ancient Aquae Flaviae) — still in use today, nearly two thousand years later." },
     tom_p2: {
       pt: "O sítio esteve prestes a desaparecer sob as águas de uma barragem projetada nos anos 90; a descoberta pública das gravuras, em 1994, travou a obra. Em 1998, a UNESCO classificou o Vale do Côa como Património Mundial — o primeiro parque arqueológico português.",
       en: "The site was about to disappear under the waters of a dam planned in the 1990s; the public discovery of the engravings in 1994 halted the project. In 1998, UNESCO designated the Côa Valley a World Heritage Site — Portugal's first archaeological park."
