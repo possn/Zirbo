@@ -246,6 +246,78 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
   .product .imgcol{ padding:70px 6vw 20px; }
 }
 
+/* ---------- PRODUCT BUY BOX (produto page — gallery + purchase) ---------- */
+.product-buy{ background:var(--verde-deep); color:var(--marfim); padding:60px 6vw 70px; }
+.pbwrap{ max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:start; }
+.gallery-main{ position:relative; border:1px solid rgba(247,242,231,0.16); background:rgba(0,0,0,0.15); display:flex; align-items:center; justify-content:center; padding:40px; min-height:360px; }
+.gallery-main img{ max-width:280px; width:100%; filter:drop-shadow(0 30px 50px rgba(0,0,0,0.45)); }
+.pill-badge{
+  position:absolute; top:16px; left:16px; z-index:2;
+  background:var(--dourado); color:var(--xisto); font-family:'Public Sans', sans-serif;
+  font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;
+  padding:6px 12px; border-radius:2px;
+}
+.gallery-thumbs{ display:flex; gap:10px; margin-top:14px; }
+.gallery-thumbs .thumb{
+  width:72px; height:72px; padding:6px; background:rgba(0,0,0,0.15);
+  border:1px solid rgba(247,242,231,0.16); cursor:pointer; transition:border-color .2s;
+}
+.gallery-thumbs .thumb img{ width:100%; height:100%; object-fit:cover; }
+.gallery-thumbs .thumb.active, .gallery-thumbs .thumb:hover{ border-color:var(--dourado); }
+
+.buybox .cat-tag{ display:block; margin-bottom:10px; }
+.buybox h1{ font-size:clamp(1.9rem, 3.2vw, 2.7rem); margin-bottom:16px; line-height:1.1; }
+.buybox .price-row{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:16px; }
+.buybox .price-main{ font-family:'Fraunces', serif; font-size:2rem; color:var(--dourado-soft); }
+.buybox .price-note{ font-size:0.78rem; color:rgba(247,242,231,0.55); }
+.buybox .short-desc{ color:var(--marfim-dim); max-width:50ch; margin-bottom:14px; }
+.buybox .avail{ font-size:0.85rem; color:var(--dourado-soft); margin-bottom:26px; }
+.buy-row{ display:flex; gap:14px; align-items:stretch; margin-bottom:16px; flex-wrap:wrap; }
+.qty-stepper{
+  display:flex; align-items:center; border:1px solid rgba(247,242,231,0.28); height:52px;
+}
+.qty-stepper button{
+  width:40px; height:100%; background:none; border:none; color:var(--marfim);
+  font-size:1.1rem; cursor:pointer; transition:background .2s;
+}
+.qty-stepper button:hover{ background:rgba(247,242,231,0.08); }
+.qty-stepper input{
+  width:46px; height:100%; border:none; border-left:1px solid rgba(247,242,231,0.28);
+  border-right:1px solid rgba(247,242,231,0.28); background:none; color:var(--marfim);
+  text-align:center; font-family:'Fraunces', serif; font-size:1rem;
+  -moz-appearance:textfield;
+}
+.qty-stepper input::-webkit-outer-spin-button, .qty-stepper input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+.buy-row .add-cart-btn.buy-main{
+  flex:1; min-width:200px; height:52px; margin:0; padding:0 24px;
+  display:flex; align-items:center; justify-content:center;
+}
+.buybox .specs.mini{ margin-top:8px; max-width:44ch; }
+@media (max-width:860px){
+  .pbwrap{ grid-template-columns:1fr; gap:30px; }
+  .gallery-main{ min-height:280px; }
+}
+
+/* ---------- PRODUCT TABS (produto page) ---------- */
+.tabs-section{ background:var(--marfim); padding:0 6vw 70px; }
+.tabs-section .wrap{ max-width:var(--max); margin:0 auto; }
+.tabnav{ display:flex; gap:2px; border-bottom:1px solid #d9d0b8; }
+.tabnav .tabbtn{
+  background:none; border:none; padding:18px 22px; font-family:'Public Sans', sans-serif;
+  font-size:0.85rem; letter-spacing:0.04em; color:#8a8672; cursor:pointer;
+  border-bottom:2px solid transparent; margin-bottom:-1px; transition:color .2s, border-color .2s;
+}
+.tabnav .tabbtn.active, .tabnav .tabbtn:hover{ color:var(--verde); border-bottom-color:var(--verde); }
+.tabpanel{ display:none; padding:34px 0; max-width:var(--prose); }
+.tabpanel.active{ display:block; }
+.tabpanel p{ color:#3a372e; margin-bottom:14px; }
+.tabpanel .tinnote{ color:var(--verde); font-weight:500; }
+.tabpanel h3{ font-family:'Fraunces', serif; font-size:1.1rem; color:var(--xisto); margin-bottom:14px; }
+.tabpanel .specs li .k{ color:#8a8672; }
+.tabpanel .specs li .v{ color:var(--xisto); }
+.tabpanel .specs, .tabpanel .specs li{ border-color:#d9d0b8; }
+.tabpanel .foot-note{ color:#9a967f; }
+
 /* ---------- CHARACTERISTICS GRID (produto page) ---------- */
 .chargrid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:1px; background:rgba(247,242,231,0.14); max-width:var(--prose); margin:36px auto 0; border:1px solid rgba(247,242,231,0.14); }
 .prose-section .chargrid{ background:#e3dbc4; border-color:#e3dbc4; }

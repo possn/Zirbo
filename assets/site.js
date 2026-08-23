@@ -14,7 +14,7 @@
       nameEn: "Zirbo Olive Oil — 500 ml Tin",
       price: 16.5,
       img: "assets/tin-lifestyle.jpg",
-      url: "loja.html"
+      url: "produto.html"
     }
   };
 
@@ -31,7 +31,7 @@
     { pt: "A Loja", en: "The Shop", url: "loja.html", kw: "comprar lata galheteiro dosador vidro barro shop buy" },
     { pt: "Sobre Nós", en: "About Us", url: "sobre-nos.html", kw: "marca empresa about" },
     { pt: "Contacte-nos", en: "Contact Us", url: "contacto.html", kw: "email contacto contact" },
-    { pt: "Azeite Zirbo — Lata 500 ml", en: "Zirbo Olive Oil — 500 ml Tin", url: "loja.html#produto-lata", kw: "lata azeite comprar buy tin oil" },
+    { pt: "Azeite Zirbo — Lata 500 ml", en: "Zirbo Olive Oil — 500 ml Tin", url: "produto.html", kw: "lata azeite comprar buy tin oil" },
     { pt: "Dosador de Azeite Premium", en: "Premium Olive Oil Doser", url: "loja.html", kw: "dosador cortiça doser cork" },
     { pt: "Zirbo Edição Vidro", en: "Zirbo Glass Edition", url: "loja.html", kw: "vidro frasco glass bottle" },
     { pt: "Zirbo Edição Barro", en: "Zirbo Clay Edition", url: "loja.html", kw: "barro grés jarro clay jug" }
@@ -349,6 +349,19 @@
     spec_extraction: { pt: "Extração", en: "Extraction" },
     spec_extraction_v: { pt: "A frio", en: "Cold" },
     prod_footnote: { pt: "*Valores-alvo, sujeitos a confirmação pela ficha técnica final do lote.", en: "*Target values, subject to confirmation by the batch's final spec sheet." },
+    prod_category_tag: { pt: "Azeite Virgem Extra · Edição Limitada", en: "Extra Virgin Olive Oil · Limited Edition" },
+    prod_buy_title: { pt: "Azeite Zirbo — Lata 500\u00a0ml", en: "Zirbo Olive Oil — 500\u00a0ml Tin" },
+    prod_short_desc: {
+      pt: "Virgem extra da Terra Fria Transmontana, em lata de alumínio que protege da luz e conserva o azeite. Colheita manual, prensa tradicional, produção limitada e numerada.",
+      en: "Extra virgin from the Terra Fria Transmontana, in an aluminium tin that blocks light and preserves the oil. Hand-harvested, traditionally pressed, limited numbered production."
+    },
+    prod_availability: { pt: "Disponível para reserva — lote piloto de 1.000 latas numeradas.", en: "Available for pre-order — pilot batch of 1,000 numbered tins." },
+    prod_qty_label: { pt: "Quantidade", en: "Quantity" },
+    tab_desc: { pt: "Descrição", en: "Description" },
+    tab_info: { pt: "Informação adicional", en: "Additional information" },
+    tab_info_title: { pt: "Características do Produto", en: "Product Characteristics" },
+    gallery_thumb1_alt: { pt: "Lata Zirbo, azeite virgem extra, 500 ml", en: "Zirbo tin, extra virgin olive oil, 500 ml" },
+    gallery_thumb2_alt: { pt: "Lata Zirbo em composição de mesa", en: "Zirbo tin styled on a table" },
     prod_h1: { pt: "Porquê lata, e não vidro", en: "Why a tin, not glass" },
     prod_p1: {
       pt: "A lata de alumínio é a embalagem tradicionalmente usada para azeites de gama alta em contextos onde a proteção da luz é prioridade absoluta — a exposição à luz é uma das principais causas de degradação do azeite, oxidando os seus compostos e alterando aroma e sabor ao longo do tempo. Ao contrário do vidro, mesmo escuro, a lata bloqueia totalmente a luz e o ar, prolongando a vida útil do produto sem necessidade de conservantes.",
@@ -627,6 +640,7 @@
     },
     shop_tin_pricenote: { pt: "(PVP indicativo — pode ir até 19,00 €)", en: "(indicative retail price — may reach €19.00)" },
     shop_tin_waitlist: { pt: "Ou entrar na lista de espera →", en: "Or join the waitlist →" },
+    shop_tin_view: { pt: "Ver ficha do produto →", en: "View product page →" },
     shop_special_h: { pt: "Edições especiais", en: "Special editions" },
     shop_vidro_name: { pt: "Zirbo Edição Vidro", en: "Zirbo Glass Edition" },
     shop_vidro_desc: {
@@ -711,6 +725,14 @@
     document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
       var key = el.getAttribute("data-i18n-ph");
       if (I18N[key]) el.setAttribute("placeholder", I18N[key][lang] || I18N[key].pt);
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-alt");
+      if (I18N[key]) el.setAttribute("alt", I18N[key][lang] || I18N[key].pt);
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-aria");
+      if (I18N[key]) el.setAttribute("aria-label", I18N[key][lang] || I18N[key].pt);
     });
   }
   function t(key) {
@@ -904,11 +926,62 @@
       else if (btn.dataset.act === "rm") setQty(id, 0);
     });
 
-    // add-to-cart buttons
+    // add-to-cart buttons (optionally paired with a quantity input via data-qty-input="inputId")
     document.querySelectorAll(".add-cart-btn[data-product]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        addToCart(btn.getAttribute("data-product"), 1);
+        var qty = 1;
+        var qtyInputId = btn.getAttribute("data-qty-input");
+        if (qtyInputId) {
+          var qtyInput = document.getElementById(qtyInputId);
+          if (qtyInput) qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
+        }
+        addToCart(btn.getAttribute("data-product"), qty);
         openCart();
+      });
+    });
+
+    // quantity steppers (buy box): buttons with data-qact="inc"/"dec" next to an <input>
+    document.querySelectorAll(".qty-stepper").forEach(function (stepper) {
+      var input = stepper.querySelector("input");
+      if (!input) return;
+      stepper.querySelectorAll("button[data-qact]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var min = parseInt(input.getAttribute("min"), 10) || 1;
+          var max = parseInt(input.getAttribute("max"), 10) || 99;
+          var val = parseInt(input.value, 10) || min;
+          if (btn.dataset.qact === "inc") val = Math.min(max, val + 1);
+          else if (btn.dataset.qact === "dec") val = Math.max(min, val - 1);
+          input.value = val;
+        });
+      });
+      input.addEventListener("change", function () {
+        var min = parseInt(input.getAttribute("min"), 10) || 1;
+        var max = parseInt(input.getAttribute("max"), 10) || 99;
+        var val = parseInt(input.value, 10) || min;
+        input.value = Math.min(max, Math.max(min, val));
+      });
+    });
+
+    // product gallery thumbnails (produto.html)
+    document.querySelectorAll(".gallery-thumbs .thumb[data-img]").forEach(function (thumb) {
+      thumb.addEventListener("click", function () {
+        var mainImg = document.getElementById("galleryMain");
+        if (!mainImg) return;
+        mainImg.src = thumb.getAttribute("data-img");
+        document.querySelectorAll(".gallery-thumbs .thumb").forEach(function (t) { t.classList.remove("active"); });
+        thumb.classList.add("active");
+      });
+    });
+
+    // product tabs (produto.html)
+    document.querySelectorAll(".tabnav .tabbtn[data-tab]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var tab = btn.getAttribute("data-tab");
+        document.querySelectorAll(".tabnav .tabbtn").forEach(function (b) { b.classList.remove("active"); });
+        document.querySelectorAll(".tabpanel").forEach(function (p) { p.classList.remove("active"); });
+        btn.classList.add("active");
+        var panel = document.getElementById("tab-" + tab);
+        if (panel) panel.classList.add("active");
       });
     });
 
