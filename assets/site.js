@@ -49,7 +49,7 @@
     nav_beneficios: { pt: "Benefícios", en: "Benefits" },
     nav_receitas: { pt: "Receitas", en: "Recipes" },
     nav_loja: { pt: "Loja", en: "Shop" },
-    nav_waitlist: { pt: "Lista de espera", en: "Waitlist" },
+    nav_shop_cta: { pt: "Comprar", en: "Shop now" },
     // footer
     footer_tagline: { pt: "A força da terra, esculpida pelo vento.", en: "The strength of the land, carved by the wind." },
     footer_explore: { pt: "Explorar", en: "Explore" },
@@ -72,6 +72,11 @@
     hero_eyebrow: { pt: "Terra Fria Transmontana · Azeite Virgem Extra", en: "Terra Fria Transmontana · Extra Virgin Olive Oil" },
     hero_tag: { pt: "“A força da terra, esculpida pelo vento.”", en: "“The strength of the land, carved by the wind.”" },
     hero_scroll: { pt: "Descubra", en: "Discover" },
+    lote_eyebrow: { pt: "Produção limitada e numerada", en: "Limited, numbered production" },
+    lote_h: { pt: "1.000 latas.<br>Uma só colheita.", en: "1,000 tins.<br>One single harvest." },
+    lote_p: { pt: "O primeiro lote Zirbo é limitado e numerado. Depois de esgotado, só a próxima colheita trará mais.", en: "The first Zirbo batch is limited and numbered. Once it sells out, only next harvest's batch will bring more." },
+    lote_cta: { pt: "Comprar agora →", en: "Buy now →" },
+    lote_fineprint: { pt: "Envio após confirmação da ficha técnica final do lote.", en: "Shipping begins once the batch's final spec sheet is confirmed." },
     // manifesto (index — "O Nome Zirbo")
     nome_eyebrow: { pt: "A origem do nome", en: "The origin of the name" },
     nome_lede: {
@@ -533,13 +538,13 @@
     priv_dek: { pt: "Como tratamos os seus dados — de forma simples e em conformidade com o Regulamento Geral de Proteção de Dados.", en: "How we handle your data — simply, and in compliance with the General Data Protection Regulation." },
     priv_h1: { pt: "1. Recolha e registo de dados", en: "1. Data collection and recording" },
     priv_p1: {
-      pt: "A Zirbo compromete-se a proteger a privacidade de quem visita este site e recolhe apenas os dados pessoais fornecidos voluntariamente — atualmente, apenas o endereço de e-mail submetido na lista de espera. Esse dado é usado exclusivamente para avisar sobre o lançamento do lote piloto e para comunicações relacionadas com a marca.",
-      en: "Zirbo is committed to protecting the privacy of everyone who visits this site, and only collects personal data voluntarily provided — currently, only the email address submitted to the waitlist. This data is used exclusively to notify about the pilot batch's launch and for brand-related communications."
+      pt: "A Zirbo compromete-se a proteger a privacidade de quem visita este site e recolhe apenas os dados pessoais fornecidos voluntariamente — nomeadamente através do formulário de contacto e, no momento da compra, os dados necessários ao processamento do pagamento e ao envio da encomenda. Esses dados são usados exclusivamente para responder ao contacto, processar a encomenda e para comunicações relacionadas com a marca.",
+      en: "Zirbo is committed to protecting the privacy of everyone who visits this site, and only collects personal data voluntarily provided — namely through the contact form and, at the time of purchase, the data needed to process payment and ship the order. This data is used exclusively to respond to enquiries, process orders, and for brand-related communications."
     },
     priv_h2: { pt: "2. Retificação ou eliminação dos dados", en: "2. Rectification or deletion of data" },
     priv_p2: {
-      pt: "Nos termos da legislação aplicável, tem direito de acesso e retificação dos seus dados a qualquer momento. Qualquer pessoa pode optar livremente por fornecer os seus dados, e o preenchimento do formulário da lista de espera é entendido como uma indicação voluntária, aceitando esta política de privacidade. Se pretender deixar de ser contactado, basta pedir a eliminação dos seus dados para o contacto indicado no ponto 5.",
-      en: "Under applicable law, you have the right to access and rectify your data at any time. Anyone may freely choose whether to provide their data, and filling in the waitlist form is understood as a voluntary act, accepting this privacy policy. If you wish to stop being contacted, simply request deletion of your data via the contact listed in point 5."
+      pt: "Nos termos da legislação aplicável, tem direito de acesso e retificação dos seus dados a qualquer momento. Qualquer pessoa pode optar livremente por fornecer os seus dados, e o preenchimento de qualquer formulário deste site é entendido como uma indicação voluntária, aceitando esta política de privacidade. Se pretender deixar de ser contactado, basta pedir a eliminação dos seus dados para o contacto indicado no ponto 5.",
+      en: "Under applicable law, you have the right to access and rectify your data at any time. Anyone may freely choose whether to provide their data, and filling in any form on this site is understood as a voluntary act, accepting this privacy policy. If you wish to stop being contacted, simply request deletion of your data via the contact listed in point 5."
     },
     priv_h3: { pt: "3. Segurança e utilização da informação", en: "3. Security and use of information" },
     priv_p3: { pt: "A Zirbo compromete-se a não vender, alugar ou transmitir a terceiros os dados pessoais recolhidos através deste site, exceto com autorização do utilizador ou quando legalmente exigido.", en: "Zirbo commits to not selling, renting or transmitting to third parties the personal data collected through this site, except with user authorisation or when legally required." },
@@ -652,7 +657,6 @@
       en: "Extra virgin from the Terra Fria Transmontana, in an aluminium tin that protects it from light and keeps it fresh. Limited, numbered production."
     },
     shop_tin_pricenote: { pt: "(PVP indicativo — pode ir até 19,00 €)", en: "(indicative retail price — may reach €19.00)" },
-    shop_tin_waitlist: { pt: "Ou entrar na lista de espera →", en: "Or join the waitlist →" },
     shop_tin_view: { pt: "Ver ficha do produto →", en: "View product page →" },
     shop_special_h: { pt: "Edições especiais", en: "Special editions" },
     shop_vidro_name: { pt: "Zirbo Edição Vidro", en: "Zirbo Glass Edition" },
@@ -871,6 +875,13 @@
     setLang(getLang());
     renderCart();
 
+    // populate mobile nav drawer by cloning the desktop nav links (keeps aria-current/i18n in sync)
+    var navScrollEl = document.querySelector(".navscroll");
+    var drawerLinksEl = document.getElementById("navDrawerLinks");
+    if (navScrollEl && drawerLinksEl) {
+      drawerLinksEl.innerHTML = navScrollEl.innerHTML;
+    }
+
     // language toggle
     var langBtn = document.getElementById("langToggle");
     if (langBtn) {
@@ -904,7 +915,30 @@
       renderSearch(searchInput.value);
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") { closeSearch(); closeCart(); }
+      if (e.key === "Escape") { closeSearch(); closeCart(); closeMenu(); }
+    });
+
+    // mobile nav drawer
+    var navDrawer = document.getElementById("navDrawer");
+    var navScrim = document.getElementById("navScrim");
+    var menuOpenBtn = document.getElementById("menuOpen");
+    var menuCloseBtn = document.getElementById("menuClose");
+    function openMenu() {
+      navDrawer.classList.add("open");
+      navScrim.classList.add("open");
+      navDrawer.setAttribute("aria-hidden", "false");
+    }
+    function closeMenu() {
+      if (!navDrawer) return;
+      navDrawer.classList.remove("open");
+      navScrim.classList.remove("open");
+      navDrawer.setAttribute("aria-hidden", "true");
+    }
+    if (menuOpenBtn) menuOpenBtn.addEventListener("click", openMenu);
+    if (menuCloseBtn) menuCloseBtn.addEventListener("click", closeMenu);
+    if (navScrim) navScrim.addEventListener("click", closeMenu);
+    if (drawerLinksEl) drawerLinksEl.addEventListener("click", function (e) {
+      if (e.target.closest("a")) closeMenu();
     });
 
     // cart drawer
@@ -1080,8 +1114,8 @@
           checkoutBtn.textContent = t("cart_checkout");
           if (checkoutError) {
             checkoutError.textContent = getLang() === "en"
-              ? "Checkout isn't available yet — please try the waitlist instead."
-              : "O checkout ainda não está disponível — use a lista de espera por agora.";
+              ? "Checkout is temporarily unavailable — please try again shortly, or contact us."
+              : "O checkout está temporariamente indisponível — tente novamente dentro de momentos, ou contacte-nos.";
             checkoutError.style.display = "block";
           }
         });

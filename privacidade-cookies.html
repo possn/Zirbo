@@ -79,7 +79,24 @@
 </aside>
 
 <div class="toast" id="toast"></div>
+
+<!-- Mobile nav drawer -->
+<div class="nav-scrim" id="navScrim"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer-head">
+    <a class="brandmark" href="index.html">
+      <img src="assets/logo.png" alt="">
+      <span class="word">Zirbo</span>
+    </a>
+    <button id="menuClose" aria-label="Fechar menu">&times;</button>
+  </div>
+  <nav class="nav-drawer-links" id="navDrawerLinks"></nav>
+</aside>
+
 <header class="nav">
+  <button class="menu-btn" id="menuOpen" aria-label="Abrir menu" title="Menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
   <a class="brandmark" href="index.html">
     <img src="assets/logo.png" alt="">
     <span class="word">Zirbo</span>
@@ -94,7 +111,7 @@
     <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
     <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
     <a href="loja.html" data-i18n="nav_loja">Loja</a>
-    <a href="index.html#lote" class="cta" data-i18n="nav_waitlist">Lista de espera</a>
+    <a href="loja.html" class="cta" data-i18n="nav_shop_cta">Comprar</a>
   </div>
   <div class="navicons">
     <button class="icon-btn" id="searchOpen" aria-label="Procurar" title="Procurar">
@@ -120,9 +137,9 @@
 <section class="prose-section">
   <div class="prose">
     <h2 data-i18n="priv_h1">1. Recolha e registo de dados</h2>
-    <p data-i18n="priv_p1">A Zirbo compromete-se a proteger a privacidade de quem visita este site e recolhe apenas os dados pessoais fornecidos voluntariamente — atualmente, apenas o endereço de e-mail submetido na lista de espera. Esse dado é usado exclusivamente para avisar sobre o lançamento do lote piloto e para comunicações relacionadas com a marca.</p>
+    <p data-i18n="priv_p1">A Zirbo compromete-se a proteger a privacidade de quem visita este site e recolhe apenas os dados pessoais fornecidos voluntariamente — nomeadamente através do formulário de contacto e, no momento da compra, os dados necessários ao processamento do pagamento e ao envio da encomenda. Esses dados são usados exclusivamente para responder ao contacto, processar a encomenda e para comunicações relacionadas com a marca.</p>
     <h2 style="margin-top:40px;" data-i18n="priv_h2">2. Retificação ou eliminação dos dados</h2>
-    <p data-i18n="priv_p2">Nos termos da legislação aplicável, tem direito de acesso e retificação dos seus dados a qualquer momento. Qualquer pessoa pode optar livremente por fornecer os seus dados, e o preenchimento do formulário da lista de espera é entendido como uma indicação voluntária, aceitando esta política de privacidade. Se pretender deixar de ser contactado, basta pedir a eliminação dos seus dados para o contacto indicado no ponto 5.</p>
+    <p data-i18n="priv_p2">Nos termos da legislação aplicável, tem direito de acesso e retificação dos seus dados a qualquer momento. Qualquer pessoa pode optar livremente por fornecer os seus dados, e o preenchimento de qualquer formulário deste site é entendido como uma indicação voluntária, aceitando esta política de privacidade. Se pretender deixar de ser contactado, basta pedir a eliminação dos seus dados para o contacto indicado no ponto 5.</p>
     <h2 style="margin-top:40px;" data-i18n="priv_h3">3. Segurança e utilização da informação</h2>
     <p data-i18n="priv_p3">A Zirbo compromete-se a não vender, alugar ou transmitir a terceiros os dados pessoais recolhidos através deste site, exceto com autorização do utilizador ou quando legalmente exigido.</p>
     <h2 style="margin-top:40px;" data-i18n="priv_h4">4. Conservação da informação pessoal</h2>
@@ -182,7 +199,6 @@
         <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
         <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
         <a href="loja.html" data-i18n="nav_loja">Loja</a>
-        <a href="index.html#lote" data-i18n="nav_waitlist">Lista de espera</a>
       </div>
       <div class="col">
         <h4 data-i18n="footer_support">Apoio ao Cliente</h4>

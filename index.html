@@ -79,7 +79,24 @@
 </aside>
 
 <div class="toast" id="toast"></div>
+
+<!-- Mobile nav drawer -->
+<div class="nav-scrim" id="navScrim"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer-head">
+    <a class="brandmark" href="index.html">
+      <img src="assets/logo.png" alt="">
+      <span class="word">Zirbo</span>
+    </a>
+    <button id="menuClose" aria-label="Fechar menu">&times;</button>
+  </div>
+  <nav class="nav-drawer-links" id="navDrawerLinks"></nav>
+</aside>
+
 <header class="nav">
+  <button class="menu-btn" id="menuOpen" aria-label="Abrir menu" title="Menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
   <a class="brandmark" href="index.html">
     <img src="assets/logo.png" alt="">
     <span class="word">Zirbo</span>
@@ -94,7 +111,7 @@
     <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
     <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
     <a href="loja.html" data-i18n="nav_loja">Loja</a>
-    <a href="index.html#lote" class="cta" data-i18n="nav_waitlist">Lista de espera</a>
+    <a href="loja.html" class="cta" data-i18n="nav_shop_cta">Comprar</a>
   </div>
   <div class="navicons">
     <button class="icon-btn" id="searchOpen" aria-label="Procurar" title="Procurar">
@@ -200,18 +217,14 @@
 
 <section class="lote" id="lote">
   <div class="wrap">
-    <span class="eyebrow">Produção limitada e numerada</span>
-    <h2>1.000 latas.<br>Uma só colheita.</h2>
-    <p>O primeiro lote Zirbo é limitado. Junte-se à lista de espera para acesso antecipado ao lançamento.</p>
+    <span class="eyebrow" data-i18n="lote_eyebrow">Produção limitada e numerada</span>
+    <h2 data-i18n="lote_h">1.000 latas.<br>Uma só colheita.</h2>
+    <p data-i18n="lote_p">O primeiro lote Zirbo é limitado e numerado. Depois de esgotado, só a próxima colheita trará mais.</p>
     <div class="lotebar">
       <span class="num">001</span><span class="of">/</span><span class="num" style="font-size:1.3rem; color:#8a8672;">1000</span>
     </div>
-    <form class="waitlist" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Recebido ✓'; this.querySelector('button').disabled=true;">
-      <input type="email" required placeholder="o.seu@email.com" aria-label="O seu e-mail">
-      <button type="submit">Quero acesso antecipado</button>
-    </form>
-    <p class="formnote">Este formulário ainda não está ligado a um serviço de envio de e-mail — é preciso associar um provedor (ex. Mailchimp, Resend, Brevo) antes do lançamento.</p>
-    <p class="fineprint">Sem spam. Apenas o essencial: colheita, lote e abertura da loja.</p>
+    <a href="loja.html" class="lote-cta" data-i18n="lote_cta">Comprar agora →</a>
+    <p class="fineprint" data-i18n="lote_fineprint">Envio após confirmação da ficha técnica final do lote.</p>
   </div>
 </section>
 <footer>
@@ -245,7 +258,6 @@
         <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
         <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
         <a href="loja.html" data-i18n="nav_loja">Loja</a>
-        <a href="index.html#lote" data-i18n="nav_waitlist">Lista de espera</a>
       </div>
       <div class="col">
         <h4 data-i18n="footer_support">Apoio ao Cliente</h4>

@@ -459,6 +459,53 @@ html[data-lang="en"] .lang-toggle .off{ color:var(--dourado-soft); }
 .search-results .rs{ font-size:0.78rem; color:rgba(247,242,231,0.5); white-space:nowrap; }
 .search-empty{ color:rgba(247,242,231,0.4); font-size:0.9rem; margin-top:24px; }
 
+/* ---------- NAV DRAWER (mobile side menu) ---------- */
+.menu-btn{
+  display:none; background:none; border:none; cursor:pointer; padding:6px;
+  color:var(--marfim); flex:0 0 auto; margin-right:2px;
+}
+.menu-btn svg{ display:block; }
+.nav-scrim{
+  position:fixed; inset:0; z-index:290; background:rgba(20,19,16,0.5);
+  opacity:0; pointer-events:none; transition:opacity .25s;
+}
+.nav-scrim.open{ opacity:1; pointer-events:auto; }
+.nav-drawer{
+  position:fixed; top:0; left:0; bottom:0; z-index:295;
+  width:min(320px, 86vw); background:var(--xisto); color:var(--marfim);
+  display:flex; flex-direction:column;
+  transform:translateX(-100%); transition:transform .3s cubic-bezier(.2,.7,.2,1);
+  box-shadow:20px 0 50px rgba(0,0,0,0.3);
+}
+.nav-drawer.open{ transform:translateX(0); }
+.nav-drawer-head{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:20px 22px; border-bottom:1px solid rgba(247,242,231,0.12);
+}
+.nav-drawer-head .brandmark{ display:flex; align-items:center; gap:9px; text-decoration:none; }
+.nav-drawer-head .brandmark img{ height:26px; width:auto; object-fit:contain; }
+.nav-drawer-head .word{ font-family:'Fraunces', serif; font-size:1.05rem; color:var(--marfim); }
+.nav-drawer-head button{ background:none; border:none; font-size:1.6rem; cursor:pointer; color:var(--marfim); line-height:1; }
+.nav-drawer-links{ flex:1; overflow-y:auto; display:flex; flex-direction:column; padding:14px 10px; }
+.nav-drawer-links a{
+  text-decoration:none; color:rgba(247,242,231,0.78); padding:14px 12px;
+  font-family:'Fraunces', serif; font-size:1.08rem; border-bottom:1px solid rgba(247,242,231,0.08);
+  transition:color .2s;
+}
+.nav-drawer-links a:hover{ color:var(--marfim); }
+.nav-drawer-links a[aria-current]{ color:var(--dourado-soft); }
+.nav-drawer-links a.cta{
+  margin-top:14px; text-align:center; font-family:'Public Sans', sans-serif;
+  font-size:0.82rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em;
+  color:var(--xisto); background:var(--dourado-soft); border-bottom:none; padding:16px 12px;
+}
+.nav-drawer-links a.cta:hover{ background:var(--marfim); }
+
+@media (max-width:1320px){
+  header.nav .navscroll{ display:none; }
+  .menu-btn{ display:flex; align-items:center; justify-content:center; }
+}
+
 /* ---------- CART DRAWER ---------- */
 .cart-scrim{
   position:fixed; inset:0; z-index:290; background:rgba(20,19,16,0.5);
@@ -577,7 +624,7 @@ textarea.cf-input{ resize:vertical; min-height:120px; }
   .galgrid{ grid-template-columns:1fr; }
 }
 
-/* ---------- LOTE / WAITLIST ---------- */
+/* ---------- LOTE / SCARCITY CTA ---------- */
 .lote{ background:var(--marfim); padding:130px 6vw 150px; text-align:center; }
 .lote .wrap{ max-width:640px; }
 .lote .eyebrow{ display:block; margin-bottom:18px; }
@@ -586,20 +633,13 @@ textarea.cf-input{ resize:vertical; min-height:120px; }
 .lotebar{ display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:40px; flex-wrap:wrap; }
 .lotebar .num{ font-family:'Fraunces', serif; font-size:2.4rem; color:var(--verde); }
 .lotebar .of{ color:#8a8672; font-size:0.95rem; }
-form.waitlist{ display:flex; gap:10px; max-width:440px; margin:0 auto 16px; flex-wrap:wrap; justify-content:center; }
-form.waitlist input[type=email]{
-  flex:1 1 240px; padding:16px 18px; border:1px solid #cfc7ab; background:#fff;
-  font-family:'Public Sans', sans-serif; font-size:0.95rem; color:var(--xisto);
+.lote-cta{
+  display:inline-block; background:var(--verde); color:var(--marfim); font-family:'Public Sans', sans-serif;
+  font-size:0.9rem; font-weight:600; letter-spacing:0.02em; text-decoration:none;
+  padding:16px 34px; margin-bottom:16px; transition:background .2s;
 }
-form.waitlist input[type=email]:focus{ outline:2px solid var(--dourado); outline-offset:2px; border-color:var(--dourado); }
-form.waitlist button{
-  padding:16px 28px; background:var(--verde); color:var(--marfim); border:none;
-  font-family:'Public Sans', sans-serif; font-weight:600; letter-spacing:0.04em; font-size:0.85rem;
-  text-transform:uppercase; cursor:pointer; transition:background .2s;
-}
-form.waitlist button:hover{ background:var(--dourado); color:var(--xisto); }
+.lote-cta:hover{ background:var(--dourado); color:var(--xisto); }
 .lote .fineprint{ font-size:0.78rem; color:#9a967f; }
-.lote .formnote{ font-size:0.78rem; color:#9a967f; max-width:440px; margin:0 auto 10px; }
 
 /* ---------- FOOTER ---------- */
 footer{ background:var(--xisto); color:rgba(247,242,231,0.6); padding:70px 6vw 40px; }

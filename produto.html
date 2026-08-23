@@ -98,7 +98,24 @@
 </aside>
 
 <div class="toast" id="toast"></div>
+
+<!-- Mobile nav drawer -->
+<div class="nav-scrim" id="navScrim"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer-head">
+    <a class="brandmark" href="index.html">
+      <img src="assets/logo.png" alt="">
+      <span class="word">Zirbo</span>
+    </a>
+    <button id="menuClose" aria-label="Fechar menu">&times;</button>
+  </div>
+  <nav class="nav-drawer-links" id="navDrawerLinks"></nav>
+</aside>
+
 <header class="nav">
+  <button class="menu-btn" id="menuOpen" aria-label="Abrir menu" title="Menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
   <a class="brandmark" href="index.html">
     <img src="assets/logo.png" alt="">
     <span class="word">Zirbo</span>
@@ -113,7 +130,7 @@
     <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
     <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
     <a href="loja.html" data-i18n="nav_loja">Loja</a>
-    <a href="index.html#lote" class="cta" data-i18n="nav_waitlist">Lista de espera</a>
+    <a href="loja.html" class="cta" data-i18n="nav_shop_cta">Comprar</a>
   </div>
   <div class="navicons">
     <button class="icon-btn" id="searchOpen" aria-label="Procurar" title="Procurar">
@@ -164,7 +181,7 @@
         <span class="price-note" data-i18n="shop_tin_pricenote">(PVP indicativo — pode ir até 19,00 €)</span>
       </div>
       <p class="short-desc" data-i18n="prod_short_desc">Virgem extra da Terra Fria Transmontana, em lata de alumínio que protege da luz e conserva o azeite. Colheita manual, prensa tradicional, produção limitada e numerada.</p>
-      <p class="avail" data-i18n="prod_availability">Disponível para reserva — lote piloto de 1.000 latas numeradas.</p>
+      <p class="avail" data-i18n="prod_availability">Produção limitada — lote piloto de 1.000 latas numeradas.</p>
       <div class="buy-row">
         <div class="qty-stepper">
           <button type="button" data-qact="dec" aria-label="-">&minus;</button>
@@ -173,7 +190,6 @@
         </div>
         <button class="add-cart-btn buy-main" data-product="tin-500" data-qty-input="prodQty" data-i18n="add_to_cart">Adicionar ao carrinho</button>
       </div>
-      <a class="cta-link" href="index.html#lote" data-i18n="shop_tin_waitlist">Ou entrar na lista de espera →</a>
       <ul class="specs mini">
         <li><span class="k" data-i18n="spec_cat">Categoria</span><span class="dots"></span><span class="v" data-i18n="spec_cat_v">Virgem Extra Premium</span></li>
         <li><span class="k" data-i18n="spec_origin">Origem</span><span class="dots"></span><span class="v">Terra Fria Transmontana</span></li>
@@ -286,7 +302,6 @@
         <a href="beneficios.html" data-i18n="nav_beneficios">Benefícios</a>
         <a href="receitas.html" data-i18n="nav_receitas">Receitas</a>
         <a href="loja.html" data-i18n="nav_loja">Loja</a>
-        <a href="index.html#lote" data-i18n="nav_waitlist">Lista de espera</a>
       </div>
       <div class="col">
         <h4 data-i18n="footer_support">Apoio ao Cliente</h4>
