@@ -355,6 +355,21 @@
     spec_extraction: { pt: "Extração", en: "Extraction" },
     spec_extraction_v: { pt: "A frio", en: "Cold" },
     prod_footnote: { pt: "*Valores-alvo, sujeitos a confirmação pela ficha técnica final do lote.", en: "*Target values, subject to confirmation by the batch's final spec sheet." },
+    nutri_title: { pt: "Declaração Nutricional", en: "Nutrition Declaration" },
+    nutri_basis: { pt: "Valor médio por 100 ml", en: "Average value per 100 ml" },
+    nutri_energy: { pt: "Energia", en: "Energy" },
+    nutri_fat: { pt: "Lípidos", en: "Fat" },
+    nutri_fat_sat: { pt: "dos quais Saturadas", en: "of which Saturates" },
+    nutri_fat_mono: { pt: "dos quais Monoinsaturadas", en: "of which Monounsaturates" },
+    nutri_fat_poly: { pt: "dos quais Polinsaturadas", en: "of which Polyunsaturates" },
+    nutri_carb: { pt: "Hidratos de Carbono", en: "Carbohydrate" },
+    nutri_sugar: { pt: "dos quais Açúcares", en: "of which Sugars" },
+    nutri_protein: { pt: "Proteínas", en: "Protein" },
+    nutri_salt: { pt: "Sal", en: "Salt" },
+    nutri_footnote: {
+      pt: "Valores médios de referência para azeite virgem extra, sujeitos a confirmação pela ficha técnica final do lote.",
+      en: "Average reference values for extra virgin olive oil, subject to confirmation by the batch's final spec sheet."
+    },
     prod_category_tag: { pt: "Azeite Virgem Extra · Edição Limitada", en: "Extra Virgin Olive Oil · Limited Edition" },
     prod_buy_title: { pt: "Azeite Zirbo — Lata 500\u00a0ml", en: "Zirbo Olive Oil — 500\u00a0ml Tin" },
     prod_short_desc: {

@@ -373,6 +373,11 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 .tabpanel .specs li .k{ color:#8a8672; }
 .tabpanel .specs li .v{ color:var(--xisto); }
 .tabpanel .specs, .tabpanel .specs li{ border-color:#d9d0b8; }
+.tabpanel .specs.nutri-table{ margin-top:0; }
+.tabpanel .specs li.sub .k{ padding-left:20px; color:#9a9680; }
+.tabpanel .specs li.sub .v{ font-size:0.92rem; }
+.tabpanel .nutri-basis{ font-size:0.78rem; color:#8a8672; text-transform:uppercase; letter-spacing:0.08em; margin:32px 0 6px; }
+.tabpanel h3.nutri-title{ margin-top:0; }
 .tabpanel .foot-note{ color:#9a967f; }
 
 /* ---------- CHARACTERISTICS GRID (produto page) ---------- */
