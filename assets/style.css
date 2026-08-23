@@ -185,17 +185,60 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 .tabs > .wrap > .head{ text-align:center; max-width:640px; margin:0 auto 56px; }
 .tabs .eyebrow{ display:block; margin-bottom:16px; }
 .tabs h2{ font-size:clamp(1.9rem, 3.6vw, 2.8rem); color:var(--verde); }
-.tabgrid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:#d9d0b8; border:1px solid #d9d0b8; max-width:var(--max); margin:0 auto; }
-.tabcard{
-  background:var(--marfim); padding:38px 32px; text-decoration:none; color:var(--xisto);
-  display:flex; flex-direction:column; gap:10px; transition:background .2s;
+.tabgrid{
+  display:grid; grid-template-columns:repeat(4, 1fr); grid-auto-flow:dense;
+  gap:3px; background:var(--xisto); max-width:var(--max); margin:0 auto;
 }
-.tabcard:hover{ background:#fffdf8; }
-.tabcard .num{ font-size:0.72rem; letter-spacing:0.16em; color:var(--dourado); text-transform:uppercase; }
-.tabcard h3{ font-size:1.25rem; color:var(--verde); }
-.tabcard p{ font-size:0.9rem; color:#6b6650; }
-.tabcard .go{ margin-top:auto; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--dourado); }
-@media (max-width:860px){ .tabgrid{ grid-template-columns:1fr; } }
+.tabcard{
+  position:relative; display:block; overflow:hidden;
+  aspect-ratio:3/4; color:var(--marfim); text-decoration:none;
+  background:var(--xisto-2);
+}
+.tabcard img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  filter:saturate(0.92) brightness(0.82);
+  transition:transform .7s cubic-bezier(.2,.7,.2,1), filter .5s;
+}
+.tabcard:hover img{ transform:scale(1.07); filter:saturate(1.02) brightness(0.72); }
+.tabcard::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(180deg, rgba(20,19,16,0.05) 0%, rgba(20,19,16,0.15) 40%, rgba(20,19,16,0.92) 100%);
+}
+.tabcard .num{
+  position:absolute; top:16px; left:18px; z-index:2;
+  font-family:'Fraunces', serif; font-size:1.5rem; font-weight:400;
+  color:rgba(247,242,231,0.55);
+}
+.tabcard .body{
+  position:absolute; left:0; right:0; bottom:0; z-index:2; padding:22px 22px 24px;
+}
+.tabcard h3{ font-size:1.2rem; color:var(--marfim); margin-bottom:6px; line-height:1.15; }
+.tabcard p{
+  font-size:0.84rem; color:rgba(247,242,231,0.78); margin-bottom:12px;
+  max-width:32ch; opacity:0; max-height:0; overflow:hidden;
+  transition:opacity .3s, max-height .3s, margin-bottom .3s;
+}
+.tabcard .go{ font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--dourado-soft); }
+/* first card = feature: bigger, description always visible */
+.tabgrid a:nth-child(1){ grid-column:span 2; grid-row:span 2; }
+.tabgrid a:nth-child(1) .num{ font-size:2rem; }
+.tabgrid a:nth-child(1) h3{ font-size:1.7rem; }
+.tabgrid a:nth-child(1) p{ opacity:1; max-height:100px; font-size:0.92rem; }
+/* last card (A Loja) spans 2 cols on desktop to close the grid evenly + give the shop CTA weight */
+.tabgrid a:nth-child(8){ grid-column:span 2; }
+@media (hover:hover){
+  .tabcard:hover p{ opacity:1; max-height:100px; }
+}
+@media (max-width:960px){
+  .tabgrid{ grid-template-columns:repeat(2, 1fr); }
+  .tabgrid a:nth-child(1){ grid-column:span 2; grid-row:span 1; aspect-ratio:16/10; }
+}
+@media (max-width:640px){
+  .tabgrid{ grid-template-columns:1fr; }
+  .tabgrid a:nth-child(1){ grid-column:span 1; aspect-ratio:4/5; }
+  .tabcard{ aspect-ratio:4/5; }
+  .tabcard p{ opacity:1; max-height:100px; }
+}
 
 /* ---------- CROSSLINKS (bottom of subpages) ---------- */
 .crosslinks{ background:var(--xisto); color:var(--marfim); padding:70px 6vw; }
