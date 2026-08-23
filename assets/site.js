@@ -416,6 +416,10 @@
       pt: "O azeite virgem extra é rico em ácido oleico, uma gordura monoinsaturada que constitui a base da dieta mediterrânica — um padrão alimentar reconhecido pela UNESCO como Património Cultural Imaterial da Humanidade. Ao contrário de gorduras saturadas, o ácido oleico está associado, na literatura nutricional, a um perfil lipídico mais favorável quando consumido no contexto de uma alimentação equilibrada.",
       en: "Extra virgin olive oil is rich in oleic acid, a monounsaturated fat that forms the basis of the Mediterranean diet — a dietary pattern recognised by UNESCO as Intangible Cultural Heritage of Humanity. Unlike saturated fats, oleic acid is associated in the nutritional literature with a more favourable lipid profile when consumed as part of a balanced diet."
     },
+    ben_stat_label: {
+      pt: "de gordura monoinsaturada por cada 100 ml de Azeite Zirbo — dados da declaração nutricional do produto, disponível na <a href=\"produto.html\" style=\"color:var(--verde); text-decoration:underline;\">ficha técnica</a>.",
+      en: "of monounsaturated fat per 100 ml of Zirbo Olive Oil — from the product's nutrition declaration, available in the <a href=\"produto.html\" style=\"color:var(--verde); text-decoration:underline;\">spec sheet</a>."
+    },
     ben_p2: {
       pt: "O azeite virgem extra contém também polifenóis — compostos naturais com propriedades antioxidantes, resultantes do processo de extração a frio e ausentes em óleos vegetais refinados.",
       en: "Extra virgin olive oil also contains polyphenols — natural compounds with antioxidant properties, a result of cold extraction and absent from refined vegetable oils."
@@ -498,6 +502,8 @@
     olival_cap4: { pt: "Cada tronco nodoso conta décadas de vento e sol.", en: "Every gnarled trunk tells decades of wind and sun." },
     olival_cap5: { pt: "Fileiras mais novas, plantadas para garantir o futuro do olival.", en: "Younger rows, planted to secure the grove's future." },
     olival_cap6: { pt: "O caminho de terra que atravessa o olival, encosta acima.", en: "The dirt path that crosses the grove, up the hillside." },
+    olival_cap7: { pt: "Fileira após fileira, o olival estende-se pela encosta.", en: "Row after row, the grove stretches across the hillside." },
+    olival_cap8: { pt: "Cada cacho é o resultado de um ano inteiro de espera.", en: "Every cluster is the result of a full year's wait." },
     // contacto
     cont_eyebrow: { pt: "Fale connosco", en: "Get in touch" },
     cont_title: { pt: "Contacte-nos", en: "Contact Us" },
