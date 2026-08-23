@@ -464,6 +464,18 @@
       pt: "Para conhecer a história por trás do nome, da região e do produto, visite as páginas A História do Azeite, Trás-os-Montes e O Azeite na Região.",
       en: "To learn the story behind the name, the region and the product, visit the pages The History of Olive Oil, Trás-os-Montes and Olive Oil in the Region."
     },
+    olival_eyebrow: { pt: "Da terra à lata", en: "From the grove to the tin" },
+    olival_h: { pt: "O nosso olival", en: "Our olive grove" },
+    olival_p: {
+      pt: "Fotografias tiradas no olival parceiro em Trás-os-Montes, na Terra Fria Transmontana — as mesmas oliveiras e encostas de onde vem o azeite Zirbo.",
+      en: "Photos taken at the partner grove in Trás-os-Montes, in the Terra Fria Transmontana — the same olive trees and hillsides the Zirbo oil comes from."
+    },
+    olival_cap1: { pt: "Uma oliveira centenária, tronco múltiplo talhado por gerações de podas.", en: "A century-old olive tree, its multiple trunk shaped by generations of pruning." },
+    olival_cap2: { pt: "Uma oliveira carregada, ainda semanas antes da colheita.", en: "A tree heavy with fruit, still weeks before harvest." },
+    olival_cap3: { pt: "As encostas da Terra Fria — o cenário de todos os dias.", en: "The hillsides of the Terra Fria — the everyday backdrop." },
+    olival_cap4: { pt: "Cada tronco nodoso conta décadas de vento e sol.", en: "Every gnarled trunk tells decades of wind and sun." },
+    olival_cap5: { pt: "Fileiras mais novas, plantadas para garantir o futuro do olival.", en: "Younger rows, planted to secure the grove's future." },
+    olival_cap6: { pt: "O caminho de terra que atravessa o olival, encosta acima.", en: "The dirt path that crosses the grove, up the hillside." },
     // contacto
     cont_eyebrow: { pt: "Fale connosco", en: "Get in touch" },
     cont_title: { pt: "Contacte-nos", en: "Contact Us" },
