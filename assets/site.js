@@ -230,6 +230,7 @@
     },
     ter_h3: { pt: "Quatro variedades, um carácter", en: "Four varieties, one character" },
     ter_fig1: { pt: "Oliveira centenária — o tempo é parte da receita, não um obstáculo a contornar.", en: "A centuries-old olive tree — time is part of the recipe, not an obstacle to work around." },
+    ter_fig2: { pt: "Uma árvore carregada, ainda a semanas da colheita — as quatro variedades lado a lado no mesmo olival.", en: "A tree heavy with fruit, still weeks from harvest — the four varieties side by side in the same grove." },
     ter_p4: { pt: "O perfil do azeite transmontano nasce do equilíbrio entre quatro variedades autóctones:", en: "The character of Trás-os-Montes olive oil comes from the balance of four native varieties:" },
     ter_v1: { pt: "Contribui com amargor e picante", en: "Adds bitterness and pungency" },
     ter_v2: { pt: "Sabor frutado mais intenso", en: "More intense fruity flavour" },
