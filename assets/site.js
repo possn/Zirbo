@@ -75,8 +75,8 @@
     banner_eyebrow: { pt: "Cultivo próprio", en: "Our own growing" },
     banner_h: { pt: "As oliveiras são nossas.", en: "The olive trees are ours." },
     banner_p: {
-      pt: "Sequeiro, poda à mão, sem atalhos — cultivadas à moda antiga no nosso olival em Trás-os-Montes, e prensadas à moda antiga num lagar regional.",
-      en: "Rain-fed, hand-pruned, no shortcuts — grown the old way in our own olive grove in Trás-os-Montes, and pressed the old way at a regional mill."
+      pt: "Sequeiro, poda à mão, sem atalhos — cultivadas à moda antiga no nosso olival em Trás-os-Montes, e prensadas do mesmo modo num lagar regional.",
+      en: "Rain-fed, hand-pruned, no shortcuts — grown the old way in our own olive grove in Trás-os-Montes, and pressed the same way at a regional mill."
     },
     banner_cta: { pt: "Conheça o nosso olival →", en: "See our olive grove →" },
     nf_eyebrow: { pt: "Erro 404", en: "404 Error" },
