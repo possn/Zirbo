@@ -72,11 +72,11 @@
     hero_eyebrow: { pt: "Terra Fria Transmontana · Azeite Virgem Extra", en: "Terra Fria Transmontana · Extra Virgin Olive Oil" },
     hero_tag: { pt: "“A força da terra, esculpida pelo vento.”", en: "“The strength of the land, carved by the wind.”" },
     hero_scroll: { pt: "Descubra", en: "Discover" },
-    banner_eyebrow: { pt: "Não é uma imagem de arquivo", en: "Not a stock photo" },
+    banner_eyebrow: { pt: "Cultivo próprio", en: "Our own growing" },
     banner_h: { pt: "As oliveiras são nossas.", en: "The olive trees are ours." },
     banner_p: {
-      pt: "Cultivamos o nosso próprio olival em Trás-os-Montes, à moda antiga — sequeiro, poda à mão, sem atalhos. Só a prensagem final é feita num lagar parceiro certificado na região.",
-      en: "We grow our own olive grove in Trás-os-Montes, the old way — rain-fed, hand-pruned, no shortcuts. Only the final pressing is done at a certified partner mill in the region."
+      pt: "Sequeiro, poda à mão, sem atalhos — cultivadas à moda antiga no nosso olival em Trás-os-Montes, e prensadas à moda antiga num lagar regional.",
+      en: "Rain-fed, hand-pruned, no shortcuts — grown the old way in our own olive grove in Trás-os-Montes, and pressed the old way at a regional mill."
     },
     banner_cta: { pt: "Conheça o nosso olival →", en: "See our olive grove →" },
     nf_eyebrow: { pt: "Erro 404", en: "404 Error" },
