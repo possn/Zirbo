@@ -72,6 +72,15 @@
     hero_eyebrow: { pt: "Terra Fria Transmontana · Azeite Virgem Extra", en: "Terra Fria Transmontana · Extra Virgin Olive Oil" },
     hero_tag: { pt: "“A força da terra, esculpida pelo vento.”", en: "“The strength of the land, carved by the wind.”" },
     hero_scroll: { pt: "Descubra", en: "Discover" },
+    nf_eyebrow: { pt: "Erro 404", en: "404 Error" },
+    nf_title: { pt: "Esta página perdeu-se no olival.", en: "This page got lost in the grove." },
+    nf_dek: {
+      pt: "A página que procura não existe, foi movida, ou o link está incorreto. Mas o azeite continua onde sempre esteve.",
+      en: "The page you're looking for doesn't exist, was moved, or the link is wrong. But the olive oil is right where it's always been."
+    },
+    nf_home: { pt: "Voltar ao início", en: "Back to home" },
+    nf_shop: { pt: "Ir para a Loja →", en: "Go to the Shop →" },
+    nf_explore: { pt: "Talvez procure isto", en: "You might be looking for" },
     lote_eyebrow: { pt: "Produção limitada e numerada", en: "Limited, numbered production" },
     lote_h: { pt: "1.000 latas.<br>Uma só colheita.", en: "1,000 tins.<br>One single harvest." },
     lote_p: { pt: "O primeiro lote Zirbo é limitado e numerado. Depois de esgotado, só a próxima colheita trará mais.", en: "The first Zirbo batch is limited and numbered. Once it sells out, only next harvest's batch will bring more." },
