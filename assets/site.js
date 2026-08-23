@@ -250,7 +250,7 @@
       en: "The municipality of Mirandela — also known for its alheira sausage — holds the region's most important olive groves, covering around 35% of its farmland."
     },
     ter_h3: { pt: "Quatro variedades, um carácter", en: "Four varieties, one character" },
-    ter_fig1: { pt: "Oliveira centenária — o tempo é parte da receita, não um obstáculo a contornar.", en: "A centuries-old olive tree — time is part of the recipe, not an obstacle to work around." },
+    ter_fig1: { pt: "Uma oliveira do nosso olival — plantada há mais de meio século, ainda a dar fruto.", en: "An olive tree from our own grove — planted more than half a century ago, still bearing fruit." },
     ter_fig2: { pt: "Uma árvore carregada, ainda a semanas da colheita — as quatro variedades lado a lado no mesmo olival.", en: "A tree heavy with fruit, still weeks from harvest — the four varieties side by side in the same grove." },
     ter_p4: { pt: "O perfil do azeite transmontano nasce do equilíbrio entre quatro variedades autóctones:", en: "The character of Trás-os-Montes olive oil comes from the balance of four native varieties:" },
     ter_v1: { pt: "Contribui com amargor e picante", en: "Adds bitterness and pungency" },
@@ -512,14 +512,32 @@
       pt: "Fotografias tiradas no nosso olival em Trás-os-Montes, na Terra Fria Transmontana — as mesmas oliveiras e encostas de onde vem o azeite Zirbo.",
       en: "Photos taken at our own olive grove in Trás-os-Montes, in the Terra Fria Transmontana — the same olive trees and hillsides the Zirbo oil comes from."
     },
-    olival_cap1: { pt: "Uma oliveira centenária, tronco múltiplo talhado por gerações de podas.", en: "A century-old olive tree, its multiple trunk shaped by generations of pruning." },
+    olival_cap1: { pt: "Uma sobrevivente dos incêndios: o tronco múltiplo é a marca de quem rebentou de novo da raiz.", en: "A survivor of the wildfires: the multiple trunk is the mark of a tree that grew back from the root." },
     olival_cap2: { pt: "Uma oliveira carregada, ainda semanas antes da colheita.", en: "A tree heavy with fruit, still weeks before harvest." },
     olival_cap3: { pt: "As encostas da Terra Fria — o cenário de todos os dias.", en: "The hillsides of the Terra Fria — the everyday backdrop." },
-    olival_cap4: { pt: "Cada tronco nodoso conta décadas de vento e sol.", en: "Every gnarled trunk tells decades of wind and sun." },
-    olival_cap5: { pt: "Fileiras mais novas, plantadas para garantir o futuro do olival.", en: "Younger rows, planted to secure the grove's future." },
+    olival_cap4: { pt: "Cada nó do tronco pode ser cicatriz de fogo — e prova de resistência.", en: "Every knot in the trunk could be a fire scar — and proof of resilience." },
+    olival_cap5: { pt: "Fileiras mais novas, replantadas onde o fogo não deixou nada para trás.", en: "Younger rows, replanted where the fire left nothing behind." },
     olival_cap6: { pt: "O caminho de terra que atravessa o olival, encosta acima.", en: "The dirt path that crosses the grove, up the hillside." },
     olival_cap7: { pt: "Fileira após fileira, o olival estende-se pela encosta.", en: "Row after row, the grove stretches across the hillside." },
     olival_cap8: { pt: "Cada cacho é o resultado de um ano inteiro de espera.", en: "Every cluster is the result of a full year's wait." },
+    hist_eyebrow: { pt: "Três gerações, um incêndio, e as árvores que resistiram", en: "Three generations, a wildfire, and the trees that held on" },
+    hist_h1: { pt: "Um olival com história", en: "A grove with a history" },
+    hist_p1: {
+      pt: "O nosso olival foi plantado há mais de 50 anos pelo avô da família — árvore a árvore, encosta acima. Não é um investimento recente nem um projeto de marca: é terra que já passou por três gerações.",
+      en: "Our olive grove was planted more than 50 years ago by the family's grandfather — tree by tree, up the hillside. It isn't a recent investment or a brand project: it's land that has already passed through three generations."
+    },
+    hist_p2: {
+      pt: "Entre 2010 e 2012, os incêndios que percorreram Trás-os-Montes destruíram mais de metade do olival. Não foi opção nem gestão — foi perda, sem mais.",
+      en: "Between 2010 and 2012, the wildfires that swept through Trás-os-Montes destroyed more than half the grove. It wasn't a choice or a management decision — it was simply loss."
+    },
+    hist_pull: {
+      pt: "Mas as árvores que sobreviveram voltaram a rebentar da raiz. Nos anos seguintes, foram vingando — teimosas, resistentes.",
+      en: "But the trees that survived grew back from the root. In the years that followed, they took hold — stubborn, resilient."
+    },
+    hist_p3: {
+      pt: "É delas, e das fileiras mais novas replantadas depois para as substituir, que vem hoje o azeite Zirbo.",
+      en: "It's from those trees, and the younger rows replanted afterwards to replace what was lost, that Zirbo olive oil comes today."
+    },
     cult_eyebrow: { pt: "Como cuidamos das oliveiras", en: "How we care for the trees" },
     cult_h1: { pt: "Cultivo Tradicional", en: "Traditional Cultivation" },
     cult_p1: {
@@ -536,8 +554,8 @@
       en: "Every cut is deliberate: old, diseased or crossing wood is removed — never more than the tree can afford to lose in a single year."
     },
     cult_p3: {
-      pt: "Não há pressa nem máquina que substitua este trabalho. É repetido árvore a árvore, todos os invernos, há gerações — e é isso, mais do que qualquer técnica nova, que mantém as oliveiras centenárias do nosso olival ainda produtivas.",
-      en: "No machine or shortcut replaces this work. It's repeated tree by tree, every winter, for generations — and that, more than any new technique, is what keeps the centuries-old trees in our grove still productive."
+      pt: "Não há pressa nem máquina que substitua este trabalho. É repetido árvore a árvore, todos os invernos, há gerações — e é esse cuidado, mais do que qualquer técnica nova, que mantém produtivas as árvores que resistiram ao fogo.",
+      en: "No machine or shortcut replaces this work. It's repeated tree by tree, every winter, for generations — and that care, more than any new technique, is what keeps the trees that survived the fire still productive."
     },
     cult_fig2: {
       pt: "Anos de poda cuidada moldam a copa aberta, típica do olival tradicional transmontano.",
