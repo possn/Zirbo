@@ -368,6 +368,7 @@
     tab_info_title: { pt: "Características do Produto", en: "Product Characteristics" },
     gallery_thumb1_alt: { pt: "Lata Zirbo, azeite virgem extra, 500 ml", en: "Zirbo tin, extra virgin olive oil, 500 ml" },
     gallery_thumb2_alt: { pt: "Lata Zirbo em composição de mesa", en: "Zirbo tin styled on a table" },
+    zoom_hint: { pt: "⊕ Ampliar", en: "⊕ Zoom" },
     prod_h1: { pt: "Porquê lata, e não vidro", en: "Why a tin, not glass" },
     prod_p1: {
       pt: "A lata de alumínio é a embalagem tradicionalmente usada para azeites de gama alta em contextos onde a proteção da luz é prioridade absoluta — a exposição à luz é uma das principais causas de degradação do azeite, oxidando os seus compostos e alterando aroma e sabor ao longo do tempo. Ao contrário do vidro, mesmo escuro, a lata bloqueia totalmente a luz e o ar, prolongando a vida útil do produto sem necessidade de conservantes.",
@@ -1019,6 +1020,19 @@
         thumb.classList.add("active");
       });
     });
+
+    // click/tap main product image to open full-size in a new tab (whichever image is currently shown)
+    var galleryMainWrap = document.getElementById("galleryMainWrap");
+    if (galleryMainWrap) {
+      var openZoom = function () {
+        var mainImg = document.getElementById("galleryMain");
+        if (mainImg) window.open(mainImg.src, "_blank", "noopener");
+      };
+      galleryMainWrap.addEventListener("click", openZoom);
+      galleryMainWrap.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openZoom(); }
+      });
+    }
 
     // product tabs (produto.html)
     document.querySelectorAll(".tabnav .tabbtn[data-tab]").forEach(function (btn) {
