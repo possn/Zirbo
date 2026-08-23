@@ -504,6 +504,34 @@
     olival_cap6: { pt: "O caminho de terra que atravessa o olival, encosta acima.", en: "The dirt path that crosses the grove, up the hillside." },
     olival_cap7: { pt: "Fileira após fileira, o olival estende-se pela encosta.", en: "Row after row, the grove stretches across the hillside." },
     olival_cap8: { pt: "Cada cacho é o resultado de um ano inteiro de espera.", en: "Every cluster is the result of a full year's wait." },
+    cult_eyebrow: { pt: "Como cuidamos das oliveiras", en: "How we care for the trees" },
+    cult_h1: { pt: "Cultivo Tradicional", en: "Traditional Cultivation" },
+    cult_p1: {
+      pt: "O nosso olival trabalha-se como sempre se trabalhou nesta região: em regime de sequeiro, sem rega forçada, deixando que seja o solo de xisto — e as estações — a ditar o ritmo. É essa resistência, mais do que qualquer intervenção, que dá caráter à azeitona.",
+      en: "Our grove is worked the way it has always been worked in this region: rain-fed, with no forced irrigation, letting the schist soil — and the seasons — set the pace. It's that resilience, more than any intervention, that gives the olive its character."
+    },
+    cult_h2: { pt: "A poda", en: "Pruning" },
+    cult_p2: {
+      pt: "A poda faz-se no inverno, depois da colheita e antes do arranque da nova vegetação — sempre à mão. O objetivo não é só controlar o tamanho da árvore: é abrir a copa em forma de taça, deixando entrar luz e ar até ao centro, para que a azeitona amadureça de forma uniforme em toda a árvore, e não só nas pontas.",
+      en: "Pruning happens in winter, after harvest and before new growth begins — always by hand. The goal isn't just to control the tree's size: it's to open the canopy into a cup shape, letting light and air reach the centre, so the fruit ripens evenly across the whole tree, not just at the tips."
+    },
+    cult_fig1: {
+      pt: "Cada corte é pensado: remove-se a madeira velha, doente ou cruzada — nunca mais do que a árvore aguenta perder num só ano.",
+      en: "Every cut is deliberate: old, diseased or crossing wood is removed — never more than the tree can afford to lose in a single year."
+    },
+    cult_p3: {
+      pt: "Não há pressa nem máquina que substitua este trabalho. É repetido árvore a árvore, todos os invernos, há gerações — e é isso, mais do que qualquer técnica nova, que mantém as oliveiras centenárias do nosso olival ainda produtivas.",
+      en: "No machine or shortcut replaces this work. It's repeated tree by tree, every winter, for generations — and that, more than any new technique, is what keeps the centuries-old trees in our grove still productive."
+    },
+    cult_fig2: {
+      pt: "Anos de poda cuidada moldam a copa aberta, típica do olival tradicional transmontano.",
+      en: "Years of careful pruning shape the open canopy typical of the traditional Trás-os-Montes grove."
+    },
+    cult_h3: { pt: "O resto do ano", en: "The rest of the year" },
+    cult_p4: {
+      pt: "Fora da época da poda e da colheita, a intervenção é mínima: sem regas artificiais, sem adubação intensiva, sem herbicidas de largo espectro. A erva cresce e seca naturalmente ao longo do ano, protegendo o solo da erosão nas encostas mais inclinadas. É um cultivo que exige paciência — e que está, de alguma forma, em cada gota de Zirbo.",
+      en: "Outside pruning and harvest season, intervention is kept to a minimum: no artificial irrigation, no intensive fertilising, no broad-spectrum herbicides. Grass grows and dries naturally through the year, protecting the soil from erosion on the steeper slopes. It's a way of growing that demands patience — and it's there, in some way, in every drop of Zirbo."
+    },
     // contacto
     cont_eyebrow: { pt: "Fale connosco", en: "Get in touch" },
     cont_title: { pt: "Contacte-nos", en: "Contact Us" },
