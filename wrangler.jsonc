@@ -9,12 +9,5 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS"
-  },
-  "secrets_store_secrets": [
-    {
-      "binding": "RESEND_API_KEY",
-      "store_id": "dead1fb1897146d3983a4f6f63ec47b3",
-      "secret_name": "resend_api_key_v2"
-    }
-  ]
+  }
 }
