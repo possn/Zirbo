@@ -72,6 +72,13 @@
     hero_eyebrow: { pt: "Terra Fria Transmontana · Azeite Virgem Extra", en: "Terra Fria Transmontana · Extra Virgin Olive Oil" },
     hero_tag: { pt: "“A força da terra, esculpida pelo vento.”", en: "“The strength of the land, carved by the wind.”" },
     hero_scroll: { pt: "Descubra", en: "Discover" },
+    banner_eyebrow: { pt: "Não é uma imagem de arquivo", en: "Not a stock photo" },
+    banner_h: { pt: "As oliveiras são nossas.", en: "The olive trees are ours." },
+    banner_p: {
+      pt: "Cultivamos o nosso próprio olival em Trás-os-Montes, à moda antiga — sequeiro, poda à mão, sem atalhos. Só a prensagem final é feita num lagar parceiro certificado na região.",
+      en: "We grow our own olive grove in Trás-os-Montes, the old way — rain-fed, hand-pruned, no shortcuts. Only the final pressing is done at a certified partner mill in the region."
+    },
+    banner_cta: { pt: "Conheça o nosso olival →", en: "See our olive grove →" },
     nf_eyebrow: { pt: "Erro 404", en: "404 Error" },
     nf_title: { pt: "Esta página perdeu-se no olival.", en: "This page got lost in the grove." },
     nf_dek: {
@@ -502,8 +509,8 @@
     olival_eyebrow: { pt: "Da terra à lata", en: "From the grove to the tin" },
     olival_h: { pt: "O nosso olival", en: "Our olive grove" },
     olival_p: {
-      pt: "Fotografias tiradas no olival parceiro em Trás-os-Montes, na Terra Fria Transmontana — as mesmas oliveiras e encostas de onde vem o azeite Zirbo.",
-      en: "Photos taken at the partner grove in Trás-os-Montes, in the Terra Fria Transmontana — the same olive trees and hillsides the Zirbo oil comes from."
+      pt: "Fotografias tiradas no nosso olival em Trás-os-Montes, na Terra Fria Transmontana — as mesmas oliveiras e encostas de onde vem o azeite Zirbo.",
+      en: "Photos taken at our own olive grove in Trás-os-Montes, in the Terra Fria Transmontana — the same olive trees and hillsides the Zirbo oil comes from."
     },
     olival_cap1: { pt: "Uma oliveira centenária, tronco múltiplo talhado por gerações de podas.", en: "A century-old olive tree, its multiple trunk shaped by generations of pruning." },
     olival_cap2: { pt: "Uma oliveira carregada, ainda semanas antes da colheita.", en: "A tree heavy with fruit, still weeks before harvest." },
