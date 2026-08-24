@@ -1154,7 +1154,7 @@
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       })
-        .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }); })
+        .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }).catch(function () { throw new Error("error"); }); })
         .then(function (res) {
           submitBtn.disabled = false;
           submitBtn.textContent = t("cont_form_send");
