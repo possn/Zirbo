@@ -1231,4 +1231,13 @@
       renderCart();
     }
   });
+
+  // PWA: register the service worker so the site is installable on
+  // phones/desktops. Registered after load so it never competes with the
+  // page's own first paint or the checkout/contact requests.
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/sw.js").catch(function () {});
+    });
+  }
 })();
