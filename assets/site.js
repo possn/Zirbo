@@ -863,7 +863,6 @@
     var cart = getCart();
     cart[id] = (cart[id] || 0) + (qty || 1);
     saveCart(cart);
-    showToast(t("added_to_cart"));
   }
   function setQty(id, qty) {
     var cart = getCart();
