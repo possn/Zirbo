@@ -1,6 +1,7 @@
 // Zirbo — site.js
 // Cart (localStorage), search overlay, and PT/EN language toggle.
-// No backend yet: cart persists locally; checkout leads to a placeholder page.
+// Cart persists locally (localStorage); checkout hands off to the Worker's
+// /api/checkout, which creates a real Stripe Checkout Session server-side.
 // Ready to be replaced by real Stripe Checkout + D1 once the business is registered.
 
 (function () {
@@ -1217,5 +1218,14 @@
           }
         });
     });
+
+    // obrigado — a completed Stripe Checkout redirects here with
+    // ?session_id=... in the URL. Only then do we know the purchase went
+    // through, so this is the single place the cart gets cleared.
+    if (/\/obrigado\.html/.test(window.location.pathname) &&
+        /[?&]session_id=/.test(window.location.search)) {
+      localStorage.removeItem("zirbo_cart");
+      renderCart();
+    }
   });
 })();

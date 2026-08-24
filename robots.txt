@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.zirbo.cc/sitemap.xml
+Sitemap: https://zirbo.cc/sitemap.xml
