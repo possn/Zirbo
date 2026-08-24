@@ -469,6 +469,7 @@ header.nav .navicons{ display:flex; align-items:center; gap:6px; flex:0 0 auto; 
   transition:opacity .2s;
 }
 .icon-btn:hover{ opacity:1; }
+.cart-btn{ margin-right:10px; }
 .cart-btn .cart-count{
   position:absolute; top:-2px; right:-2px;
   background:var(--dourado-soft); color:var(--xisto);
