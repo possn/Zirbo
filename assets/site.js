@@ -775,8 +775,8 @@
     },
     shop_bandeja_name: { pt: "Bandeja de Degustação", en: "Tasting Tray" },
     shop_bandeja_desc: {
-      pt: "Madeira de castanho transmontano, com dois encaixes — um para azeite Zirbo e outro para um segundo azeite ou vinagre, lado a lado, para comparar em cada prova.",
-      en: "Trás-os-Montes chestnut wood, with two slots — one for Zirbo olive oil, one for a second oil or vinegar, side by side for tasting comparisons."
+      pt: "Madeira maciça, com acabamento natural — duas bandejas de tamanhos diferentes, para azeite, pão e acompanhamentos à mesa.",
+      en: "Solid wood, natural finish — two trays in different sizes, for olive oil, bread and accompaniments at the table."
     },
     shop_tasting_h: { pt: "Prova & oferta", en: "Tasting & gifting" },
     shop_kit_name: { pt: "Kit de Prova — 3 x 100 ml", en: "Tasting Kit — 3 x 100 ml" },
