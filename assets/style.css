@@ -132,7 +132,7 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 }
 .page-hero .back{
   font-size:0.76rem; letter-spacing:0.08em; text-transform:uppercase;
-  color:var(--dourado-soft); text-decoration:none; margin-bottom:24px; display:inline-flex; gap:8px; align-items:center;
+  color:var(--dourado-soft); text-decoration:none; margin-bottom:24px; display:flex; gap:8px; align-items:center;
   width:fit-content;
 }
 .page-hero .back:hover{ color:var(--marfim); }
@@ -404,6 +404,10 @@ header.nav .navscroll a.cta:hover{ background:var(--marfim); }
 
 .shopgrid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:#d9d0b8; border:1px solid #d9d0b8; max-width:var(--max); margin:0 auto 60px; }
 .shopcard{ background:var(--marfim); padding:34px 28px; display:flex; flex-direction:column; gap:12px; }
+.shopcard .specs, .shopcard .specs li{ border-color:#d9d0b8; }
+.shopcard .specs li .k{ color:#8a8672; }
+.shopcard .specs li .v{ color:var(--xisto); }
+.shopcard .specs li .dots{ border-bottom-color:#d9d0b8; }
 .shopcard .badge{
   align-self:flex-start; font-size:0.64rem; letter-spacing:0.12em; text-transform:uppercase;
   padding:5px 10px; border:1px solid var(--dourado); color:var(--dourado);
