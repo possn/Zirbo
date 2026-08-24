@@ -723,6 +723,10 @@
     spec_cork_nat: { pt: "Cortiça natural", en: "Natural cork" },
     spec_flow: { pt: "Fluxo", en: "Flow" },
     spec_flow_v: { pt: "Controlado, gota a gota", en: "Controlled, drop by drop" },
+    spec_capacity: { pt: "Capacidade", en: "Capacity" },
+    spec_material: { pt: "Material", en: "Material" },
+    spec_system: { pt: "Sistema", en: "System" },
+    spec_antidrip: { pt: "Anti-gota", en: "Drip-free" },
     // shop page
     shop_hero_eyebrow: { pt: "A coleção Zirbo", en: "The Zirbo collection" },
     shop_hero_title: { pt: "A Loja", en: "The Shop" },
@@ -766,8 +770,8 @@
     },
     shop_galheteiro_name: { pt: "Galheteiro Zirbo", en: "Zirbo Cruet" },
     shop_galheteiro_desc: {
-      pt: "Vidro e aço inoxidável, com bico doseador anti-pingo para servir com precisão à mesa — sem desperdício, sem escorrências.",
-      en: "Glass and stainless steel, with a drip-free dosing spout for precise pouring at the table — no waste, no mess."
+      pt: "Almotolia em aço inoxidável polido, com bico doseador interno e sistema anti-gota, para servir com precisão à mesa — sem desperdício, sem escorrências.",
+      en: "Polished stainless-steel oil can, with an internal dosing spout and drip-free system, for precise pouring at the table — no waste, no mess."
     },
     shop_bandeja_name: { pt: "Bandeja de Degustação", en: "Tasting Tray" },
     shop_bandeja_desc: {
